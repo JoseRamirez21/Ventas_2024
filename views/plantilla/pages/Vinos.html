@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC Licores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .navbar-custom {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .navbar-brand-custom {
+            font-weight: bold;
+        }
+        .search-bar {
+            flex: 1;
+        }
+        .category-menu {
+            background-color: #226dc2;
+        }
+        .category-menu a {
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .category-menu .nav-link {
+            margin: 0 10px; 
+        }
+
+
+
+
+
+
+
+
+
+    .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+           
+        }
+        .footer a {
+            color: #fff;
+        }
+        .footer .icon {
+            font-size: 20px;
+        }
+        .b_whatsaap {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 1000;
+    animation: bounce 1s infinite;
+}
+
+.b_whatsaap img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(30, 200, 55, 0.2);
+    transition: transform 0.3s;
+}
+
+.b_whatsaap img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(10px);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+    </style>
+</head>
+<body>
+
+    
+  <header>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid d-flex justify-content-center align-items-center ">
+
+                <a class="navbar-brand navbar-brand-custom mx-3" href="#">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcOg8Ax5g9goNiTXPtuLwE23JPqOtrO3VSEQ&s" style="width: 50px; height: 40px;" alt="">       JC LICORES </a>
+                <form class="d-flex search-bar mx-3">
+                    <input class="form-control me-2" type="search"
+                        placeholder="Busca productos, categorías o marcas" aria-label="Search">
+                    <button class="fa-solid fa-magnifying-glass" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <div class="dropdown mx-3 ">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="accountDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cuenta
+                    </button>
+                    <ul class="dropdown-menu " aria-labelledby="accountDropdown">
+                      <li><a class="dropdown-item" href="login1.html">Iniciar Sesión</a></li>
+                      <li><a class="dropdown-item" href="https://apps.apple.com/us/app/licores-mundiales/id1473051773" target="_blank">Cerrar sesión</a></li>
+                  </ul>
+                </div>
+                <a class="btn btn-outline-secondary mx-3 fa-solid fa-cart-shopping" href="carrito.html"><i
+                        class="bi bi-cart "></i> </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg category-menu">
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="pagina_principal.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Whisky.html">Whisky</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Vinos.html">Vinos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Burbujas.html">Burbujas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Ron.html">Ron</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Vodka.html">Vodka</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tequila.html">Tequilas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Pisco.html">Pisco</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Cerveza.html">Cervezas</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    </nav>
+</header>
+    
+
+
+
+<div class="container my-4">
+  <div class="container-fluid1 p-3 m-0 mt-4 row"> <h2 style="color: red;  font-size: 35px; font-family:'Gill Sans',
+    'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; display: flex; align-items: center;"> <span style="flex: 1; margin: 30px;
+     border-top: 2px solid rgb(221, 21, 21);">
+   </span> COLECCIONES DE VINOS <span style="flex: 1;  margin: 30px;  border-top: 2px solid rgb(221, 20, 20);"></span> </h2>
+</div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/09/Alma-Negra-Blend-2019-Mendoza@05x.png" class="card-img-top" alt="MG Spirit Mojito">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Robert Carls Express 750 ML</h5>
+            <p class="card-text">S/8.00</p>
+            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/04/Altos-Las-Hormigas-Terroir-Malbec-2018@05x-300x300.png" class="card-img-top" alt="Tónica Backus">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Juan Carls VP 750 ML</h5>
+            <p class="card-text">S/9.00</p>
+            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/04/El-Enemigo-Malbec-2019@05x-300x300.png" class="card-img-top" alt="Sangría Tabernero">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Rioja Carls Sup750 ML</h5>
+            <p class="card-text">S/14.00</p>
+            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2024/01/Montes-Classic-Reserva-Malbec-2021@05x-2-400x400.png" class="card-img-top" alt="MG Spirit Blueberry">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Robert Carls 750 ML</h5>
+            <p class="card-text">S/45.00</p>
+            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/04/19-Crimes-Cali-Red-Blend-2020@05x-e1705451993429-400x400.png" class="card-img-top" alt="MG Spirit Blueberry">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Robert Carls Black 750 ML</h5>
+            <p class="card-text">S/27.00</p>
+            <a href="carrito.html" class="btn btn-darger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/04/Robert-Mondavi-Private-Seleccion-Zinfandel-2017@05x-400x400.png" class="card-img-top" alt="MG Spirit Blueberry">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Whitert Carls White 750 ML</h5>
+            <p class="card-text">S/20.00</p>
+            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/04/Benjamin-Nieto-Senetiner-Chardonnay-2021@05x-400x400.png" class="card-img-top" alt="MG Spirit Blueberry">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Robert Carls Superior 750 ML</h5>
+            <p class="card-text">S/24.00</p> 
+            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/04/Don-Luis-Cousino-Macul-Sauvignon-Blanc-2022@05x-400x400.png" class="card-img-top" alt="MG Spirit Blueberry">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Robert Carls Green 750 ML</h5>
+            <p class="card-text">S/15.00</p>
+            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/09/Fabre-Montmayou-Torrontes-2022-Estate-Bottled-Mendoza@05x-400x400.png" class="card-img-top" alt="MG Spirit Blueberry">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Robert Carls Limit 750 ML</h5>
+            <p class="card-text">S/48.00</p>
+            <a href="carrito.html" class="btn btn-darger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/09/Faustino-Rivero-Albarino-Rias-Baixas-2022@05x-400x400.png" class="card-img-top" alt="MG Spirit Blueberry">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Robert Carls SkyBlue 750 ML</h5>
+            <p class="card-text">S/68.00</p>
+            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/04/Faustino-V-Viura-Chardonnay-2021-Rioja@05x-400x400.png" class="card-img-top" alt="MG Spirit Blueberry">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Robert Carls Yellow 750 ML</h5>
+            <p class="card-text">S/38.00</p>
+            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.miluvas.pe/wp-content/uploads/2023/04/Mar-de-Frades-Albarino-Atlantico-DO-Rias-Baixas-2022@05x-400x400.png" class="card-img-top" alt="MG Spirit Blueberry">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title">Robert Carls Blue 750 ML</h5>
+            <p class="card-text">S/28.00</p>
+            <a href="carrito.html" class="btn btn-darger">AÑADIR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b_whatsaap">
+      <a href=" https://w.app/i3a7vS" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp">
+      </a>
+  </div>
+  </div>    
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="bg-dark text-white mt-5 p-4 text-center">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h5>Sobre Nosotros</h5>
+                <p>Somos una empresa de gran reconocimiento por nuestro envios rapidos y precios comodos
+                    Contamos con varias sucursales dentro del pais.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h5>Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                  <li><a href="pagina_principal.html" class="text-white"  style="text-decoration: none;">Inicio</a></li>
+                  <li><a href="Libro.html" class="text-white"  style="text-decoration: none;">Libro de Reclamaciones</a></li>
+                  <li><a href="Terminos.html" class="text-white"  style="text-decoration: none;">Términos y Condiciones</a></li>
+                  <li><a href="Politica.html" class="text-white"  style="text-decoration: none;">Política de Privacidad</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contáctanos</h5>
+                <p>Email: <a href="mailto:soportesistemanotas@gmail.com" class="text-white"  style="text-decoration: none;">JCLicores@gmail.com</a></p>
+                <p>Teléfono: <a href="tel:901267943" class="text-white"  style="text-decoration: none;"> 901267943</a></p>
+                <div class="social-icons mt-2 " >
+                    <a href="https://web.whatsapp.com/" target="_blank" class="me-4" >
+                        <i class="fa-brands fa-whatsapp" style="font-size: 35px; "></i>
+                    </a>
+                    <a href="https://www.facebook.com/josec.ramirez.718" target="_blank"  class="me-4">
+                        <i class="fa-brands fa-facebook" style="font-size: 35px;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/josec_ramirezramos/" target="_blank"  class="me-4">
+                        <i class="fa-brands fa-instagram" style="font-size: 35px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <p class="mb-0">&copy; 2024  JC Licores. Todos los derechos reservados a nuestra empresa.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

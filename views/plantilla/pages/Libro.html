@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC Licores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .navbar-custom {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .navbar-brand-custom {
+            font-weight: bold;
+        }
+        .search-bar {
+            flex: 1;
+        }
+        .category-menu {
+            background-color: #226dc2;
+        }
+        .category-menu a {
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .category-menu .nav-link {
+            margin: 0 10px;
+        }
+
+
+
+
+      
+
+
+    .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+           
+        }
+        .footer a {
+            color: #fff;
+        }
+        .footer .icon {
+            font-size: 20px;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+
+
+
+
+        .section-header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+       
+        .b_whatsaap {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 1000;
+    animation: bounce 1s infinite;
+}
+
+.b_whatsaap img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(30, 200, 55, 0.2);
+    transition: transform 0.3s;
+}
+
+.b_whatsaap img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(10px);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+    </style>
+</head>
+<body>
+
+    
+    <header>
+      
+            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                <div class="container-fluid d-flex justify-content-center align-items-center ">
+
+                    <a class="navbar-brand navbar-brand-custom mx-3" href="#">
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcOg8Ax5g9goNiTXPtuLwE23JPqOtrO3VSEQ&s" style="width: 50px; height: 40px;" alt="">       JC LICORES </a>
+                    <form class="d-flex search-bar mx-3">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Busca productos, categorías o marcas" aria-label="Search">
+                        <button class="fa-solid fa-magnifying-glass" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <div class="dropdown mx-3 ">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="accountDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cuenta
+                        </button>
+                        <ul class="dropdown-menu " aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="login1.html">Iniciar Sesión</a></li>
+                            <li><a class="dropdown-item" href="https://apps.apple.com/us/app/licores-mundiales/id1473051773" target="_blank">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-outline-secondary mx-3 fa-solid fa-cart-shopping" href="carrito.html"><i
+                            class="bi bi-cart "></i> </a>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg category-menu">
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="pagina_principal.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Whisky.html">Whisky</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Vinos.html">Vinos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Burbujas.html">Burbujas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Ron.html">Ron</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Vodka.html">Vodka</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tequila.html">Tequilas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Pisco.html">Pisco</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Cerveza.html">Cervezas</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </nav>
+    </header>
+    
+
+
+ 
+
+
+<main>
+    
+
+   
+    <div class="container my-5" style="width: 45%;">
+        <h1 class="text-center mb-4">LIBRO DE RECLAMACIONES</h1>
+
+        <form>
+           
+            <div class="mb-3" >
+                <div class="section-header" style="background-color:  rgb(47, 47, 196); text-align: center;">1. Identificación del Consumidor Reclamante</div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="nombres" class="form-label">Nombres </label>
+                        <input type="text" class="form-control" id="nombres" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellidos" class="form-label">Apellidos </label>
+                        <input type="text" class="form-control" id="apellidos" required>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <label for="direccion" class="form-label">Dirección </label>
+                    <input type="text" class="form-control" id="direccion" required>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="tipoDocumento" class="form-label">Tipo de Documento</label>
+                        <select class="form-select" id="tipoDocumento">
+                            <option>DNI</option>
+                            <option>Pasaporte</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="numeroDocumento" class="form-label">Nro de Documento</label>
+                        <input type="text" class="form-control" id="numeroDocumento" required>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">E-mail </label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="telefono">
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="mb-3">
+                <div class="section-header" style="background-color: rgb(47, 47, 196); text-align: center;">2. Identificación del Bien Contratado</div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="numeroPedido" class="form-label">Número de pedido</label>
+                        <input type="text" class="form-control" id="numeroPedido">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="montoReclamado" class="form-label">Monto Reclamado S/</label>
+                        <input type="text" class="form-control" id="montoReclamado">
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <label for="descripcionBien" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="descripcionBien" rows="3"></textarea>
+                </div>
+            </div>
+
+            
+            <div class="mb-3">
+                <div class="section-header" style="background-color: rgb(47, 47, 196); text-align: center;">3. Detalle de la Reclamación y Pedido del Consumidor</div>
+                <div class="mt-3">
+                    <label class="form-label">Tipo de reclamación </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipoReclamacion" id="reclamo" value="reclamo" checked>
+                        <label class="form-check-label" for="reclamo">Reclamo</label>
+                        <p>Disconformidad relacionada a los productos o servicios.</p>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipoReclamacion" id="queja" value="queja">
+                        <label class="form-check-label" for="queja">Queja</label>
+                        <p>Malestar o descontento respecto a la atención al público.</p>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <label for="pedido" class="form-label">Pedido (Lo que solicita)</label>
+                    <textarea class="form-control" id="pedido" rows="3"></textarea>
+                </div>
+                <div class="mt-3">
+                    <label for="detalleReclamacion" class="form-label">Detalle de Reclamación</label>
+                    <textarea class="form-control" id="detalleReclamacion" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Enviar Queja</button>
+            </div>
+        </form>
+    </div>
+    <div class="b_whatsaap">
+        <a href=" https://w.app/i3a7vS" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp">
+        </a>
+    </div>
+
+</main>
+
+    
+       
+
+
+
+        <footer class="bg-dark text-white mt-5 p-4 text-center">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <h5>Sobre Nosotros</h5>
+                        <p>Somos una empresa de gran reconocimiento por nuestro envios rapidos y precios comodos
+                            Contamos con varias sucursales dentro del pais.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Enlaces Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="pagina_principal.html" class="text-white"  style="text-decoration: none;">Inicio</a></li>
+                            <li><a href="Libro.html" class="text-white"  style="text-decoration: none;">Libro de Reclamaciones</a></li>
+                            <li><a href="Terminos.html" class="text-white"  style="text-decoration: none;">Términos y Condiciones</a></li>
+                            <li><a href="Politica.html" class="text-white"  style="text-decoration: none;">Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contáctanos</h5>
+                        <p>Email: <a href="mailto:soportesistemanotas@gmail.com" class="text-white"  style="text-decoration: none;">JCLicores@gmail.com</a></p>
+                        <p>Teléfono: <a href="tel:901267943" class="text-white"  style="text-decoration: none;"> 901267943</a></p>
+                        <div class="social-icons mt-2 " >
+                            <a href="https://web.whatsapp.com/" target="_blank" class="me-4" >
+                                <i class="fa-brands fa-whatsapp" style="font-size: 35px; "></i>
+                            </a>
+                            <a href="https://www.facebook.com/josec.ramirez.718" target="_blank"  class="me-4">
+                                <i class="fa-brands fa-facebook" style="font-size: 35px;"></i>
+                            </a>
+                            <a href="https://www.instagram.com/josec_ramirezramos/" target="_blank"  class="me-4">
+                                <i class="fa-brands fa-instagram" style="font-size: 35px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="bg-white">
+                <p class="mb-0">&copy; 2024  JC Licores. Todos los derechos reservados a nuestra empresa.</p>
+            </div>
+        </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
