@@ -1,4 +1,5 @@
-<main>
+
+<div style="margin-top:75px;">
     <div id="carouselExampleIndicators" class="carousel slide mt-5 pt-5 " data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -318,6 +319,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid p-3 m-0 mt-1 row">
         <div class="container-fluid1 p-3 m-0 mt-4 row"> <h2 style="color: red;  font-size: 35px; font-family:'Gill Sans',
             'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; display: flex; align-items: center;"> <span style="flex: 1; margin: 30px;
@@ -393,8 +395,12 @@
     </div>
 
 
-    <div class="container mt-4">
-        <div class="container mt-1">
+
+
+
+
+    <div class="container1 mt-4" style="width: 70%; margin: 0 auto;">
+        <div class="container mt-1" style="width: 80%; margin: 0 auto;">
             <div class="container-fluid p-3 m-0 mt-1 row">
                 <div class="container-fluid1 p-3 m-0 mt-4 row"> <h2 style="color: rgb(62, 20, 228);  font-size: 35px; font-family:'Gill Sans',
                     'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; display: flex; align-items: center;"> <span style="flex: 1; margin: 30px;
@@ -433,7 +439,9 @@
                 </a>
             </div>
         </div>
-        <div class="container text-center my-4">
+        </div>
+    </div>
+        <div class="container1 text-center my-4 style="width: 0%; margin: 0 auto;"">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <div class="col">
                     <div class="card service-card">
@@ -472,7 +480,8 @@
                 </div>
             </div>
         </div>
-        <div class="container my-4">
+        </div>
+        <div class="container1 my-4" style="width: 70%; margin: 0 auto;">
             <div class="delivery-banner">
                 <div class="line-top"></div>
                 <div class="d-flex align-items-center justify-content-center my-3">
@@ -484,7 +493,11 @@
                 <div class="conditions">
                     Aplican condiciones para el envio. <a href="#">(Ver aquí)</a>
                 </div>
+                </div>
             </div>
-        </div>
-    </div>
-</main>
+            </div>
+            </div>
+            
+            
+            
+            
