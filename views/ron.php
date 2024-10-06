@@ -12,7 +12,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">Ron Flor de Caña 700 ML</h5>
             <p class="card-text">S/48.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">Ron Apleton 600 ML</h5>
             <p class="card-text">S/28.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">La Hechicera Extra Sup</h5>
             <p class="card-text">S/50.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">Ron Parce 10 Años 600 ML</h5>
             <p class="card-text">S/60.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">Ron Cartavio 1 L</h5>
             <p class="card-text">S/50.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">Krakens Super 600 ML</h5>
             <p class="card-text">S/160.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">Apetoon Kiskigo 500 ML</h5>
             <p class="card-text">S/47.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">Facundo Exquisito Top</h5>
             <p class="card-text">S/549.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title"> Abuelo Añejo 700 ML</h5>
             <p class="card-text">S/128.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">Havana Club 600 ML</h5>
             <p class="card-text">S/820.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">Calazan Añejo 10 Años</h5>
             <p class="card-text">S/453.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -122,7 +122,7 @@
           <div class="card-body  d-flex flex-column align-items-center">
             <h5 class="card-title">Agostura Top 600 ML</h5>
             <p class="card-text">S/199.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>

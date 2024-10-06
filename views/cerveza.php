@@ -12,7 +12,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Cerveza Herdinger Super</h5>
           <p class="card-text">S/17.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Cerveza Herdinger SWhust</h5>
           <p class="card-text">S/12.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Cerveza Herdinger SWhust</h5>
           <p class="card-text">S/20.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Cusquena Negra 500 ML</h5>
           <p class="card-text">S/10.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Pilsen En Lata 400 ML</h5>
           <p class="card-text">S/5.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Cusqueña Trigo 500 ML</h5>
           <p class="card-text">S/10.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Pilsen En Lata 300 ML </h5>
           <p class="card-text">S/4.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -82,7 +82,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Heineken Sup 500 ML</h5>
           <p class="card-text">S/8.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title"> Pancho Fierro Torento 700 ML</h5>
           <p class="card-text">S/810.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">ACDC Super Premium</h5>
           <p class="card-text">S/850.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -112,7 +112,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Pilsen Botella 400 ML</h5>
           <p class="card-text">S/6.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -122,7 +122,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Cerveza Corona 400 ML</h5>
           <p class="card-text">S/12.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>

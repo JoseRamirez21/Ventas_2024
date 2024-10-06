@@ -1,7 +1,5 @@
-<main>
-    
 
-   
+<main>
     <div class="container1 my-5" style="width: 60%; font-family: 'Times New Roman', Times, serif;">
         <h1 class="text-center mb-4" style="color: rgb(236, 29, 29); ">Términos y Condiciones</h1>
         <h5 style="color: rgb(4, 5, 18);">Bienvenido a nuestra tienda en línea de licorería. Al utilizar nuestro sitio web, usted acepta los

@@ -13,7 +13,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Jameson Irlandés 750 ML</h5>
             <p class="card-text">S/35.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
           
         </div>
@@ -24,7 +24,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Jack Denilson 750 ML</h5>
             <p class="card-text">S/40.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Whisky VAT 69 750 ML</h5>
             <p class="card-text">S/35.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Black & White 70 ML</h5>
             <p class="card-text">S/45.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Jim Beam BLack 750 ML</h5>
             <p class="card-text">S/40.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Something Special 400 ML</h5>
             <p class="card-text">S/30.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Regal Mizura 750 ML</h5>
             <p class="card-text">S/36.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Jim Beam White 750 ML</h5>
             <p class="card-text">S/45.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Old Time Black 750 ML</h5>
             <p class="card-text">S/25.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Black Label 750 ML</h5>
             <p class="card-text">S/120.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Gold Label 750 ML</h5>
             <p class="card-text">S/280.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
           <div class="card-body d-flex flex-column align-items-center">
             <h5 class="card-title">Red Label</h5>
             <p class="card-text">S/40.00</p>
-            <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+            <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
           </div>
         </div>
       </div>

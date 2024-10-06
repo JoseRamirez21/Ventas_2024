@@ -54,7 +54,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
 
@@ -71,7 +71,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 180.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 400.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 1 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 600.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -131,7 +131,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 900.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a>
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@
                 </div>
 
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a>
                 </div>
             </div>
         </div>
@@ -164,7 +164,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 2 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a>
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -210,7 +210,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 250.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -225,7 +225,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 180.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -240,7 +240,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 280.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -267,7 +267,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 44 000 000.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -283,7 +283,7 @@
                     </p>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -298,7 +298,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/.3 000 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -313,7 +313,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/.2 000 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -335,7 +335,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 600.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -351,7 +351,7 @@
                     </p>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -366,7 +366,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 470.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -381,7 +381,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 700.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>

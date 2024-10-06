@@ -14,7 +14,7 @@
                 <input type="text" placeholder="Nombre">
                 <input type="email" placeholder="Correo Electronico">
                 <input type="password" placeholder="Contraseña">
-                <button><a href="pagina_principal.html" style="color:white;">Registrarse <i class="fa fa-user"></i></a></button>
+                <button><a href="<?php echo BASE_URL; ?>inicio" style="color:white;">Registrarse <i class="fa fa-user"></i></a></button>
             </form>
         </div>
         <div class="form-container sign-in">
@@ -30,7 +30,7 @@
                 <input type="email" placeholder="Correo Electronico">
                 <input type="password" placeholder="Contraseña">
                 <a href="#">¿Olvidaste tu contraseña?</a>
-                <button><a href="pagina_principal.html" style="color:white;"> Iniciar Sesión <i class="fa fa-user"></i></a></button>
+                <button><a href="<?php echo BASE_URL; ?>inicio" style="color:white;"> Iniciar Sesión <i class="fa fa-user"></i></a></button>
             </form>
         </div>
         <div class="toggle-container">

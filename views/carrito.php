@@ -1,9 +1,5 @@
 
-    
-
-<div class="container" style="margin-top: 30px;">
-
-<div class="container">
+<div class="container" style="margin-top:150px;">
     <div class="row">
         <div class="col">
             <div class="row border-bottom mb-3">
@@ -110,7 +106,7 @@
             </div>  
         </div>
     </div>
-</div>
+    
 
 <div class="promo-section">
     <label for="promo-code">Código de Promoción</label>
@@ -130,8 +126,10 @@
     <a href="https://www.pagoefectivo.la/pe/"><img src="https://cdn.worldvectorlogo.com/logos/pago-efectivo-2020.svg" alt="Yape" style="width: 150px; height: 200px;"></a>
 </div>
 <div class="cart-footer" style="background: white; padding: 10px; text-align: center;">
-    <button class="btn btn-success">Finalizar Compra</button>
-    <a href="pagina_principal.html" class="btn btn-primary" style="margin-left: 50px;">Seguir Comprando</a>
+<div class="text-center my-4">
+        <button class="btn btn-success btn-custom">Finalizar Compra</button>
+        <button class="btn btn-primary" style="margin-left: 50px; background-color: skyblue;"><a href="<?php echo BASE_URL; ?>inicio" >Seguir Comprando</a></button>
+    </div>
 </div>
 <div class="b_whatsaap">
     <a href=" https://w.app/i3a7vS" target="_blank">
@@ -139,3 +137,4 @@
     </a>
 </div>
 </div>
+

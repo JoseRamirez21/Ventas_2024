@@ -12,7 +12,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Herradura Despur 700 ML</h5>
           <p class="card-text">S/157.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Tiequila Holmena 600 ML</h5>
           <p class="card-text">S/257.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Olmena Alto Super 600 ML</h5>
           <p class="card-text">S/420.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">El Jimador Super</h5>
           <p class="card-text">S/150.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Tequila Reposado 500 ML</h5>
           <p class="card-text">S/890.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Jose Cuervo Especial 700 ML</h5>
           <p class="card-text">S/150.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Jose Cuervo Tradicic 700ML </h5>
           <p class="card-text">S/497.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -82,7 +82,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Tequila Sauza River 700 ML</h5>
           <p class="card-text">S/600.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title"> Olmena Reposado 40 Años</h5>
           <p class="card-text">S/900.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Absolute Pink 600 ML</h5>
           <p class="card-text">S/850.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -112,7 +112,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Jose Cuervo Reposado 700ML</h5>
           <p class="card-text">S/499.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -122,7 +122,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Tequila Herradura Silv 600ML</h5>
           <p class="card-text">S/959.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>

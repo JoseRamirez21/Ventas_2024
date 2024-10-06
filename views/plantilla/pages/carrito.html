@@ -431,36 +431,6 @@
     <script src="https://kit.fontawesome.com/34fad0bc74.js" crossorigin="anonymous"></script>
     
 </body>
-<script>
-    function updateSubtotal(element) {
-        const price = parseFloat(element.getAttribute('data-price'));
-        const quantity = parseInt(element.value);
-        const subtotal = price * quantity;
-        const row = element.parentElement.parentElement;
-        row.querySelector('.subtotal').innerText = `S/ ${subtotal.toFixed(2)}`;
-        updateTotal();
-    }
 
-    function updateTotal() {
-        let total = 0;
-        document.querySelectorAll('.subtotal').forEach(subtotalElement => {
-            total += parseFloat(subtotalElement.innerText.replace('S/ ', ''));
-        });
-        document.getElementById('subtotal-amount').innerText = `S/ ${total.toFixed(2)}`;
-        document.getElementById('total-amount').innerText = `S/ ${total.toFixed(2)}`;
-    }
-
-    function applyPromo() {
-        const promoCode = document.getElementById('promo-code').value;
-        if (promoCode === 'dpw-2024') {
-            let total = parseFloat(document.getElementById('total-amount').innerText.replace('S/ ', ''));
-            total = total * 0.9; // 10% discount
-            document.getElementById('total-amount').innerText = `S/ ${total.toFixed(2)}`;
-            alert('Código de promoción aplicado con éxito');
-        } else {
-            alert('Código de promoción no válido');
-        }
-    }
-</script>
 
 </html>

@@ -46,7 +46,7 @@
      </div>
         <div class=" col-lg-3 col-md-4 col-sm-6 p-3 ">
             <div class="card" style="min-height: 00px;">
-               <a href="carrito.html"> <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-gold-label-botella-750ml.webp?v=1677262912"
+               <a href="<?php echo BASE_URL; ?>carrito"> <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-gold-label-botella-750ml.webp?v=1677262912"
                     class="card-img-top" alt="..."></a>
                 <div class="card-body br-100">
                     <h5 class="card-title">GOLD LABEL</h5>
@@ -55,14 +55,14 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
 
         </div>
         <div class=" col-lg-3 col-md-4 col-sm-6 p-3 ">
             <div class="card" style="min-height: 00px;">
-                <a href="carrito.html"> <img src="https://mundolicor.com.pe/wp-content/uploads/2019/12/136-Johnnie-Walker-Black-600x600.jpg"
+                <a href="<?php echo BASE_URL; ?>carrito"> <img src="https://mundolicor.com.pe/wp-content/uploads/2019/12/136-Johnnie-Walker-Black-600x600.jpg"
                     class="card-img-top" alt="..."></a>
                 <div class="card-body br-100">
                     <h5 class="card-title">BLACK LABEL</h5>
@@ -72,13 +72,13 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 180.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
         <div class=" col-lg-3 col-md-4 col-sm-6 p-3 ">
             <div class="card" style="min-height: 00px;">
-                <a href="carrito.html"> <img src="https://licoreriasunidas.pe/cdn/shop/products/8a83f62506284458a866dd447bf3b4ba.webp?v=1678117951"
+                <a href="<?php echo BASE_URL; ?>carrito"> <img src="https://licoreriasunidas.pe/cdn/shop/products/8a83f62506284458a866dd447bf3b4ba.webp?v=1678117951"
                     class="card-img-top" alt="..."></a>
                 <div class="card-body br-100">
                     <h5 class="card-title">DOUBLE LABEL</h5>
@@ -87,13 +87,13 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 400.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
         <div class=" col-lg-3 col-md-4 col-sm-6 p-3 ">
             <div class="card" style="min-height: 00px;">
-                <a href="carrito.html">  <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-blue-label-botella-750ml.webp?v=1677792200"
+                <a href="<?php echo BASE_URL; ?>carrito">  <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-blue-label-botella-750ml.webp?v=1677792200"
                     class="card-img-top" alt="..."></a>
                 <div class="card-body br-100">
                     <h5 class="card-title">BLUE LABEL</h5>
@@ -102,13 +102,13 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 1 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
         <div class=" col-lg-3 col-md-4 col-sm-6 p-3 ">
             <div class="card" style="min-height: 00px;">
-                <a href="carrito.html"> <img src="https://barruntoone.com/wp-content/uploads/2022/12/WHISKY-JOHNNIE-WALKER-GREEN-LABEL-750-ML-1.jpg"
+                <a href="<?php echo BASE_URL; ?>carrito"> <img src="https://barruntoone.com/wp-content/uploads/2022/12/WHISKY-JOHNNIE-WALKER-GREEN-LABEL-750-ML-1.jpg"
                     class="card-img-top" alt="..."></a>
                 <div class="card-body br-100">
                     <h5 class="card-title">GREEN LABEL</h5>
@@ -117,13 +117,13 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 600.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
         <div class=" col-lg-3 col-md-4 col-sm-6 p-3 ">
             <div class="card" style="min-height: 00px;">
-                <a href="carrito.html"> <img src="https://home.ripley.com.pe/Attachment/WOP_4/2044201742015/2044201742015_2.jpg"
+                <a href="<?php echo BASE_URL; ?>carrito"> <img src="https://home.ripley.com.pe/Attachment/WOP_4/2044201742015/2044201742015_2.jpg"
                     class="card-img-top" alt="..."></a>
                 <div class="card-body br-100">
                     <h5 class="card-title">PLATINUM LABEL</h5>
@@ -132,13 +132,13 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 900.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a>
                 </div>
             </div>
         </div>
         <div class=" col-lg-3 col-md-4 col-sm-6 p-3 ">
             <div class="card" style="min-height: 00px;">
-                <a href="carrito.html"> <img src="https://tofuu.getjusto.com/orioneat-local/resized2/8hZsmp7AbjjjbNZwM-1200-1200.webp"
+                <a href="<?php echo BASE_URL; ?>carrito"> <img src="https://tofuu.getjusto.com/orioneat-local/resized2/8hZsmp7AbjjjbNZwM-1200-1200.webp"
                     class="card-img-top" alt="..."></a>
                 <div class="card-body br-100">
                     <h5 class="card-title">RED LABEL</h5>
@@ -149,13 +149,13 @@
                 </div>
 
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a>
                 </div>
             </div>
         </div>
         <div class=" col-lg-3 col-md-4 col-sm-6 p-3 ">
             <div class="card" style="min-height: 00px;">
-                <a href="carrito.html">  <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-king-george-botella-700ml-74a9b8aebc.webp?v=1677263312&width=500"
+                <a href="<?php echo BASE_URL; ?>carrito">  <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-king-george-botella-700ml-74a9b8aebc.webp?v=1677263312&width=500"
                     class="card-img-top" alt="..."></a>
                 <div class="card-body br-100">
                     <h5 class="card-title">KING GEORGE V</h5>
@@ -165,7 +165,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 2 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a>
                 </div>
             </div>
         </div>
@@ -196,7 +196,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -211,7 +211,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 250.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -226,7 +226,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 180.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -241,7 +241,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 280.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -268,7 +268,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 44 000 000.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -284,7 +284,7 @@
                     </p>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -299,7 +299,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/.3 000 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -314,7 +314,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/.2 000 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -337,7 +337,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 600.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -353,7 +353,7 @@
                     </p>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -368,7 +368,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 470.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>
@@ -383,7 +383,7 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 700.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="carrito.html" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
                 </div>
             </div>
         </div>

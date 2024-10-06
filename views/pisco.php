@@ -13,7 +13,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Pisco Baron Italia 700 ML</h5>
           <p class="card-text">S/197.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Don Armando 9 Años 600 ML</h5>
           <p class="card-text">S/787.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Ocuaje Acholado 600 ML</h5>
           <p class="card-text">S/420.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Ocuaje Acholado 600 ML</h5>
           <p class="card-text">S/150.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Ocuaje Acholado 600ML</h5>
           <p class="card-text">S/890.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Botija Acholado 600 ML</h5>
           <p class="card-text">S/190.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Santiago Queirolo 700 ML </h5>
           <p class="card-text">S/157.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -83,7 +83,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Pancho Fierro Italia 700 ML</h5>
           <p class="card-text">S/680.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -93,7 +93,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title"> Pancho Fierro Torento 700 ML</h5>
           <p class="card-text">S/810.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Carnaval Acholado 900 ML</h5>
           <p class="card-text">S/850.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -113,7 +113,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Kumya Acholado 700 ML</h5>
           <p class="card-text">S/499.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -123,7 +123,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Brujas De Cayando 1 L</h5>
           <p class="card-text">S/120.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>

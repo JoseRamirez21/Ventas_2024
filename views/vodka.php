@@ -12,7 +12,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">14 Inkas Super 700 ML</h5>
           <p class="card-text">S/148.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Titos Admane 600 ML</h5>
           <p class="card-text">S/57.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Vodka 1825 Extra</h5>
           <p class="card-text">S/750.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Prada Extra 600 ML</h5>
           <p class="card-text">S/560.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Erisoff Red 500 ML</h5>
           <p class="card-text">S/500.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Ciro Count Bar</h5>
           <p class="card-text">S/199.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Absolute Elixe </h5>
           <p class="card-text">S/497.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -82,7 +82,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Skyy Limon 700 ML</h5>
           <p class="card-text">S/479.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title"> Absolute BLack 700 ML</h5>
           <p class="card-text">S/500.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Absolute Pink 600 ML</h5>
           <p class="card-text">S/850.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -112,7 +112,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Aboslute White 700 ML</h5>
           <p class="card-text">S/450.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
@@ -122,7 +122,7 @@
         <div class="card-body  d-flex flex-column align-items-center">
           <h5 class="card-title">Don Cajón Top 600 ML</h5>
           <p class="card-text">S/579.00</p>
-          <a href="carrito.html" class="btn btn-danger">AÑADIR AL CARRITO</a>
+          <a href="<?php echo BASE_URL; ?>carrito" class="btn btn-danger">AÑADIR AL CARRITO</a>
         </div>
       </div>
     </div>
