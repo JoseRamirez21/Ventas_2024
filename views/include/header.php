@@ -268,6 +268,78 @@
         }
 
         
+        .background-image {
+    background-image: url('./views/include/123.webp'); /* Cambia 'your-image.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 700px; /* Altura de toda la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Caja del formulario de suscripción */
+.subscribe-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de elevación */
+}
+
+
+
+
+/* Estilo del modal */
+.modal-content {
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    display: flex;
+    align-items: center;
+}
+
+.product-preview img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.current-price {
+    color: #dc3545;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.discount-price {
+    text-decoration: line-through;
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
 
     </style>
 </head>

@@ -55,27 +55,105 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
-                </div>
-            </div>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
 
-        </div>
-        <div class=" col-lg-3 col-md-4 col-sm-6 p-3 ">
-            <div class="card" style="min-height: 00px;">
-                <a href="<?php echo BASE_URL; ?>carrito"> <img src="https://mundolicor.com.pe/wp-content/uploads/2019/12/136-Johnnie-Walker-Black-600x600.jpg"
-                    class="card-img-top" alt="..."></a>
-                <div class="card-body br-100">
-                    <h5 class="card-title">BLACK LABEL</h5>
-                    <p class="card-text">Johnnie Walker Black Label es un verdadero ícono. Una mezcla magistral de
-                        whiskies de malta
-                        y de grano de toda Escocia.</p>
-                    <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 180.00</strong>
-                </div>
-                <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                        Vista previa
+                    </button>
+
                 </div>
             </div>
         </div>
+
+       
+       
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">Tequila Jimador Reposado</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Imagen del producto -->
+                    <div class="col-md-6 product-preview">
+                        <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-gold-label-botella-750ml.webp?v=1677262912" alt="Imagen del producto">
+                    </div>
+                    <!-- Detalles del producto -->
+                    <div class="col-md-6">
+                        <h4>Tequila Jimador reposado agave, Mexico</h4>
+                        <p class="text-muted discount-price">S/92.90</p>
+                        <p class="current-price">S/84.90</p>
+                        <p>De color dorado y aroma acogedor de vainilla, madera tostada, frutas, especias y agave cocido. Una rica combinación de especias, frutas, madera, vainilla y sutiles avellanas tostadas. Al terminar se presenta suave y duradero con los cálidos sabores de vainilla y especias sutiles descansadas en roble.</p>
+                        <p>Disponibilidad: <span class="text-success">2 disponibles</span></p>
+                        <button class="btn btn-success btn-block">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 p-3">
+    <div class="card" style="min-height: 00px;">
+        <a href="<?php echo BASE_URL; ?>carrito">
+            <img src="https://mundolicor.com.pe/wp-content/uploads/2019/12/136-Johnnie-Walker-Black-600x600.jpg"
+                class="card-img-top" alt="...">
+        </a>
+        <div class="card-body br-100">
+            <h5 class="card-title">BLACK LABEL</h5>
+            <p class="card-text">Johnnie Walker Black Label es un verdadero ícono. Una mezcla magistral de whiskies de malta
+                y de grano de toda Escocia.</p>
+            <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 180.00</strong></p>
+        </div>
+        <div class="card-body">
+            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal2">
+                Vista previa
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Producto 2: Black Label -->
+<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel2">BLACK LABEL</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Imagen del producto -->
+                    <div class="col-md-6 product-preview">
+                        <img src="https://mundolicor.com.pe/wp-content/uploads/2019/12/136-Johnnie-Walker-Black-600x600.jpg" alt="Imagen del producto">
+                    </div>
+                    <!-- Detalles del producto -->
+                    <div class="col-md-6">
+                        <h4>Johnnie Walker Black Label 750ml</h4>
+                        <p class="text-muted discount-price">S/.180.00</p>
+                        <p class="current-price">S/.165.00</p>
+                        <p>Johnnie Walker Black Label es un whisky complejo, rico y lleno de carácter. Con notas de frutas oscuras, vainilla y un toque ahumado.</p>
+                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                        <button class="btn btn-success btn-block">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        
         <div class=" col-lg-3 col-md-4 col-sm-6 p-3 ">
             <div class="card" style="min-height: 00px;">
                 <a href="<?php echo BASE_URL; ?>carrito"> <img src="https://licoreriasunidas.pe/cdn/shop/products/8a83f62506284458a866dd447bf3b4ba.webp?v=1678117951"
@@ -87,7 +165,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 400.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -102,7 +184,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 1 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -117,7 +203,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 600.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -132,7 +222,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 900.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -149,7 +243,11 @@
                 </div>
 
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -165,7 +263,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 2 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -196,7 +298,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -211,7 +317,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 250.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -226,7 +336,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 180.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -241,7 +355,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 280.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -268,7 +386,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 44 000 000.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -284,7 +406,11 @@
                     </p>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -299,7 +425,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/.3 000 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -314,7 +444,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/.2 000 200.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -337,7 +471,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 600.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -353,7 +491,11 @@
                     </p>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -368,7 +510,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 470.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -383,7 +529,11 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 700.00</strong>
                 </div>
                 <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
+                            Vista previa
+                        </button>
                 </div>
             </div>
         </div>
@@ -396,6 +546,23 @@
 
 
 
+
+    <div class="background-image">
+        <!-- Caja de suscripción -->
+        <div class="subscribe-box text-center">
+            <h5>QUIERO RECIBIR OFERTAS Y PROMOCIONES PERSONALIZADAS</h5>
+            <p>Entérate de todas nuestras promociones con los mejores descuentos directamente en la bandeja de tu correo.</p>
+            
+            <!-- Formulario de suscripción -->
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Ingrese su correo electronico" required>
+                </div>
+</br>
+                <button type="submit" class="btn btn-primary btn-block">SUSCRIBIRSE</button>
+            </form>
+        </div>
+    </div>
 
 
 
@@ -449,7 +616,7 @@
                             <span class="material-icons">chat</span>
                         </div>
                         <div class="service-title">Servicio al cliente</div>
-                        <div class="service-subtitle"><span class="material-icons">whatsapp</span> +51 901 267 943</div>
+                        <div class="service-subtitle"><span class="material-icons">whatsapp</span>+51 901 267 943</div>
                     </div>
                 </div>
                 <div class="col">
