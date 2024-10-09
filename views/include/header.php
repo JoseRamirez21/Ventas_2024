@@ -129,12 +129,10 @@
 
 
 
-
-
         .b_whatsaap {
     position: fixed;
     bottom: 25px;
-    right: 20px;
+    left: 1740px; /* Cambiado a left para mover a la izquierda */
     z-index: 1000;
     animation: bounce 1s infinite;
 }
