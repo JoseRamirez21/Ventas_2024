@@ -39,12 +39,33 @@
       
 
 
-   
+    .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+ 
+        }
+        .footer a {
+            color: #fff;
+        }
+        .footer .icon {
+            font-size: 20px;
+        }
+        .social-icons1 img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
 
 
 
 
-      
+
+        .section-header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
 
        
         .b_whatsaap {
@@ -78,23 +99,66 @@
         transform: translateY(-10px);
     }
 }
-
-
     </style>
 </head>
 <body>
 
     
-   
+    <header>
+      
+            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                <div class="container-fluid d-flex justify-content-center align-items-center ">
+
+                    <a class="navbar-brand navbar-brand-custom mx-3" href="#">
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcOg8Ax5g9goNiTXPtuLwE23JPqOtrO3VSEQ&s" style="width: 50px; height: 40px;" alt="">       JC LICORES </a>
+                    <form class="d-flex search-bar mx-3">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Busca productos, categorías o marcas" aria-label="Search">
+                        <button class="fa-solid fa-magnifying-glass" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <div class="dropdown mx-3 ">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="accountDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cuenta
+                        </button>
+                        <ul class="dropdown-menu " aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="login1.html">Iniciar Sesión</a></li>
+                            <li><a class="dropdown-item" href="https://apps.apple.com/us/app/licores-mundiales/id1473051773" target="_blank">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-outline-secondary mx-3 fa-solid fa-cart-shopping" href="carrito.html"><i
+                            class="bi bi-cart "></i> </a>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg category-menu">
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="pagina_principal.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Whisky.html">Whisky</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Vinos.html">Vinos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Burbujas.html">Burbujas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Ron.html">Ron</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Vodka.html">Vodka</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tequila.html">Tequilas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Pisco.html">Pisco</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Cerveza.html">Cervezas</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </nav>
+    </header>
+    
 
 
  
 
 
     <main>
-    <div>
-        <div class="container" id="container" >
-            <div class="form-container sign-up" >
+    
+        <div class="container" id="container">
+            <div class="form-container sign-up">
                 <form>
                     <h1>Crear Usuario</h1>
                     <div class="social-icons">
@@ -141,16 +205,13 @@
                 </div>
             </div>
         </div>
-        <div class="b_whatsaap">
-        <a href=" https://w.app/i3a7vS" target="_blank">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp">
-        </a>
+    
     
     </main>
     
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

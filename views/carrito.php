@@ -42,7 +42,7 @@
                 <div class="col">
                     <div class="d-flex align-items-center">
                         <div>
-                            <img src="https://lalicorera.com/img/products/johnnie-walker-black-label.png" alt="Producto 2" width="80">
+                            <img src="https://mundolicor.com.pe/wp-content/uploads/2019/12/136-Johnnie-Walker-Black-600x600.jpg" alt="Producto 2" width="80">
                         </div>
                         <div class="ml-2">
                             <span>Black Label de 750 ML Edicion Especial</span>
@@ -127,9 +127,12 @@
 </div>
 <div class="cart-footer" style="background: white; padding: 10px; text-align: center;">
 <div class="text-center my-4">
-        <button class="btn btn-success btn-custom">Finalizar Compra</button>
-        <button class="btn btn-primary" style="margin-left: 50px; background-color: skyblue;"><a href="<?php echo BASE_URL; ?>inicio" >Seguir Comprando</a></button>
-    </div>
+<div class="button-container" style="display: flex; gap: 10px;">
+    <button class="btn btn-success btn-custom w-100">Finalizar Compra</button>
+    <button class="btn btn-primary w-100" style="background-color: skyblue;"> 
+        <a href="<?php echo BASE_URL; ?>inicio" style="color: white; text-decoration: none;">Seguir Comprando</a>
+    </button>
+</div>
 </div>
 <div class="b_whatsaap">
     <a href=" https://w.app/i3a7vS" target="_blank">

@@ -19,7 +19,7 @@
                     class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://api.lalicorera.com/img/extras/Licores-bog.jpg" class="d-block w-100" alt="...">
+                <img src="https://gondolasparaminimarket.org/wp-content/themes/theme-shelfic/img/Banner-Exhibidores-de-Licores-1.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -1155,7 +1155,7 @@
             </div>
             </div>
             </div>
-            
-            
+            </div>
+            </div>
             
             
