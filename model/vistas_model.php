@@ -4,7 +4,9 @@ class vistaModelo{
 
     protected static function obtener_vista($vista){
        $palabras_permitidas =['usuario','nuevo-usuario','usuarios','login',
-      'carrito','burbuja','cerveza','pisco','ron','vinos','tequila','vodka','whisky','libro','politica','terminos',
+      'carrito','nuevo-carrito','burbuja','burbujas','cerveza','cervezas',
+      'pisco','piscos','ron','rones','vinos','vino','tequila','tequilas','vodka','vodkas',
+      'whisky','libro','libros','politica','politicas','terminos','termino',
    'inicio'];
           if(in_array($vista,$palabras_permitidas)){
              if (is_file("./views/".$vista.".php")) {
