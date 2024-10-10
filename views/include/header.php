@@ -339,6 +339,8 @@
 }
 
 
+
+
     </style>
 </head>
 
@@ -363,7 +365,7 @@
                             Cuenta
                         </button>
                         <ul class="dropdown-menu " aria-labelledby="accountDropdown">
-                            <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>login">Iniciar Sesión</a></li>
+                            <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>registrarse">Iniciar Sesión</a></li>
                             <li><a class="dropdown-item" href="https://apps.apple.com/us/app/licores-mundiales/id1473051773" target="_blank">Cerrar sesión</a></li>
                         </ul>
                     </div>
