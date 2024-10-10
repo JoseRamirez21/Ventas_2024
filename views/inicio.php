@@ -260,7 +260,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 p-3">
     <div class="card" style="min-height: 00px;">
         <a href="<?php echo BASE_URL; ?>carrito"> 
-            <img src="https://barruntoone.com/wp-content/uploads/2022/12/WHISKY-JOHNNIE-WALKER-GREEN-LABEL-750-ML-1.jpg" class="card-img-top" alt="...">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/johnnie-walker-green-label-655df4cb5abd4.jpg?crop=0.705xw:1.00xh;0.148xw,0&resize=1200:*" class="card-img-top" alt="...">
         </a>
         <div class="card-body br-100">
             <h5 class="card-title">GREEN LABEL</h5>
