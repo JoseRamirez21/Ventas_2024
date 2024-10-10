@@ -1,9 +1,8 @@
-
-<main>
-    <div class="container1 my-5" style="width: 60%; font-family: 'Times New Roman', Times, serif;">
-        <h1 class="text-center mb-4" style="color: rgb(236, 29, 29); ">Términos y Condiciones</h1>
-        <h5 style="color: rgb(4, 5, 18);">Bienvenido a nuestra tienda en línea de licorería. Al utilizar nuestro sitio web, usted acepta los
-             siguientes términos y condiciones:</h5>
+<div style="margin-top: 150px;">
+    <div class="container1 my-5" style="width: 60%; margin: auto; font-family: 'Times New Roman', Times, serif;">
+        <h1 class="text-center mb-4" style="color: rgb(236, 29, 29);">Términos y Condiciones</h1>
+        <h5 class="text-center" style="color: rgb(4, 5, 18);">Bienvenido a nuestra tienda en línea de licorería. Al utilizar nuestro sitio web, usted acepta los
+            siguientes términos y condiciones:</h5>
 
         <h2>1. Generalidades y Uso del Sitio</h2>
         <p>El acceso y uso de este sitio web y los productos y servicios disponibles a través del mismo están sujetos a los siguientes términos, condiciones y avisos. Al utilizar los servicios, usted acepta todos los términos de servicio, que pueden ser actualizados por nosotros de vez en cuando. Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Las modificaciones serán efectivas tan pronto como se publiquen en el sitio. Es tu responsabilidad revisar regularmente los términos y condiciones para estar al tanto de cualquier cambio. Tu uso continuado del sitio web después de cualquier cambio en los términos y condiciones constituye tu aceptación de dichos cambios.</p>
@@ -31,13 +30,13 @@
         <p>Nos tomamos muy en serio tu privacidad. Por favor, revisa nuestra Política de Privacidad para entender cómo recopilamos, usamos y protegemos tu información personal. Hemos implementado medidas técnicas y organizativas para proteger tu información personal contra pérdida, uso indebido y acceso no autorizado. Sin embargo, no podemos garantizar que terceros no autorizados nunca puedan superar esas medidas o utilizar tu información personal para fines indebidos.</p>
 
         <div class="text-center mt-4">
-            <a href="#" class="btn btn-primary">Acepto todos los terminos y condiciones</a>
+            <a href="#" class="btn btn-primary">Acepto todos los términos y condiciones</a>
         </div>
     </div>
+</div>
 
-    <div class="b_whatsaap">
-        <a href=" https://w.app/i3a7vS" target="_blank">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp">
-        </a>
-    </div>
-</main>
+<div class="b_whatsaap" style="position: fixed; bottom: 25px; right: 20px;">
+    <a href="https://w.app/i3a7vS" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp" style="width: 80px; height: 80px; border-radius: 50%; box-shadow: 0 4px 8px rgba(30, 200, 55, 0.2);">
+    </a>
+</div>

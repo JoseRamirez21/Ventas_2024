@@ -134,6 +134,7 @@
     </button>
 </div>
 </div>
+</div>
 <div class="b_whatsaap">
     <a href=" https://w.app/i3a7vS" target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp">
