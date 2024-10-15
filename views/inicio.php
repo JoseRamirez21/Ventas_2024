@@ -71,7 +71,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="productModalLabel">Tequila Jimador Reposado</h5>
+                <h5 class="modal-title" id="productModalLabel">Golden Label</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -85,8 +85,8 @@
                     <!-- Detalles del producto -->
                     <div class="col-md-6">
                         <h4>Tequila Jimador reposado agave, Mexico</h4>
-                        <p class="text-muted discount-price">S/92.90</p>
-                        <p class="current-price">S/84.90</p>
+                        <p class="text-muted discount-price">S/240.00</p>
+                        <p class="current-price">S/200.00</p>
                         <p>De color dorado y aroma acogedor de vainilla, madera tostada, frutas, especias y agave cocido. Una rica combinación de especias, frutas, madera, vainilla y sutiles avellanas tostadas. Al terminar se presenta suave y duradero con los cálidos sabores de vainilla y especias sutiles descansadas en roble.</p>
                         <p>Disponibilidad: <span class="text-success">2 disponibles</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
@@ -195,9 +195,10 @@
                     </div>
                     <div class="col-md-6">
                         <h4>Johnnie Walker Double Label</h4>
-                        <p class="text-muted discount-price">S/. 400.00</p>
-                        <p>Johnnie Walker Double Black es el hermano rebelde de Johnnie Walker Black Label con una intensidad profunda y compleja.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                        <p class="text-muted discount-price">S/450.00</p>
+                        <p class="current-price">S/400.00</p>
+                        <p>Johnnie Walker Double Black Label es una versión más intensa del clásico Black Label, destacada por su marcado ahumado y carácter robusto. Elaborado con maltas de Islay, ofrece notas de turba, frutas secas y un toque de especias. En boca, se aprecia un equilibrio entre la dulzura de la vainilla y el roble tostado, con un final largo y cálido.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -244,8 +245,9 @@
                     </div>
                     <div class="col-md-6">
                         <h4>Johnnie Walker Blue Label</h4>
-                        <p class="text-muted discount-price">S/. 1 200.00</p>
-                        <p>Johnnie Walker Blue Label con sus sabores suaves acarician el paladar, proviene de la selección manual de Scotch Whiskies.</p>
+                        <p class="text-muted discount-price">S/1250.00</p>
+                        <p class="current-price">S/1200.00</p>
+                        <p>Johnnie Walker Blue Label es el whisky más exclusivo de la casa Walker, conocido por su suavidad y profundidad. Combina notas de frutas maduras, chocolate amargo y un toque de especias. En boca, revela una riqueza excepcional, con un final suave y sedoso. Cada botella es una obra maestra, mezclada a mano para garantizar la máxima calidad. Su carácter equilibrado y complejidad lo convierten en un whisky único en su clase.</p>
                         <p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
@@ -293,9 +295,10 @@
                     </div>
                     <div class="col-md-6">
                         <h4>Johnnie Walker Green Label</h4>
-                        <p class="text-muted discount-price">S/. 600.00</p>
-                        <p>Johnnie Walker Green Label es un tesoro oculto con magníficos secretos que revelar. Se elabora con maltas añejadas de 15 años.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                        <p class="text-muted discount-price">S/650.00</p>
+                        <p class="current-price">S/600.00</p>
+                        <p>Johnnie Walker Green Label es una mezcla de maltas escocesas de al menos 15 años, reconocida por su carácter equilibrado. Con notas de hierbas frescas, frutas maduras y un toque de madera ahumada, ofrece una experiencia compleja y bien estructurada. En boca, destacan sabores de miel, vainilla, frutos secos y un sutil toque especiado. Su final es largo y fresco, dejando una impresión duradera de sus sabores refinados. Un whisky sofisticado que celebra la riqueza de las maltas puras.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -343,9 +346,10 @@
                     </div>
                     <div class="col-md-6">
                         <h4>Johnnie Walker Platinum Label 18 años</h4>
-                        <p class="text-muted discount-price">S/. 900.00</p>
-                        <p>Johnnie Walker Platinum Label 18 años se inspiró en la tradición de ofrecer mezclas privadas a familiares cercanos.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                        <p class="text-muted discount-price">S/950.00</p>
+                        <p class="current-price">S/900.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
