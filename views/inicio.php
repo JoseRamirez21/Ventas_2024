@@ -84,7 +84,7 @@
                     </div>
                     <!-- Detalles del producto -->
                     <div class="col-md-6">
-                        <h4>Tequila Jimador reposado agave, Mexico</h4>
+                        <h4>JOHNNIE WALKER GOLD LABEL DE 750 ML</h4>
                         <p class="text-muted discount-price">S/240.00</p>
                         <p class="current-price">S/200.00</p>
                         <p>De color dorado y aroma acogedor de vainilla, madera tostada, frutas, especias y agave cocido. Una rica combinación de especias, frutas, madera, vainilla y sutiles avellanas tostadas. Al terminar se presenta suave y duradero con los cálidos sabores de vainilla y especias sutiles descansadas en roble.</p>
@@ -142,7 +142,7 @@
                     </div>
                     <!-- Detalles del producto -->
                     <div class="col-md-6">
-                        <h4>Johnnie Walker Black Label 750ml</h4>
+                        <h4>JOHNNIE WALKER BLACK LABEL DE 750 ML</h4>
                         <p class="text-muted discount-price">S/.180.00</p>
                         <p class="current-price">S/.165.00</p>
                         <p>Johnnie Walker Black Label es un whisky complejo, rico y lleno de carácter. Con notas de frutas oscuras, vainilla y un toque ahumado.</p>
@@ -194,7 +194,7 @@
                         <img src="https://licoreriasunidas.pe/cdn/shop/products/8a83f62506284458a866dd447bf3b4ba.webp?v=1678117951" alt="Imagen del producto">
                     </div>
                     <div class="col-md-6">
-                        <h4>Johnnie Walker Double Label</h4>
+                        <h4>JOHNNIE WALKER DOUBLE LABEL</h4>
                         <p class="text-muted discount-price">S/450.00</p>
                         <p class="current-price">S/400.00</p>
                         <p>Johnnie Walker Double Black Label es una versión más intensa del clásico Black Label, destacada por su marcado ahumado y carácter robusto. Elaborado con maltas de Islay, ofrece notas de turba, frutas secas y un toque de especias. En boca, se aprecia un equilibrio entre la dulzura de la vainilla y el roble tostado, con un final largo y cálido.</p>
@@ -244,7 +244,7 @@
                         <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-blue-label-botella-750ml.webp?v=1677792200" alt="Imagen del producto">
                     </div>
                     <div class="col-md-6">
-                        <h4>Johnnie Walker Blue Label</h4>
+                        <h4>JOHNNIE WALKER BLUE LABEL</h4>
                         <p class="text-muted discount-price">S/1250.00</p>
                         <p class="current-price">S/1200.00</p>
                         <p>Johnnie Walker Blue Label es el whisky más exclusivo de la casa Walker, conocido por su suavidad y profundidad. Combina notas de frutas maduras, chocolate amargo y un toque de especias. En boca, revela una riqueza excepcional, con un final suave y sedoso. Cada botella es una obra maestra, mezclada a mano para garantizar la máxima calidad. Su carácter equilibrado y complejidad lo convierten en un whisky único en su clase.</p>
@@ -294,7 +294,7 @@
                         <img src="https://barruntoone.com/wp-content/uploads/2022/12/WHISKY-JOHNNIE-WALKER-GREEN-LABEL-750-ML-1.jpg" alt="Imagen del producto">
                     </div>
                     <div class="col-md-6">
-                        <h4>Johnnie Walker Green Label</h4>
+                        <h4>JOHNNIE WALKER GREEN LABEL</h4>
                         <p class="text-muted discount-price">S/650.00</p>
                         <p class="current-price">S/600.00</p>
                         <p>Johnnie Walker Green Label es una mezcla de maltas escocesas de al menos 15 años, reconocida por su carácter equilibrado. Con notas de hierbas frescas, frutas maduras y un toque de madera ahumada, ofrece una experiencia compleja y bien estructurada. En boca, destacan sabores de miel, vainilla, frutos secos y un sutil toque especiado. Su final es largo y fresco, dejando una impresión duradera de sus sabores refinados. Un whisky sofisticado que celebra la riqueza de las maltas puras.</p>
@@ -345,7 +345,7 @@
                         <img src="https://home.ripley.com.pe/Attachment/WOP_4/2044201742015/2044201742015_2.jpg" alt="Imagen del producto">
                     </div>
                     <div class="col-md-6">
-                        <h4>Johnnie Walker Platinum Label 18 años</h4>
+                        <h4>JOHNNIE WALKER PLATINIUM LABEL DE 20 AÑOS</h4>
                         <p class="text-muted discount-price">S/950.00</p>
                         <p class="current-price">S/900.00</p>
                         <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
@@ -398,10 +398,11 @@
                         <img src="https://tofuu.getjusto.com/orioneat-local/resized2/8hZsmp7AbjjjbNZwM-1200-1200.webp" alt="Imagen del producto">
                     </div>
                     <div class="col-md-6">
-                        <h4>Johnnie Walker Red Label 700ml</h4>
-                        <p class="text-muted discount-price">S/. 200.00</p>
-                        <p>Johnnie Walker Red Label de 5 años se inspiró en la tradición y economía de los consumidores, por lo tanto, es la más vendida.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>JOHNNIE WALKER RED LABEL DE 18 AÑOS</h4>
+                        <p class="text-muted discount-price">S/250.00</p>
+                        <p class="current-price">S/200.00</p>
+                        <p>Johnnie Walker Red Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -450,10 +451,11 @@
                         <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-king-george-botella-700ml-74a9b8aebc.webp?v=1677263312&width=500" alt="Imagen del producto">
                     </div>
                     <div class="col-md-6">
-                        <h4>Johnnie Walker King George V 700ml</h4>
-                        <p class="text-muted discount-price">S/. 2,200.00</p>
-                        <p>Johnnie Walker King George es la colección de alta gama superando a la colección label con un increíble sabor único.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>JOHNNIE WALKER KING GEORGE V</h4>
+                        <p class="text-muted discount-price">S/2350.00</p>
+                        <p class="current-price">S/2200.00</p>
+                        <p>Johnnie Walker King George es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -515,10 +517,11 @@
                         <img src="https://hips.hearstapps.com/hmg-prod/images/11-1655622206.jpg" alt="Imagen del producto">
                     </div>
                     <div class="col-md-6">
-                        <h4>Catena Zapata</h4>
-                        <p class="text-muted discount-price">S/. 200.00</p>
-                        <p>La mejor expresión de vino peruano. Veinticuatro meses en roble francés y americano le aportan complejidad y estructura.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>CATENA ZAPATA</h4>
+                        <p class="text-muted discount-price">S/250.00</p>
+                        <p class="current-price">S/200.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -560,10 +563,11 @@
                         <img src="https://vinomalist.com/wp-content/uploads/2022/04/Castillo-Ygay2Gran-Reserva-Especial-de-Marques-de-Murrieta.jpg" alt="Imagen del producto">
                     </div>
                     <div class="col-md-6">
-                        <h4>Castillo Ygay</h4>
-                        <p class="text-muted discount-price">S/. 250.00</p>
-                        <p>Uno de los mejores vinos a nivel mundial, galardonado por su gran sabor y dulzura de una uva premium peruana.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>CASTILLO YGUAY</h4>
+                        <p class="text-muted discount-price">S/300.00</p>
+                        <p class="current-price">S/250.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -605,10 +609,11 @@
                         <img src="https://hips.hearstapps.com/hmg-prod/images/15-1655622679.jpg" alt="Imagen del producto">
                     </div>
                     <div class="col-md-6">
-                        <h4>Pichón Varón</h4>
-                        <p class="text-muted discount-price">S/. 180.00</p>
-                        <p>Elaborado en las llanuras del valle de Ica para la degustación especial de todas las familias peruanas en armonía.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>PICHON VARON</h4>
+                        <p class="text-muted discount-price">S/220.00</p>
+                        <p class="current-price">S/180.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -650,10 +655,11 @@
                         <img src="https://hips.hearstapps.com/hmg-prod/images/vino-tarsus-crianza-elle-1647172453.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Imagen del producto" class="img-fluid">
                     </div>
                     <div class="col-md-6">
-                        <h4>Tarsus Vietnam</h4>
-                        <p class="text-muted discount-price">S/. 280.00</p>
-                        <p>Uno de los mejores vinos a nivel mundial con su gran calidad de elaboración y buena calidad de productos.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>TARSUS VIETNAM</h4>
+                        <p class="text-muted discount-price">S/350.00</p>
+                        <p class="current-price">S/280.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -744,10 +750,11 @@
                         <img src="https://laovejanegra.mx/wp-content/uploads/2023/09/Tequila-Ley-925.jpg" alt="Imagen del producto" class="img-fluid">
                     </div>
                     <div class="col-md-6">
-                        <h4>CASTILLO YGUAY XTREME</h4>
-                        <p class="text-muted discount-price">S/. 4,000,200.00</p>
-                        <p>Una bebida hecha en México con una botella de cerámica de platino líquido y un sabor mexicano único e incomparable.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>CASTILLO YGUAY XTREME</h4>
+                        <p class="text-muted discount-price">S/4,000,400.00</p>
+                        <p class="current-price">S/4,000,200.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -789,10 +796,11 @@
                         <img src="https://cognac-ton.nl/wp-content/uploads/2016/03/Dud-Henri-IV-1L-Tribute-to-Dubai-%E2%82%AC4.000.000.jpg" alt="Imagen del producto" class="img-fluid">
                     </div>
                     <div class="col-md-6">
-                        <h4>COÑAC HENRY IV DUDOGNON HERITAJE</h4>
-                        <p class="text-muted discount-price">S/. 3,000,200.00</p>
-                        <p>En una botella de diamantes y oro es lo que captura la atención de la gente, lo cual captura la esencia y perfección de la bebida.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>COÑAC HENRY IV DUDOGNAN</h4>
+                        <p class="text-muted discount-price">S/3,000,800.00</p>
+                        <p class="current-price">S/3,000,200.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -834,10 +842,11 @@
                         <img src="https://hagotrago.com/wp-content/uploads/2008/04/divastraight-lowres.jpg" alt="Imagen del producto" class="img-fluid">
                     </div>
                     <div class="col-md-6">
-                        <h4>VODKA ESCOCES DIVA PREMIUM</h4>
-                        <p class="text-muted discount-price">S/. 2,000,200.00</p>
-                        <p>Una vodka premium elaborada en Escocia con su triple destilación de granos le lleva un único sabor único e incomparable.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>VODKA ESCOCES DIVA PREMIUM</h4>
+                        <p class="text-muted discount-price">S/2,000,400.00</p>
+                        <p class="current-price">S/2,000,000.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -886,10 +895,11 @@
                         <img src="https://licoreriadisenzo.pe/wp-content/uploads/2023/06/44-Gin-Thomas-Dakin-750-ml-300x282.png" alt="Imagen del producto" class="img-fluid">
                     </div>
                     <div class="col-md-6">
-                        <h4>GINT TOMAN DAKINT SUPERIOR</h4>
-                        <p class="text-muted discount-price">S/. 600.00</p>
-                        <p>Una bebida de origen italiana cuyo cuello de la botella cuenta cubierta de diamantes y con un único sabor que se diferencia de los demás.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>GINT TOMAN DAKINT SUPERIOR</h4>
+                        <p class="text-muted discount-price">S/7700.00</p>
+                        <p class="current-price">S/600.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -931,10 +941,11 @@
                         <img src="https://licoreriadisenzo.pe/wp-content/uploads/2023/06/45-Gin-Mary-Le-Bone-750-ml-300x282.png" alt="Imagen del producto" class="img-fluid">
                     </div>
                     <div class="col-md-6">
-                        <h4>GINT MARY LEAND BOTAX XTREME</h4>
-                        <p class="text-muted discount-price">S/. 500.00</p>
-                        <p>Una bebida hecha en México hecha de cerámica de platino líquido y con un sabor mexicano único e incomparable.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>GINT MARY LEAND BOTAX XTREME </h4>
+                        <p class="text-muted discount-price">S/700.00</p>
+                        <p class="current-price">S/500.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -976,10 +987,11 @@
                         <img src="https://licoreriadisenzo.pe/wp-content/uploads/2023/06/13-Gin-Bombay-Bramble-700-ml-300x282.png" alt="Imagen del producto" class="img-fluid">
                     </div>
                     <div class="col-md-6">
-                        <h4>GIN BOMBAY BREVLEM STICK</h4>
-                        <p class="text-muted discount-price">S/. 470.00</p>
-                        <p>En una botella de diamantes y oro es lo que captura la atención de la gente, lo cual captura la esencia y perfección de la bebida.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>GINT BOMBAY BREVLEM STICK </h4>
+                        <p class="text-muted discount-price">S/500.00</p>
+                        <p class="current-price">S/470.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
@@ -1021,10 +1033,11 @@
                         <img src="https://licoreriadisenzo.pe/wp-content/uploads/2023/06/55-Gin-Bulldog-750-ml-300x282.png" alt="Imagen del producto" class="img-fluid">
                     </div>
                     <div class="col-md-6">
-                        <h4>BLACK BULDONGT XIT PREMIUM</h4>
-                        <p class="text-muted discount-price">S/. 700.00</p>
-                        <p>Una vodka premium elaborada en Escocia con su triple destilación de granos le lleva un único sabor único e incomparable.</p>
-                        <p>Disponibilidad: <span class="text-success">Disponible</span></p>
+                    <h4>BLACK BULDONGT XIT PREMIUM</h4>
+                        <p class="text-muted discount-price">S/800.00</p>
+                        <p class="current-price">S/700.00</p>
+                        <p>Johnnie Walker Platinum Label es un whisky elegante y refinado, elaborado con maltas escocesas seleccionadas y envejecido por al menos 18 años. Su aroma resalta notas de frutas secas, manzanas verdes y toques cítricos, junto a matices sutiles de roble y especias. En boca, ofrece un equilibrio perfecto entre la dulzura de la miel y la complejidad de vainilla y roble tostado. Con una textura sedosa y un final cálido, este whisky es ideal para celebraciones especiales y para aquellos que buscan una experiencia de sabor excepcional.</p>
+<p>Disponibilidad: <span class="text-success">Disponible</span></p>
                         <button class="btn btn-success btn-block">Añadir al carrito</button>
                     </div>
                 </div>
