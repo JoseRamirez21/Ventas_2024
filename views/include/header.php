@@ -94,6 +94,9 @@
 
 
 
+        body {
+    overflow-x: hidden; /* Elimina el scrollbar horizontal */
+}
 
 
         .event-banner {
