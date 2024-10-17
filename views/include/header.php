@@ -345,6 +345,9 @@
 
 
     </style>
+         <script>
+            const base_url = '<?php echo BASE_URL; ?>';
+        </script>
 </head>
 
 <body>
@@ -394,6 +397,7 @@
                 </div>
         </div>
         </nav>
+        
     </header>
     <body>
         
