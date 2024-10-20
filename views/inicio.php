@@ -1,5 +1,5 @@
 
-<div style="margin-top:75px; background-color: rgb(230, 247, 250);">
+<div style="margin-top:75px;">
     <div id="carouselExampleIndicators" class="carousel slide mt-5 pt-5 " data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -49,22 +49,27 @@
                <a href="<?php echo BASE_URL; ?>carrito"> <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-gold-label-botella-750ml.webp?v=1677262912"
                     class="card-img-top" alt="..."></a>
                 <div class="card-body br-100">
-                <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
+              <!-- Botón "Agregar a Favorito" -->
+<button type="button" class="btn btn-danger btn-sm favorite-button" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
     <i class="fas fa-heart" style="color: red;"></i>
 </button>
+
+<!-- Notificación -->
+<div class="notification" id="notification">
+    <i class="fas fa-check-circle"></i>
+    Agregado a favoritos correctamente.
+</div>
                     <h5 class="card-title">GOLD LABEL</h5>
                     <p class="card-text">Johnnie Walker Gold Label es un whisky que conserva su autenticidad
                         galardonado por sus cualidades dulces y melos </p>
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 200.00</strong>
                 </div>
-                <div class="card-body">
-                    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
-
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
-                        Vista previa
-                    </button>
-
-                </div>
+                <div class="card-body d-flex align-items-center">
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModal" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
             </div>
         </div>
 
@@ -113,21 +118,22 @@
                 class="card-img-top" alt="...">
         </a>
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
 
             <h5 class="card-title">BLACK LABEL</h5>
             <p class="card-text">Johnnie Walker Black Label es un verdadero ícono. Una mezcla magistral de whiskies de malta
                 y de grano selecto.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 180.00</strong></p>
         </div>
-        <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a></br></br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal2">
-                Vista previa
-            </button>
-        </div>
+        <div class="card-body d-flex align-items-center">
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModal2" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -172,19 +178,19 @@
             <img src="https://licoreriasunidas.pe/cdn/shop/products/8a83f62506284458a866dd447bf3b4ba.webp?v=1678117951" class="card-img-top" alt="...">
         </a>
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">DOUBLE LABEL</h5>
             <p class="card-text">Johnnie Walker Double Black es el hermano rebelde de Johnnie Walker Black Label con una intensidad profunda.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 400.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalDoubleLabel">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalDoubleLabel" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -225,19 +231,19 @@
             <img src="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-blue-label-botella-750ml.webp?v=1677792200" class="card-img-top" alt="...">
         </a>
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">BLUE LABEL</h5>
-            <p class="card-text">Johnnie Walker Blue Label con sus sabores suaves acarician el paladar, proviene de la selección manual de Scotch.</p>
+            <p class="card-text">Johnnie Walker Blue Label con sus sabores suaves acarician el paladar, proviene de la selección manual.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 1 200.00</strong></p>
         </div>
-        <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalBlueLabel">
-                Vista previa
-            </button>
-        </div>
+        <div class="card-body d-flex align-items-center">
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalBlueLabel" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -278,19 +284,19 @@
             <img src="https://hips.hearstapps.com/hmg-prod/images/johnnie-walker-green-label-655df4cb5abd4.jpg?crop=0.705xw:1.00xh;0.148xw,0&resize=1200:*" class="card-img-top" alt="...">
         </a>
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">GREEN LABEL</h5>
             <p class="card-text">Johnnie Walker Green Label es un tesoro oculto con magníficos secretos que revelar. Se elabora con maltas añejadadas.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 600.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalGreenLabel">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalGreenLabel" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -332,19 +338,19 @@
             <img src="https://home.ripley.com.pe/Attachment/WOP_4/2044201742015/2044201742015_2.jpg" class="card-img-top" alt="...">
         </a>
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">PLATINUM LABEL</h5>
-            <p class="card-text">Johnnie Walker Platinum Label 18 años se inspiró en la tradición de ofrecer mezclas privadas a familiares cercanos.</p>
+            <p class="card-text">Johnnie Walker Platinum Label 18 años se inspiró en la tradición de ofrecer mezclas privadas a familiares cercanos .</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 900.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalPlatinumLabel">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalPlatinumLabel" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -388,19 +394,19 @@
             <img src="https://tofuu.getjusto.com/orioneat-local/resized2/8hZsmp7AbjjjbNZwM-1200-1200.webp" class="card-img-top" alt="...">
         </a>
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">RED LABEL</h5>
             <p class="card-text">Johnnie Walker Red Label de 5 años se inspiró en la tradición y economía de los consumidores, por lo tanto, es la más vendida.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 200.00</strong></p>
         </div>
-        <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalRedLabel">
-                Vista previa
-            </button>
-        </div>
+        <div class="card-body d-flex align-items-center">
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalRedLabel" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -444,19 +450,19 @@
                 class="card-img-top" alt="...">
         </a>
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">KING GEORGE V</h5>
-            <p class="card-text">Johnnie Walker King George es la colección de alta gama superando a la colección label con un increíble sabor único.</p>
+            <p class="card-text">Johnnie Walker King George es la colección de alta gama superando a la colección label con un increíble sabor único e imigualable.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 2,200.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalKingGeorge">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalKingGeorge" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -513,19 +519,19 @@
     <div class="card" style="min-height: 00px;">
         <img src="https://hips.hearstapps.com/hmg-prod/images/11-1655622206.jpg" class="card-img-top" alt="...">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">CATENA ZAPATA</h5>
             <p class="card-text">La mejor expresión de vino peruano. Veinticuatro meses en roble francés y americano le aportan complejidad.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 200.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalCatenaZapata">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalCatenaZapata" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -562,19 +568,19 @@
     <div class="card" style="min-height: 00px;">
         <img src="https://vinomalist.com/wp-content/uploads/2022/04/Castillo-Ygay2Gran-Reserva-Especial-de-Marques-de-Murrieta.jpg" class="card-img-top" alt="...">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">CASTILLO YGUAY</h5>
             <p class="card-text">Uno de los mejores vinos a nivel mundial, galardonado por su gran sabor y dulzura de una uva premium peruana.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 250.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalCastilloYgay">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalCastilloYgay" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -611,19 +617,19 @@
     <div class="card" style="min-height: 00px;">
         <img src="https://hips.hearstapps.com/hmg-prod/images/15-1655622679.jpg" class="card-img-top" alt="...">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">PICHON VARON</h5>
-            <p class="card-text">Elaborado en las llanuras del valle de Ica para la degustación especial de todas las familias peruanas en armonía.</p>
+            <p class="card-text">Elaborado en las llanuras del valle de Ica para la degustación especial de todas las familias peruanas.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 180.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalPichonVaron">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalCastilloYgay" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -668,12 +674,12 @@
             <p class="card-text">Uno de los mejores vinos a nivel mundial con su gran calidad de elaboración y buena calidad de productos.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 280.00</strong></p>
         </div>
-        <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalTarsus">
-                Vista previa
-            </button>
-        </div>
+      <div class="card-body">
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" title="Vista Previa" style="border: 2px solid blue; background: white;  color: blue;">
+        <i class="fas fa-eye"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -721,19 +727,19 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlupBq96gY1o96ona1HnkRAuAv9Ac6Lblh_9nf37ugz-CBPrzuBphHBH-cGOtNaYAKcE&usqp=CAU"
              class="card-img-top" alt="Botella de D' AMALFI LIMONCELLO SUPREME">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">D' AMALFI LIMONCELLO SUPREME</h5>
             <p class="card-text">Una bebida de origen italiana cuyo cuello de la botella cuenta cubierta de diamantes y con un único sabor que se diferencia de los demás.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 44,000,000.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalLimoncello">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalLimoncello" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -772,19 +778,19 @@
     <div class="card" style="min-height: 300px;">
         <img src="https://laovejanegra.mx/wp-content/uploads/2023/09/Tequila-Ley-925.jpg" class="card-img-top" alt="CASTILLO YGUAY XTREME">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">CASTILLO YGUAY XTREME</h5>
             <p class="card-text">Una bebida hecha en México con una botella de cerámica de platino líquido y un sabor mexicano único e incomparable.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 4,000,200.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalCastillo">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalCognac" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -822,19 +828,19 @@
     <div class="card" style="min-height: 300px;">
         <img src="https://cognac-ton.nl/wp-content/uploads/2016/03/Dud-Henri-IV-1L-Tribute-to-Dubai-%E2%82%AC4.000.000.jpg" class="card-img-top" alt="COÑAC HENRY IV DUDOGNON HERITAJE">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">COÑAC HENRY IV DUDOGNON HERITAJE</h5>
             <p class="card-text">En una botella de diamantes y oro es lo que captura la atención de la gente, lo cual captura la esencia y perfección de la bebida.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 3,000,200.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalCognac">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalCognac" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -872,19 +878,19 @@
     <div class="card" style="min-height: 300px;">
         <img src="https://hagotrago.com/wp-content/uploads/2008/04/divastraight-lowres.jpg" class="card-img-top" alt="VODKA ESCOCES DIVA PREMIUM">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">VODKA ESCOCES DIVA PREMIUM</h5>
             <p class="card-text">Una vodka premium elaborada en Escocia con su triple destilación de granos le lleva un único sabor único e incomparable.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 2,000,200.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalVodka">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalVodka" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -929,19 +935,19 @@
     <div class="card" style="min-height: 300px;">
         <img src="https://licoreriadisenzo.pe/wp-content/uploads/2023/06/44-Gin-Thomas-Dakin-750-ml-300x282.png" class="card-img-top" alt="GINT TOMAN DAKINT SUPERIOR">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">GINT TOMAN DAKINT SUPERIOR</h5>
             <p class="card-text">Una bebida de origen italiana cuyo cuello de la botella cuenta cubierta de diamantes y con un único sabor que se diferencia de los demás.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 600.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalGin">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalMary" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -979,19 +985,19 @@
     <div class="card" style="min-height: 300px;">
         <img src="https://licoreriadisenzo.pe/wp-content/uploads/2023/06/45-Gin-Mary-Le-Bone-750-ml-300x282.png" class="card-img-top" alt="GINT MARY LEAND BOTAX Xtreme">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">GINT MARY LEAND BOTAX<br>XTREME</h5>
             <p class="card-text">Una bebida hecha en México hecha de cerámica de platino líquido y con un sabor mexicano único e incomparable.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 500.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalMary">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalMary" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -1029,19 +1035,19 @@
     <div class="card" style="min-height: 300px;">
         <img src="https://licoreriadisenzo.pe/wp-content/uploads/2023/06/13-Gin-Bombay-Bramble-700-ml-300x282.png" class="card-img-top" alt="GIN BOMBAY BREVLEM STICK">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">GIN BOMBAY BREVLEM STICK</h5>
             <p class="card-text">En una botella de diamantes y oro es lo que captura la atención de la gente, lo cual captura la esencia y perfección de la bebida.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 470.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalBombay">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalBombay" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -1079,19 +1085,19 @@
     <div class="card" style="min-height: 300px;">
         <img src="https://licoreriadisenzo.pe/wp-content/uploads/2023/06/55-Gin-Bulldog-750-ml-300x282.png" class="card-img-top" alt="BLACK BULDONGT XIT PREMIUM">
         <div class="card-body br-100">
-        <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em;" title="Agregar a Favorito">
-    <i class="fas fa-heart" style="color: red;"></i>
-</button>
+        <button type="button" class="btn btn-danger btn-sm favorite-button" title="Agregar a Favorito" style="position: absolute; top: 10px; right: 10px; border: none; background: transparent; font-size: 1.5em; color: red;">
+            <i class="fas fa-heart"></i>
+        </button>
             <h5 class="card-title">BLACK BULDONGT XIT PREMIUM</h5>
             <p class="card-text">Una vodka premium elaborada en Escocia con su triple destilación de granos le lleva un único sabor único e incomparable.</p>
             <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 700.00</strong></p>
         </div>
         <div class="card-body">
-            <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a><br><br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModalBulldog">
-                Vista previa
-            </button>
-        </div>
+    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+    <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModalBulldog" style="border: 2px solid blue;">
+        <i class="fas fa-eye" style="color: blue;"></i>
+    </button>
+</div>
     </div>
 </div>
 
@@ -1125,18 +1131,14 @@
     </div>
 </div>
 
-    <div class="b_whatsaap">
-        <a href=" https://w.app/i3a7vS" target="_blank">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp">
-        </a>
-    </div>
+    
 
 
 
 
     <div class="background-image">
         <!-- Caja de suscripción -->
-        <div class="subscribe-box text-center">
+        <div class="subscribe-box text-center" style="height: 300px; width:600px;">
             <h5>QUIERO RECIBIR OFERTAS Y PROMOCIONES PERSONALIZADAS</h5>
             <p>Entérate de todas nuestras promociones con los mejores descuentos directamente en la bandeja de tu correo.</p>
             
@@ -1146,7 +1148,9 @@
                     <input type="email" class="form-control" placeholder="Ingrese su correo electronico" required>
                 </div>
 </br>
-                <button type="submit" class="btn btn-primary btn-block">SUSCRIBIRSE</button>
+<div class="text-center">
+    <button type="submit" class="btn btn-primary" style="width: 200px;">SUSCRIBIRSE</button>
+</div>
             </form>
         </div>
     </div>
@@ -1253,5 +1257,10 @@
             </div>
             </div>
             </div>
+            <div class="b_whatsaap">
+    <a href="https://w.app/i3a7vS" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp">
+    </a>
+</div>
             
             

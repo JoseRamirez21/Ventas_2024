@@ -12,7 +12,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>views/plantilla/pages/estilo.css">
 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+
+
+
+
+
+/* css de notificaciones de favoritos*/ 
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 30px; /* Aumento del padding */
+    background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Degradado de blanco a gris claro */
+    color: #007bff; /* Azul */
+    border-radius: 10px; /* Esquinas redondeadas */
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3); /* Sombra sutil */
+    border: 1px solid #007bff; /* Borde azul */
+    animation: fadeIn 0.5s ease, fadeOut 0.5s ease 2s; /* Animaciones */
+    font-size: 20px; /* Aumento del tamaño de la letra */
+}
+
+.notification i {
+    font-size: 36px; /* Aumento del tamaño del ícono */
+    margin-right: 15px; /* Espaciado ajustado */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%); /* Efecto de entrada */
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-50%, -40%); /* Efecto de salida */
+    }
+}
+
+
+
         .navbar-custom {
             background-color: #f8f9fa;
             border-bottom: 1px solid #dee2e6;
@@ -131,39 +187,37 @@
         }
 
 
-
         .b_whatsaap {
-    position: fixed;
-    bottom: 25px;
-    left: 1740px; /* Cambiado a left para mover a la izquierda */
-    z-index: 1000;
-    animation: bounce 1s infinite;
-}
+            position: fixed;
+            bottom: 25px;
+            right: 25px; /* Posición ajustada a la derecha */
+            z-index: 1000;
+            animation: bounce 1s infinite;
+        }
 
-.b_whatsaap img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(30, 200, 55, 0.2);
-    transition: transform 0.3s;
-}
+        .b_whatsaap img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(30, 200, 55, 0.2);
+            transition: transform 0.3s;
+        }
 
-.b_whatsaap img:hover {
-    transform: scale(1.1);
-}
+        .b_whatsaap img:hover {
+            transform: scale(1.1);
+        }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(10px);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(10px);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
 
 
 
@@ -360,11 +414,12 @@
 
                     <a class="navbar-brand navbar-brand-custom mx-3" href="#">
                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcOg8Ax5g9goNiTXPtuLwE23JPqOtrO3VSEQ&s" style="width: 50px; height: 40px;" alt="">       JC LICORES </a>
-                    <form class="d-flex search-bar mx-3">
-                        <input class="form-control me-2" type="search"
-                            placeholder="Busca productos, categorías o marcas" aria-label="Search">
-                        <button class="fa-solid fa-magnifying-glass" type="submit"><i class="bi bi-search"></i></button>
-                    </form>
+                         <form class="d-flex search-bar mx-3">
+    <input class="form-control me-2" type="search" placeholder="Busca productos, categorías o marcas" aria-label="Search">
+    <button class="btn btn-outline-secondary" type="submit" style="font-size: 13px; padding: 0.5em 1em;">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</form>
                     <div class="dropdown mx-3 ">
                         <button class="btn btn-light dropdown-toggle" type="button" id="accountDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -375,8 +430,9 @@
                             <li><a class="dropdown-item" href="https://apps.apple.com/us/app/licores-mundiales/id1473051773" target="_blank">Cerrar sesión</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-outline-secondary mx-3 fa-solid fa-cart-shopping" href="<?php echo BASE_URL; ?>carrito">
-                        <i class="bi bi-cart "></i> </a>
+                    <a class="btn btn-outline-secondary mx-3" href="<?php echo BASE_URL; ?>carrito" title="Ver Carrito">
+    <i class="fas fa-shopping-cart"></i>
+</a>
                 </div>
             </nav>
             <nav class="navbar navbar-expand-lg category-menu">

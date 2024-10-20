@@ -4,7 +4,9 @@
 
     <form>
         <div class="mb-3">
-            <div class="section-header" style="background-color: rgb(47, 47, 196); text-align: center;">1. Identificación del Consumidor Reclamante</div>
+            <div class="section-header" style="background-color:rgb(33, 135, 201) ; text-align: center; border-radius:8px; font-size:22px; color: #fff; padding:5px;">
+                1. Identificación del Consumidor Reclamante
+            </div>
             <div class="row mt-3">
                 <div class="col-md-6">
                     <label for="nombres" class="form-label">Nombres</label>
@@ -45,7 +47,9 @@
         </div>
 
         <div class="mb-3">
-            <div class="section-header" style="background-color: rgb(47, 47, 196); text-align: center;">2. Identificación del Bien Contratado</div>
+            <div class="section-header" style="background-color:rgb(33, 135, 201); text-align: center; border-radius:8px; font-size:22px; color: #fff; padding:5px">
+                2. Identificación del Bien Contratado
+            </div>
             <div class="row mt-3">
                 <div class="col-md-6">
                     <label for="numeroPedido" class="form-label">Número de pedido</label>
@@ -63,7 +67,9 @@
         </div>
 
         <div class="mb-3">
-            <div class="section-header" style="background-color: rgb(47, 47, 196); text-align: center;">3. Detalle de la Reclamación y Pedido del Consumidor</div>
+        <div class="section-header" style="background-color: rgb(33, 135, 201); text-align: center; border-radius: 8px; font-size: 24px; color: #fff; padding: 5px;">
+    3. Detalle de la Reclamación y Pedido del Consumidor
+</div>
             <div class="mt-3">
                 <label class="form-label">Tipo de reclamación</label>
                 <div class="form-check">
@@ -88,13 +94,13 @@
         </div>
 
         <div class="text-center">
-            <button type="submit" class="btn btn-success">Enviar Queja</button>
+            <button type="submit" class="btn btn-success" style="width: 250px; font-size:19px">Enviar Queja</button>
         </div>
     </form>
 </div>
 
-<div class="b_whatsaap" style="position: fixed; bottom: 25px; right: 20px;">
+<div class="b_whatsaap">
     <a href="https://w.app/i3a7vS" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp" style="width: 80px; height: 80px; border-radius: 50%; box-shadow: 0 4px 8px rgba(30, 200, 55, 0.2);">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp">
     </a>
 </div>

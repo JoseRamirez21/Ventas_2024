@@ -153,16 +153,16 @@
                     <p>Si tienes alguna pregunta sobre esta política de privacidad, puedes contactarnos 
                         utilizando la información a continuación:</p>
                     <p><strong>JC Licores</strong></p>
-                    <p>Correo electrónico: josexitorap♠4gmail.com</p>
-                    <p>+51901267943</p>
+                    <p>Correo electrónico: josexitorap@gmail.com</p>
+                    <p>+51 901267943</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </div>
-<div class="b_whatsaap" style="position: fixed; bottom: 25px; right: 20px;">
+<div class="b_whatsaap">
     <a href="https://w.app/i3a7vS" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp" style="width: 80px; height: 80px; border-radius: 50%; box-shadow: 0 4px 8px rgba(30, 200, 55, 0.2);">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp">
     </a>
 </div>

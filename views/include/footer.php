@@ -84,6 +84,52 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    // Funcionalidad para "Agregar a Favorito"
+    document.querySelectorAll('.favorite-button').forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevenir la acción predeterminada
+            
+            // Mostrar la notificación
+            const notification = $('#notification');
+            notification.fadeIn(200).delay(1000).fadeOut(200); // Aparece, se queda 2 segundos y desaparece
+        });
+    });
+</script>
+
+
+
+<script>
+    function showNotification() {
+        const notification = document.getElementById('notification');
+        notification.style.display = 'block';
+
+        // Ocultar la notificación después de 3 segundos
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 3000);
+    }
+</script>
+
+
+
+<script>
+    
+const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+</script>
 </body>
 </body>
 

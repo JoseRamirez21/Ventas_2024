@@ -7,15 +7,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-main{
-    background-color: #14d963;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 85vh;
-}
+
 
 .container{
     background-color: #fff;
@@ -25,7 +17,7 @@ main{
     overflow: hidden;
     width: 768px;
     max-width: 100%;
-    min-height: 500px;
+    min-height: 520px;
 }
 
 .container p{
@@ -47,7 +39,7 @@ main{
 }
 
 .container button{
-    background-color: blue;
+    background-color: #512da8;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -163,7 +155,7 @@ main{
 .toggle{
     background-color: #512da8;
     height: 100%;
-    background: linear-gradient(to right, #0929e0, #1321c0);
+    background: linear-gradient(to right, #5c6bc0, #512da8);
     color: #fff;
     position: relative;
     left: -100%;
@@ -208,10 +200,4 @@ main{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
-
-
-
-
-
-
 
