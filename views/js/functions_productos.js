@@ -16,7 +16,7 @@ alert ("error, campos vacios");
     return;
    }
    try { 
-    // capturamos datos del formulario html(nuevo_producto.php)
+    // capturamos datos del formulario html(nuevo-producto.php)
     const datos = new FormData(frmRegistrar);
     // Enviar datos hacia el controlador
     let respuesta = await  fetch(base_url+'controller/Producto.php?tipo=registrar',{
