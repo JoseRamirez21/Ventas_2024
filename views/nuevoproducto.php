@@ -43,3 +43,4 @@
 </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functions_productos.js"></script>
+<script>listar_categorias();</script>
