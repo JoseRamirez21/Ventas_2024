@@ -25,7 +25,7 @@
     <div>
         <label for="categoria">Categoría:</label>
         <!-- <input type="text" name="categoria" id="categoria" class="form-control"  placeholder="Categoria" required> -->
-        <select type="text" name="categoria" id="categoria" class="form-control"  placeholder="Categoria" required>  <option value="">Seleccione</option></select>
+        <select type="text" name="categoria" id="categoria" class="form-control"  placeholder="Categoria" required>  <option value="">Seleccionar</option></select>
        
     </div>
     <div>
