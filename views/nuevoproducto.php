@@ -25,7 +25,7 @@
     <div>
         <label for="categoria">Categoría:</label>
         <!-- <input type="text" name="categoria" id="categoria" class="form-control"  placeholder="Categoria" required> -->
-        <select type="text" name="categoria" id="categoria" class="form-control"  placeholder="Categoria" required>  <option value="">Seleccionar</option></select>
+        <select name="categoria" id="categoria" class="form-control"  placeholder="Categoria" required>  <option value="">Seleccionar</option></select>
        
     </div>
     <div>
@@ -38,7 +38,8 @@
     </div>
     <div>
         <label for="proveedor">Proveedor:</label>
-        <input type="number" name="proveedor" id="proveedor"  placeholder="Proveedor" class="form-control" required>
+        <!-- <input type="number" name="proveedor" id="proveedor"  placeholder="Proveedor" class="form-control" required> -->
+        <select name="proveedor" id="proveedor" class="form-control"  placeholder="Proveedor" required>  <option value="">Seleccionar</option></select>
     </div>
     <br>
     <button type="button" class="btn btn-success" onclick="registrarProducto();">Registrar</button>
@@ -46,3 +47,4 @@
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functions_productos.js"></script>
 <script>listar_categorias();</script>
+<script>listar_proveedores();</script>
