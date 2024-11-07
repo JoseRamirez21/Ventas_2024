@@ -53,7 +53,7 @@ async function listar_categorias() {
         }
         console.log(respuesta);
     } catch (e) {
-        console.log("Error al cargar las Categorias"+e);
+        console.error("Error al cargar las Categorias"+e);
     }
     
 }
