@@ -1,5 +1,5 @@
 
-<div class="fo1" style="padding: 150px;">
+<div class="fo1" style="padding: 150px; width: 82%; display: block; margin: 0 auto; ">
 <form class="form1" action="" id="formRegistrarProd">
     
     <div>
@@ -42,7 +42,8 @@
         <select name="proveedor" id="proveedor" class="form-control"  placeholder="Proveedor" required>  <option value="">Seleccionar</option></select>
     </div>
     <br>
-    <button type="button" class="btn btn-success" onclick="registrarProducto();">Registrar</button>
+    <!-- <button  style="width: 50%; text-align: center;" type="button" class="btn btn-success" onclick="registrarProducto();">Registrar</button> -->
+    <button style="width: 30%; display: block; margin: 0 auto;" type="button" class="btn btn-success" onclick="registrarProducto();">Registrar</button>
 </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functions_productos.js"></script>

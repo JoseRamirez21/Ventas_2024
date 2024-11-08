@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-11-2024 a las 14:03:42
+-- Tiempo de generación: 08-11-2024 a las 22:35:21
 -- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Versión de PHP: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -316,8 +316,8 @@ CREATE TABLE `categoria` (
 --
 
 INSERT INTO `categoria` (`id`, `nombre`, `detalle`) VALUES
-(1, 'polos', 'polos para adultos'),
-(2, 'Chimpunes', 'varones');
+(1, 'vinos', 'vino blanco'),
+(2, 'whisky', 'añejo');
 
 -- --------------------------------------------------------
 
@@ -389,7 +389,8 @@ CREATE TABLE `persona` (
 --
 
 INSERT INTO `persona` (`id`, `nro_identidad`, `razon_social`, `telefono`, `correo`, `departamento`, `provincia`, `distrito`, `cod_postal`, `direccion`, `rol`, `password`, `estado`, `fecha_reg`) VALUES
-(1, '45698321', 'jhonatan cesar ñaupai farfan', '900654123', 'jhonatan@gmail.com', 'ayacucho', 'huanta', 'huanta', 123456, 'jr racaredo alvarado', 'proveedor', '123456789', '1', '2024-12-12 00:00:00');
+(1, '76122823', 'jose', '900654123', 'jose@gmail.com', 'ayacucho', 'huanta', 'huanta', 123456, 'San Martin', 'proveedor', '123', '1', '2024-12-12 00:00:00'),
+(2, '78965412', 'jota', '987456321', 'jota@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 51, 'Cedropata', 'proveedor', '123', '1', '2024-11-12 11:03:50');
 
 -- --------------------------------------------------------
 
@@ -415,17 +416,17 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id`, `codigo`, `nombre`, `detalle`, `precio`, `stock`, `id_categoria`, `fecha_vencimiento`, `imagen`, `id_proveedor`) VALUES
-(1, '123456', 'polo', 'polo amarrillo', 60.99, 100, 1, '2024-12-12', 'polo.jpg', 1),
-(2, '24', 'f', 'fsd', 45.00, 4, 1, '2024-10-10', '5', 1),
-(3, '21', 'polosfdg', 'dfsdfsf', 9999.99, 452, 1, '2024-11-13', '12', 1),
-(4, '78', 'camisetas', 'deportivas', 23.00, 13, 1, '2024-11-08', '2002', 1),
-(6, '1222', 'df', 'df', 4.00, 3, 1, '2024-10-10', '1122', 1),
-(7, '14777', 'gfg', 'rgg', 45.00, 3, 1, '2024-10-10', '1122', 1),
-(8, '1233', 'ropas des', 'dfsd', 2.00, 2, 1, '2024-10-03', '1', 1),
-(9, '1233333', 'gdfg', 'fggfd', 6.00, 56, 1, '2024-10-02', '6', 1),
-(10, '13', 'fgvx', 'dfd', 34.00, 4, 1, '2024-10-03', '1', 1),
-(11, '147', 'fgvx', 'dfd', 34.00, 4, 1, '2024-10-03', '1', 1),
-(12, '1', 'sdfgh', 'das', 12.00, 1, 1, '2024-10-11', 'das', 1);
+(1, '001', 'Vino Rojo', 'San marco', 60.99, 20, 1, '2024-12-12', 'vino.jpg', 1),
+(2, '002', 'whisky', 'real good', 45.00, 4, 2, '2024-10-10', 'whisky.png', 2),
+(3, '003', 'vino blanco', 'San Marco', 9999.99, 20, 1, '2024-11-13', 'vinos.png', 1),
+(4, '004', 'vinos liar', 'peruana', 23.00, 13, 1, '2024-11-08', '2002.png', 1),
+(6, '006', 'vinos blue', 'chincha', 20.00, 25, 1, '2024-10-10', '1122.png', 1),
+(7, '007', 'whisky red', 'xtreme', 45.00, 50, 2, '2024-10-10', '1122.png', 1),
+(8, '008', 'vinos', 'xtreme uva', 28.00, 20, 1, '2024-10-03', '1.png', 2),
+(9, '009', 'vinos whithe', 'ica version', 45.00, 56, 1, '2024-10-02', 'vinopisco.png', 1),
+(10, '010', 'whisky', 'xtreme full', 34.00, 40, 1, '2024-10-03', '1.png', 1),
+(11, '011', 'vino', 'uva and red', 34.00, 40, 1, '2024-10-03', 'vinossss.png', 1),
+(12, '012', 'whisky', 'and whithe experienc', 112.00, 19, 2, '2024-10-11', 'das.png', 2);
 
 -- --------------------------------------------------------
 
@@ -551,7 +552,7 @@ ALTER TABLE `pagos`
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
