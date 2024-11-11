@@ -1,8 +1,8 @@
 <div class="fo1" style="padding: 150px; width: auto; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
-    <form class="form1" action="" id="formRegistrarProd"  style="width: 60%;">
+    <form class="form1" action="" id="formRegistrarPer"  style="width: 60%;">
     <div>
     <label for="numero_identidad">Número de Identidad:</label>
-    <input type="text" name="numero_identidad" id="numero_identidad" placeholder="Número de Identidad" class="form-control" required>
+    <input type="text" name="numero_identidad" id="nro_identidad" placeholder="Número de Identidad" class="form-control" required>
 </div>
 <div>
     <label for="razon_social">Razón Social:</label>
@@ -38,7 +38,12 @@
 </div>
 <div>
     <label for="rol">Rol:</label>
-    <input type="text" name="rol" id="rol" placeholder="Rol" class="form-control" required>
+    <!-- <input type="text" name="rol" id="rol" placeholder="Rol" class="form-control" required> -->
+    <select name="rol" id="rol" class="form-control" placeholder="Rol" required>
+        <option value="">Seleccionar</option>
+        <option value="Proveedor">Proveedor</option>
+        <option value="Cliente">Cliente</option>
+    </select>
 </div>
 <div>
     <label for="password">Contraseña:</label>
@@ -57,8 +62,8 @@
     <input type="date" name="fecha_reg" id="fecha_reg" class="form-control" required>
 </div>
 <br>
-<button type="button" class="btn btn-success" onclick="registrarProducto();">Registrar</button>
+<button type="button" class="btn btn-success" onclick="registrarPersona();">Registrar</button>
 
-<script src="<?php echo BASE_URL;?>views/js/functions_productos.js"></script>
-<script>listar_categorias();</script>
+<script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
+
 </div>
