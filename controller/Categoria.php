@@ -25,4 +25,38 @@ if (!empty($arr_Categorias)) {
     echo json_encode($arr_Respuesta);
 }
 
+
+
+
+
+if($tipo=="registrar"){
+    // print_r($_POST);
+    // echo $_FILES['imagen']['tmp_name'];
+
+    if($_POST){
+        $nombre = $_POST['nombre'];
+        $detalle = $_POST['detalle'];
+       
+        if ( $nombre=="" || $detalle=="") {
+          //respuesta
+            $arr_Respuesta = array('status'=> false,
+            'mensaje'=>'Error, campos vacios');
+        } else{
+            $arrCategoria = 
+            $objCategoria->registrarCategoria( $nombre,
+             $detalle);
+              if ($arrCategoria->id>0) {
+                $arr_Respuesta = array('status'=> true,
+                'mensaje'=>'Registro exitoso');
+              
+             } else {
+                $arr_Respuesta = array('status'=> false,
+                'mensaje'=>'Error al registrar producto');
+              }
+              echo json_encode($arr_Respuesta);
+        }
+    }
+}
+
+?>
 ?>
