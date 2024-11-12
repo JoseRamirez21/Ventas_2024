@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-11-2024 a las 18:20:03
+-- Tiempo de generación: 12-11-2024 a las 01:07:40
 -- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Versión de PHP: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -191,9 +191,9 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `insertcompras` (IN `p_id_producto` 
     SET existe_compras = (SELECT COUNT(*) FROM compras WHERE id_producto=p_id_producto);
     
     IF existe_compras=0 THEN
-    	INSERT INTO compras (id_producto,cantidad,precio,stock,id_trabajador)
+    	INSERT INTO compras (id_producto,cantidad,precio,id_trabajador)
         	VALUES 
-(p_id_producto,p_cantidad,p_detalle,p_precio,p_id_trabajador);
+(p_id_producto,p_cantidad,p_precio,p_id_trabajador);
            SET id = LAST_INSERT_ID();
     ELSE
            SET id=0;
@@ -233,19 +233,25 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `insertpagos` (IN `p_id_venta` INT(1
     SELECT id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `insertpersona` (IN `p_nro_identidad` VARCHAR(11), IN `p_razon_sacial` VARCHAR(130), IN `p_telefono` VARCHAR(15), IN `p_correo` VARCHAR(100), IN `p_departamento` VARCHAR(20), IN `p_provincia` VARCHAR(30), IN `p_distrito` VARCHAR(50), IN `p_cod_postal` INT(5), IN `p_direccion` VARCHAR(100), IN `p_rol` VARCHAR(15), IN `p_password` VARCHAR(500), IN `p_estado` VARCHAR(1), IN `p_fecha_reg` DATETIME)   BEGIN
-	DECLARE existe_persona INT;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertpersona` (IN `p_nro_identidad` VARCHAR(11), IN `p_razon_social` VARCHAR(130), IN `p_telefono` VARCHAR(15), IN `p_correo` VARCHAR(100), IN `p_departamento` VARCHAR(20), IN `p_provincia` VARCHAR(30), IN `p_distrito` VARCHAR(50), IN `p_cod_postal` INT(5), IN `p_direccion` VARCHAR(100), IN `p_rol` VARCHAR(15), IN `p_password` VARCHAR(500), IN `p_estado` VARCHAR(1), IN `p_fecha_reg` DATETIME)   BEGIN
+    DECLARE existe_persona INT;
     DECLARE id INT;
-    SET existe_persona = (SELECT COUNT(*) FROM persona WHERE nro_identidad=p_nro_identidad);
+
+    -- Verificar si la persona ya existe
+    SET existe_persona = (SELECT COUNT(*) FROM persona WHERE nro_identidad = p_nro_identidad);
     
-    IF existe_persona=0 THEN
-    	INSERT INTO persona (nro_identidad,razon_sacial,telefono,correo,departamento,provincia,distrito,cod_postal,direccion,rol,password,estado,fecha_reg)
-        	VALUES 
-(p_nro_identidad,p_razon_sacial,p_telefono,p_correo,p_departamento,p_provincia,p_distrito,p_cod_postal,p_direccion,p_cod_postal,p_direccion,p_rol,p_password,p_estado,p_fecha_reg);
-           SET id = LAST_INSERT_ID();
+    IF existe_persona = 0 THEN
+        -- Insertar la nueva persona
+        INSERT INTO persona (nro_identidad, razon_social, telefono, correo, departamento, provincia, distrito, cod_postal, direccion, rol, password, estado, fecha_reg) 
+        VALUES (p_nro_identidad, p_razon_social, p_telefono, p_correo, p_departamento, p_provincia, p_distrito, p_cod_postal, p_direccion, p_rol, p_password, p_estado, p_fecha_reg);
+        
+        -- Obtener el ID de la nueva persona insertada
+        SET id = LAST_INSERT_ID();
     ELSE
-           SET id=0;
+        SET id = 0; -- Persona ya existe
     END IF;
+
+    -- Retornar el ID de la persona insertada o 0 si hubo un error
     SELECT id;
 END$$
 
@@ -316,13 +322,10 @@ CREATE TABLE `categoria` (
 --
 
 INSERT INTO `categoria` (`id`, `nombre`, `detalle`) VALUES
-(1, 'polos', 'polos para adultos'),
-(2, 'Chimpunes', 'varones'),
-(4, 'werwe', 'ere'),
-(5, 'awedsfg', 'drftgh'),
-(6, 'redes e internet', 'drftghwew'),
-(7, 'redes e internetesss', 'drftghwew'),
-(8, 'redes', 'drftghwew');
+(1, 'vinos', 'vino blanco'),
+(2, 'whisky', 'añejo'),
+(4, 'vzdv', 'sdvsd'),
+(5, 'etfh', 'sdgfh');
 
 -- --------------------------------------------------------
 
@@ -337,6 +340,14 @@ CREATE TABLE `compras` (
   `precio` decimal(6,2) DEFAULT NULL,
   `id_trabajador` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `compras`
+--
+
+INSERT INTO `compras` (`id`, `id_producto`, `cantidad`, `precio`, `id_trabajador`) VALUES
+(1, 1, 1, 1.00, 1),
+(2, 2, 1, 1.00, 2);
 
 -- --------------------------------------------------------
 
@@ -394,8 +405,23 @@ CREATE TABLE `persona` (
 --
 
 INSERT INTO `persona` (`id`, `nro_identidad`, `razon_social`, `telefono`, `correo`, `departamento`, `provincia`, `distrito`, `cod_postal`, `direccion`, `rol`, `password`, `estado`, `fecha_reg`) VALUES
-(1, '45698321', 'jose', '900654123', 'jose@gmail.com', 'ayacucho', 'huanta', 'huanta', 123456, 'Av San Martin', 'proveedor', '123456789', '1', '2024-12-12 00:00:00'),
-(2, '76122823', 'jota', '901237864', 'jota@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 51, 'C.P Cedropata', 'proveedor', '123', '1', '2024-11-12 11:03:50');
+(1, '76122823', 'jose', '900654123', 'jose@gmail.com', 'ayacucho', 'huanta', 'huanta', 123456, 'San Martin', 'proveedor', '123', '1', '2024-12-12 00:00:00'),
+(2, '78965412', 'jota', '987456321', 'jota@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 51, 'Cedropata', 'trabajador', '123', '1', '2024-11-12 11:03:50'),
+(3, '32456a', 'sdfa<', 'sdf', 'azsxdcf', 'zx', 'zx', 'zxz', 0, 'zxc', 'zxc', 'zxc', 'z', '0000-00-00 00:00:00'),
+(4, '23', 'sdf', 'sdfg', 'szdxf', 'zsdf', 'zdx', 'sd', 0, 'sd', 'sd', 'sd', 's', '0000-00-00 00:00:00'),
+(5, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$ZIaoNV2IfuTazVEnWDWB5u1h25gEhbw9ttkli.LQgmQ7OVYJohGWO', 'a', '2024-11-15 00:00:00'),
+(6, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$9118tffZVf/GJc/B1IBGmeS/w6MkQNZoaFeGsfBMVzt72kNcefMRe', 'a', '2024-11-15 00:00:00'),
+(7, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$2V.Mf5KIvLhfAh3B/8mPzO3CITi0XIQ/A22H8vunIsh2xziXbUw.e', 'a', '2024-11-15 00:00:00'),
+(8, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$l/IkjXboGV.mcVJPCbnxiu1F61Tu/VZVR5rYuOt0.DiuNUKBDDNxS', 'a', '2024-11-15 00:00:00'),
+(9, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$i7j.6MCj7KOnLWNgcvxdRueIOQVT4VtF62ATwvbaGgij4QmujEfyi', 'a', '2024-11-15 00:00:00'),
+(10, '324a', 'sfdg', 'sdf', 'sdf', 'as', 'zxc', 'zxc', 0, 'xc', 'zxc', 'zxc', 'z', '0000-00-00 00:00:00'),
+(11, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'Proveedor', '$2y$10$abhSH3l2npzTQVblIP3eN.rO4JaaiKXUqasPWfqKd6rq0kwFIy.VK', 'a', '2024-11-21 00:00:00'),
+(12, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'Proveedor', '$2y$10$IRMXVpxxQlAG7PBUYcYz1uF2hSs2tFU083xnVbnlXygfZ0h/CLdE6', 'a', '2024-11-21 00:00:00'),
+(13, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'trabajador', '$2y$10$V939oLC6xMC301mnl0k9.eREyTffz29.LpaA1lRVlTm0/P2LXmo4y', 'a', '2024-11-21 00:00:00'),
+(14, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'trabajador', '$2y$10$bM.SB9qnJAqoq8vLkpmuGuXdyePkPhZXmQjU8KXg.nxAFQx7OtVai', 'a', '2024-11-21 00:00:00'),
+(15, '76122823', 'wqdqdqdw', 'qdqwd', 'wqdqwd', 'qww', 'wqw', 'wqw', 1234, 'wqw', 'trabajador', 'asdfg', '1', '2024-11-11 11:03:50'),
+(16, '', '', '', '', '', '', '', 0, '', '', '', '', '0000-00-00 00:00:00'),
+(17, '12222222', 'df', 'asd', 'sad', 'sd', 'sd', 'sd', 0, 'sd', 'Cliente', '$2y$10$Icvzs4OubFzAkv9BOr3Pa.suQwOT.oQHQHkKMxzPoVnoHAxEBmSHi', 'a', '2024-11-21 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -421,40 +447,25 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id`, `codigo`, `nombre`, `detalle`, `precio`, `stock`, `id_categoria`, `fecha_vencimiento`, `imagen`, `id_proveedor`) VALUES
-(1, '123456', 'polo', 'polo amarrillo', 60.99, 100, 1, '2024-12-12', 'polo.jpg', 1),
-(2, '24', 'f', 'fsd', 45.00, 4, 1, '2024-10-10', '5', 1),
-(3, '21', 'polosfdg', 'dfsdfsf', 9999.99, 452, 1, '2024-11-13', '12', 1),
-(4, '78', 'camisetas', 'deportivas', 23.00, 13, 1, '2024-11-08', '2002', 1),
-(6, '1222', 'df', 'df', 4.00, 3, 1, '2024-10-10', '1122', 1),
-(7, '14777', 'gfg', 'rgg', 45.00, 3, 1, '2024-10-10', '1122', 1),
-(8, '1233', 'ropas des', 'dfsd', 2.00, 2, 1, '2024-10-03', '1', 1),
-(9, '1233333', 'gdfg', 'fggfd', 6.00, 56, 1, '2024-10-02', '6', 1),
-(10, '13', 'fgvx', 'dfd', 34.00, 4, 1, '2024-10-03', '1', 1),
-(11, '147', 'fgvx', 'dfd', 34.00, 4, 1, '2024-10-03', '1', 1),
-(12, '1', 'sdfgh', 'das', 12.00, 1, 1, '2024-10-11', 'das', 1),
-(13, '5', '1', '1', 1.00, 1, 1, '2024-11-16', '1', 1),
-(14, '7', 'polera', 'rojo', 12.00, 1, 1, '2024-11-13', '1', 1),
-(15, '12', 'pisco', '12', 12.00, 1, 1, '2024-11-06', '1', 1),
-(16, '14', '1', '1', 1.00, 1, 1, '2024-11-14', 'imagen', 1),
-(17, '100', '1', '1', 1.00, 1, 1, '2024-11-14', 'imagen', 1),
-(18, '101', '1', '1', 1.00, 1, 1, '2024-11-14', 'imagen', 1),
-(19, '1111', '1', '1', 1.00, 1, 1, '2024-11-12', 'imagen', 2),
-(20, '222', '1', '1', 1.00, 1, 1, '2024-11-12', 'imagen', 2),
-(21, '12122', 'vino', 'rojo', 12.00, 12, 1, '2024-11-15', 'imagen', 1),
-(22, '2020', 'whisqui', 'rojo', 12.00, 12, 1, '2024-11-15', 'imagen', 1),
-(23, '20201', 'whisqui', 'rojo', 12.00, 12, 1, '2024-11-15', 'imagen', 1),
-(24, '1212', 'scd', 'dfd', 3.00, 33, 1, '2024-11-07', 'imagen', 1),
-(25, '123101', '0121', '12', 201.00, 2, 1, '2024-11-13', 'imagen', 1),
-(26, '787', 'dfsf', 'sdf', 23.00, 23, 1, '2024-11-13', 'imagen', 2),
-(27, '77777', 'dfsf', 'sdf', 23.00, 23, 1, '2024-11-13', 'imagen', 2),
-(28, '7888', 'cghfgyhf', 'sdf', 9999.99, 23, 2, '2024-11-13', 'imagen', 1),
-(29, '435', 'sdfsd', 'fasdf', 42.00, 324, 1, '2024-11-15', 'imagen', 1),
-(30, '121212122', 'sdsd', 'sff', 23.00, 2, 1, '2024-11-06', 'imagen', 1),
-(31, '2147483647', 'sdsd', 'sff', 23.00, 2, 1, '2024-11-06', 'imagen', 1),
-(32, '1212121', 'fdf', 'ds23', 21.00, 123, 1, '2024-11-15', 'imagen', 1),
-(33, '12345', 'fdf', 'ds23', 21.00, 123, 1, '2024-11-15', 'imagen', 1),
-(34, '1458777', 'fdf', 'ds23', 21.00, 123, 1, '2024-11-15', 'imagen', 1),
-(35, '11221122', 'df', 'dsf', 2.00, 2, 1, '2024-11-21', 'imagen', 1);
+(1, '001', 'Vino Rojo', 'San marco', 60.99, 20, 1, '2024-12-12', 'vino.jpg', 1),
+(2, '002', 'whisky', 'real good', 45.00, 4, 2, '2024-10-10', 'whisky.png', 2),
+(3, '003', 'vino blanco', 'San Marco', 9999.99, 20, 1, '2024-11-13', 'vinos.png', 1),
+(4, '004', 'vinos liar', 'peruana', 23.00, 13, 1, '2024-11-08', '2002.png', 1),
+(6, '006', 'vinos blue', 'chincha', 20.00, 25, 1, '2024-10-10', '1122.png', 1),
+(7, '007', 'whisky red', 'xtreme', 45.00, 50, 2, '2024-10-10', '1122.png', 1),
+(8, '008', 'vinos', 'xtreme uva', 28.00, 20, 1, '2024-10-03', '1.png', 2),
+(9, '009', 'vinos whithe', 'ica version', 45.00, 56, 1, '2024-10-02', 'vinopisco.png', 1),
+(10, '010', 'whisky', 'xtreme full', 34.00, 40, 1, '2024-10-03', '1.png', 1),
+(11, '011', 'vino', 'uva and red', 34.00, 40, 1, '2024-10-03', 'vinossss.png', 1),
+(12, '012', 'whisky', 'and whithe experienc', 112.00, 19, 2, '2024-10-11', 'das.png', 2),
+(13, '013', 'Vino', 'Blanco', 12.00, 16, 1, '2024-11-14', 'imagen', 1),
+(14, '015', 'Vino', 'Blanco', 12.00, 16, 1, '2024-11-14', 'imagen', 2),
+(15, '016', 'Vino', 'Blanco Xtreme', 122.00, 16, 1, '2024-11-14', 'imagen', 2),
+(16, '017', 'Vino', 'Blanco Xtreme', 122.00, 16, 1, '2024-11-14', 'imagen', 1),
+(17, '018', 'Vino', 'Blanco Xtreme', 122.00, 16, 1, '2024-11-14', 'imagen', 1),
+(18, '019', 'Vino', 'Blanco Xtreme', 122.00, 16, 1, '2024-11-14', 'imagen', 1),
+(19, '20', 'vino', 'red', 11.00, 1, 1, '2024-11-12', 'imagen', 1),
+(20, '21', 'vino', 'red', 11.00, 1, 1, '2024-11-12', 'imagen', 1);
 
 -- --------------------------------------------------------
 
@@ -556,13 +567,13 @@ ALTER TABLE `venta`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `compras`
 --
 ALTER TABLE `compras`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `detalle_venta`
@@ -580,13 +591,13 @@ ALTER TABLE `pagos`
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `sesiones`
