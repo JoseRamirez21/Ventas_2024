@@ -49,7 +49,7 @@ async function listar_productos() {
         }
         console.log(respuesta);
     } catch (e) {
-        console.e("Error al cargar categorias" + e)
+        console.e("Error al cargar producto" + e)
     }
 }
 
