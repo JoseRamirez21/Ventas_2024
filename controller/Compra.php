@@ -1,5 +1,5 @@
 <?php
-require_once('../model/comprasmodel.php');
+require_once('../model/comprasModel.php');
 
 //instancio la clase  ComprasModel
 

@@ -1,5 +1,6 @@
 <?php
 require_once('../model/proveedorModel.php');
+
 $tipo = $_REQUEST['tipo'];
 
 //instanciar la Proveeddormodel
@@ -11,7 +12,7 @@ if($tipo=="listar"){
     $arr_Respuesta = array('status'=> false, 'contenido'=>'');
     $arr_Proveedor = $objProveedor->obtener_proveedores();
 if (!empty($arr_Proveedor)) {
-    
+
     //recordemos que el array es para agregar las opciones de los proveedores
     for ($i=0; $i < count($arr_Proveedor); $i++) { 
         $id_categoria = $arr_Proveedor[$i]->id;

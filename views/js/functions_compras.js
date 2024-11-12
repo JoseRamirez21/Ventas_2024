@@ -31,7 +31,7 @@ async function registrarCompra() {
     }
 }
 
-
+// listar productos
 async function listar_productos() {
     try {
         // envia datos hacia el controlador
@@ -53,7 +53,7 @@ async function listar_productos() {
     }
 }
 
-// Listar proveedores
+// Listar trabajador
 async function listar_trabajadores() {
     try {
         let respuesta = await fetch(base_url+'controller/Trabajador.php?tipo=listar');

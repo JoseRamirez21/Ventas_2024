@@ -1,6 +1,7 @@
 <?php
 
-require_once('../model/trabajadormodel.php');
+require_once('../model/trabajadorModel.php');
+
 // Instanciar la clase TrabajadorModel
 $objTrabajador = new TrabajadorModel();
 

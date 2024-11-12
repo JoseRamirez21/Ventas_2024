@@ -19,7 +19,7 @@ if($tipo=="registrar"){
         $cod_postal = $_POST['cod_postal'];
         $direccion = $_POST['direccion'];
         $rol = $_POST['rol'];
-        $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Esto es para poder encriptar la contraseña
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Esto es para poder encriptar las contraseñas
         $estado = $_POST['estado'];
         $fecha_reg = $_POST['fecha_reg'];
         if ($nro_identidad == "" || $razon_social == "" || $telefono == "" || $correo == "" || 
