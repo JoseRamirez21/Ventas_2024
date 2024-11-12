@@ -14,7 +14,7 @@ async function registrarProducto() {
         return;
     }
     try {
-        //capturamos datos del formulario html nuevo-producto
+        //capturamos datos del formulario nuevoproducto.php
         const datos = new FormData(formRegistrarProd);
         //enviamos datos hacia el controlador
         let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=registrar', {

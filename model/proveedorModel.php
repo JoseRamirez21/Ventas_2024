@@ -9,6 +9,7 @@ class proveedorModel{
         $this->conexion = new Conexion();
         $this-> conexion = $this->conexion->connect();
     }
+     // Ejecuta una consulta SQL para seleccionar todos los registros de la tabla 'persona' donde el rol es 'proveedor'
     public function obtener_proveedores(){
         $arrRespuesta = array();
         $respuesta = $this->conexion->query("SELECT * FROM persona WHERE rol = 'proveedor'");

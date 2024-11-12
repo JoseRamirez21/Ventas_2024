@@ -15,6 +15,7 @@ class ComprasModel
         $trabajador
 
     ) {
+        // Ejecutar un procedimiento almacenado y el procedimiento almacena los datos de una compra en la base de datos
         $sql = $this->conexion->query("CALL insertcompras
         ('{$id_producto}', '{$cantidad}', '{$precio}', '{$trabajador}')");
        

@@ -1,7 +1,7 @@
 
-<div class="fo1" style="padding: 150px; width: 82%; display: block; margin: 0 auto; ">
+<div class="fo1" style="padding: 150px;  width: 900px; display: block; margin: 0 auto; ">
 <form class="form1" action="" id="formRegistrarProd">
-    
+<h3 style="cursor: pointer; color: #007bff; text-align: center;" >Agregar Nuevos Productos</h3>
     <div>
         <label for="codigo">Código:</label>
         <input type="text" name="codigo" id="codigo"  placeholder="Codigo" class="form-control" required>

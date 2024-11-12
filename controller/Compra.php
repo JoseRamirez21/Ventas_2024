@@ -1,7 +1,7 @@
 <?php
 require_once('../model/comprasmodel.php');
 
-//instancio la clase  productoModel
+//instancio la clase  ComprasModel
 
 $objCompras = new ComprasModel();
 $tipo  = $_REQUEST['tipo'];
@@ -14,8 +14,6 @@ if ($tipo == "registrar") {
         $precio = $_POST['precio']; 
         $trabajador = $_POST['trabajador'];
 
-
-
         if (
             $id_producto == "" || $cantidad == "" || $precio == "" || $trabajador == ""
         ) {
@@ -25,7 +23,6 @@ if ($tipo == "registrar") {
                 $id_producto,
                 $cantidad,
                 $precio,
-   
                 $trabajador
             );
 

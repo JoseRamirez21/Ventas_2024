@@ -8,7 +8,7 @@ async function registrarCategoria() {
         return;
     }
     try {
-        //capturamos datos del formulario html nuevo-producto
+        //capturamos datos del formulario nuevacategoria.php
         const datos = new FormData(formRegistrarCat);
         //enviamos datos hacia el controlador
         let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=registrar', {

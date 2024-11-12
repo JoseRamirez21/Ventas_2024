@@ -1,6 +1,7 @@
 
 <div class="fo1" style="padding: 150px; width: auto; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
     <form class="form1" action="" id="formRegistrarCom"  style="width: 60%;">
+    <h3 style="cursor: pointer; color: #007bff; text-align: center;" >Agregar Nueva Compra</h3>
         <div>
             <label for="id_producto"> Producto:</label>
             <select type="text" name="id_producto" id="id_producto" placeholder="ID Producto" class="form-control" required>
@@ -20,7 +21,7 @@
             <option  class="trabajador" >Seleccione</option></select>
         </div>
         <br>
-        <button type="button" class="btn btn-success" onclick="registrar_compra();">Registrar</button>
+        <button type="button" class="btn btn-success" style="width: 30%; display: block; margin: 0 auto;" type="button" class="btn btn-success" onclick="registrarCompra();">Registrar</button>
     </form>
 </div>
 

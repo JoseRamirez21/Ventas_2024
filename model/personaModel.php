@@ -17,6 +17,7 @@ class PersonaModel{
         $distrito, $cod_postal, $direccion, 
         $rol, $password, $estado, $fecha_reg
     ){
+        // Ejecutar un procedimiento almacenado y el procedimiento almacena los datos de una persona en la base de datos
         $sql = $this->conexion->query("CALL insertpersona(
             '{$nro_identidad}', '{$razon_social}', '{$telefono}', 
             '{$correo}', '{$departamento}', '{$provincia}', 

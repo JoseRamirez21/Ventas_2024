@@ -4,12 +4,10 @@ require_once('../model/personaModel.php');
 
 $tipo = $_REQUEST['tipo'];
 
-// instancio de la clase modeloproducto
+// instancio de la clase PersonaModel
 $objPersona = new PersonaModel();
 if($tipo=="registrar"){
-    // print_r($_POST);
-    // echo $_FILES['imagen']['tmp_name'];
-
+    
     if($_POST){
         $nro_identidad = $_POST['numero_identidad'];
         $razon_social = $_POST['razon_social'];
@@ -21,7 +19,7 @@ if($tipo=="registrar"){
         $cod_postal = $_POST['cod_postal'];
         $direccion = $_POST['direccion'];
         $rol = $_POST['rol'];
-        $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Encriptar contraseña
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Esto es para poder encriptar la contraseña
         $estado = $_POST['estado'];
         $fecha_reg = $_POST['fecha_reg'];
         if ($nro_identidad == "" || $razon_social == "" || $telefono == "" || $correo == "" || 

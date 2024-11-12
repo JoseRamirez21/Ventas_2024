@@ -1,4 +1,4 @@
-async function registrar_compra() {
+async function registrarCompra() {
  
     let producto = document.querySelector('#id_producto').value;
     let cantidad = document.querySelector('#cantidad').value;
@@ -9,7 +9,7 @@ async function registrar_compra() {
         return;
     }
     try {
-        //capturamos datos del formulario html nuevo-producto
+        //capturamos datos del formulario nuevacompra.php
         const datos = new FormData(formRegistrarCom);
         //enviamos datos hacia el controlador
         let respuesta = await fetch(base_url + 'controller/Compra.php?tipo=registrar', {

@@ -1,5 +1,6 @@
 <div class="fo1" style="padding: 150px; width: auto; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
     <form class="form1" action="" id="formRegistrarPer"  style="width: 60%;">
+    <h3 style="cursor: pointer; color: #007bff; text-align: center;" >Agregar Nueva Persona</h3>
     <div>
     <label for="numero_identidad">Número de Identidad:</label>
     <input type="text" name="numero_identidad" id="nro_identidad" placeholder="Número de Identidad" class="form-control" required>
@@ -62,7 +63,7 @@
     <input type="date" name="fecha_reg" id="fecha_reg" class="form-control" required>
 </div>
 <br>
-<button type="button" class="btn btn-success" onclick="registrarPersona();">Registrar</button>
+<button type="button" class="btn btn-success" style="width: 30%; display: block; margin: 0 auto;" type="button" class="btn btn-success" onclick="registrarPersona();">Registrar</button>
 
 <script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
 

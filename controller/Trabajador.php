@@ -1,7 +1,7 @@
 <?php
 
 require_once('../model/trabajadormodel.php');
-// Instanciar la clase ProveedorModel
+// Instanciar la clase TrabajadorModel
 $objTrabajador = new TrabajadorModel();
 
 $tipo = $_REQUEST['tipo'];
@@ -10,10 +10,10 @@ if ($tipo == "listar") {
     // Respuesta inicial
     $arr_Respuesta = array('status' => false, 'contenido' => '');
     
-    // Obtener la lista de proveedores
+    // Obtener la lista de trabajadores
     $arr_Trabajador = $objTrabajador->obtener_trabajadores();
     if (!empty($arr_Trabajador)) {
-        // Recorrer el array para agregar las opciones para cada proveedor
+        // Recorrer el array para agregar las opciones para trabajador
         for ($i = 0; $i < count($arr_Trabajador); $i++) {
             $id_trabajador = $arr_Trabajador[$i]->id;
             $razon_social = $arr_Trabajador[$i]->razon_social;
