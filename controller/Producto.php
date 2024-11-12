@@ -79,5 +79,6 @@ if ($tipo == "listar") {
     }
 
     echo json_encode($arr_Respuesta);
+    
 }
 ?>
