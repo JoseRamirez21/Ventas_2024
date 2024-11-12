@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-11-2024 a las 01:07:40
+-- Tiempo de generación: 12-11-2024 a las 14:14:09
 -- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.0.28
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -325,7 +325,9 @@ INSERT INTO `categoria` (`id`, `nombre`, `detalle`) VALUES
 (1, 'vinos', 'vino blanco'),
 (2, 'whisky', 'añejo'),
 (4, 'vzdv', 'sdvsd'),
-(5, 'etfh', 'sdgfh');
+(5, 'etfh', 'sdgfh'),
+(6, 'Vinos red xtreme', 'russ kaya'),
+(7, 'ggh', 'hgh');
 
 -- --------------------------------------------------------
 
@@ -347,7 +349,10 @@ CREATE TABLE `compras` (
 
 INSERT INTO `compras` (`id`, `id_producto`, `cantidad`, `precio`, `id_trabajador`) VALUES
 (1, 1, 1, 1.00, 1),
-(2, 2, 1, 1.00, 2);
+(2, 2, 1, 1.00, 2),
+(3, 10, 12, 1.00, 2),
+(4, 14, 12, 1.00, 2),
+(5, 11, 12, 12.00, 14);
 
 -- --------------------------------------------------------
 
@@ -421,7 +426,8 @@ INSERT INTO `persona` (`id`, `nro_identidad`, `razon_social`, `telefono`, `corre
 (14, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'trabajador', '$2y$10$bM.SB9qnJAqoq8vLkpmuGuXdyePkPhZXmQjU8KXg.nxAFQx7OtVai', 'a', '2024-11-21 00:00:00'),
 (15, '76122823', 'wqdqdqdw', 'qdqwd', 'wqdqwd', 'qww', 'wqw', 'wqw', 1234, 'wqw', 'trabajador', 'asdfg', '1', '2024-11-11 11:03:50'),
 (16, '', '', '', '', '', '', '', 0, '', '', '', '', '0000-00-00 00:00:00'),
-(17, '12222222', 'df', 'asd', 'sad', 'sd', 'sd', 'sd', 0, 'sd', 'Cliente', '$2y$10$Icvzs4OubFzAkv9BOr3Pa.suQwOT.oQHQHkKMxzPoVnoHAxEBmSHi', 'a', '2024-11-21 00:00:00');
+(17, '12222222', 'df', 'asd', 'sad', 'sd', 'sd', 'sd', 0, 'sd', 'Cliente', '$2y$10$Icvzs4OubFzAkv9BOr3Pa.suQwOT.oQHQHkKMxzPoVnoHAxEBmSHi', 'a', '2024-11-21 00:00:00'),
+(18, '1234321', 'xtreme', '234', 'wedf@gmail', 'asd', 'sd', 'sd', 0, 'asd', 'Proveedor', '$2y$10$85vl2rrNiZKq60q2zKyZrecyT2w.Ro5qOt3yV9Cz1kHQJcAjmtLf2', 'a', '2024-11-13 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -567,13 +573,13 @@ ALTER TABLE `venta`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `compras`
 --
 ALTER TABLE `compras`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `detalle_venta`
@@ -591,7 +597,7 @@ ALTER TABLE `pagos`
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
