@@ -1,35 +1,40 @@
-<?php 
-
-require_once "../library/conexion.php"; 
-
-class ComprasModel {
-
+<?php
+require_once "../library/conexion.php";
+class ComprasModel
+{
     private $conexion;
-
-    function __construct() {
+    function __construct()
+    {
         $this->conexion = new Conexion();
         $this->conexion = $this->conexion->connect();
     }
+    public function registrarCompras(
+        $id_producto,
+        $cantidad,
+        $precio,
+        $trabajador
 
-    public function registrarCompra($id_proveedor, $cantidad, $precio, $id_trabajador) {
-        $sql = $this->conexion->query("CALL insertCompra('{$id_proveedor}', '{$cantidad}', '{$precio}','{$id_trabajador}')");
-
-        // Verificar si se ejecutó correctamente
-        if ($sql) {
-            return (object) [
-                'status' => true,
-                'mensaje' => 'Compra registrada exitosamente.'
-            ];
-        } else {
-            return (object) [
-                'status' => false,
-                'mensaje' => 'Error al registrar la compra: ' . $this->conexion->error
-            ];
+    ) {
+        $sql = $this->conexion->query("CALL insertcompras
+        ('{$id_producto}', '{$cantidad}', '{$precio}', '{$trabajador}')");
+       
+         if ($sql == false) {
+            print_r(value: $this->conexion->error);
         }
+
+
+        $sql = $sql->fetch_object();
+        return $sql;
     }
-
-    // Puedes agregar más métodos para manejar otras operaciones relacionadas con compras aquí
-
+    
+    public function obtener_productos()
+    {
+        $arrRespuesta = array();
+        $respuesta = $this->conexion->query(" SELECT * FROM producto");
+        while ($objeto = $respuesta->fetch_object()) {
+            array_push($arrRespuesta, $objeto);
+            
+        }
+        return $arrRespuesta;
+    }
 }
-
-?>

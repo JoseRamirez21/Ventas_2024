@@ -1,31 +1,40 @@
 <?php
-require_once('../model/ComprasModel.php');
+require_once('../model/comprasmodel.php');
 
-$tipo = $_REQUEST['tipo'];
+//instancio la clase  productoModel
+
 $objCompras = new ComprasModel();
+$tipo  = $_REQUEST['tipo'];
 
 if ($tipo == "registrar") {
+
     if ($_POST) {
-        // Captura de datos del formulario
-        $id_proveedor = $_POST['id_proveedor'];
+        $id_producto = $_POST['id_producto'];
         $cantidad = $_POST['cantidad'];
-        $precio = $_POST['precio'];
-        $id_proveedor = $_POST['id_trabajador'];
-        // Validación de campos (puedes personalizar esto según tus necesidades)
-        if (empty($id_proveedor) || empty($cantidad) || empty($precio) ||empty($id_trabajador) ) {
-            echo json_encode(['status' => false, 'mensaje' => 'Todos los campos son obligatorios.']);
-            exit;
+        $precio = $_POST['precio']; 
+        $trabajador = $_POST['trabajador'];
+
+
+
+        if (
+            $id_producto == "" || $cantidad == "" || $precio == "" || $trabajador == ""
+        ) {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacios');
+        } else {
+            $arrProducto = $objCompras->registrarCompras(
+                $id_producto,
+                $cantidad,
+                $precio,
+   
+                $trabajador
+            );
+
+            if ($arrProducto->id > 0) {
+                $arr_Respuesta = array('status' => true, 'mensaje' => 'Producto registrado con exito');
+            } else {
+                $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al registrar producto');
+            }
+            echo json_encode($arr_Respuesta);
         }
-
-        // Registro de la compra
-        $resultado = $objCompras->registrarCompra($id_proveedor, $cantidad, $precio,$id_trabajador);
-
-        // Retornar la respuesta en formato JSON
-        echo json_encode($resultado);
-    } else {
-        echo json_encode(['status' => false, 'mensaje' => 'No se recibieron datos.']);
     }
-} else {
-    echo json_encode(['status' => false, 'mensaje' => 'Tipo de operación no válida.']);
 }
-?>
