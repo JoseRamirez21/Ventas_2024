@@ -14,8 +14,15 @@ class vistasControlador extends vistaModelo{
         }else{
             $respuesta = "login";
         }
+        // Verificar si la ruta es para la vista administrativa
+    if ($ruta[0] == "admin") {
+        $respuesta = "admin";
+    }
         return $respuesta ;
     }
 }
-
 ?>
+
+      
+    
+   
