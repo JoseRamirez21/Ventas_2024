@@ -31,7 +31,7 @@
 </div>
 <div>
     <label for="cod_postal">Código Postal:</label>
-    <input type="text" name="cod_postal" id="cod_postal" placeholder="Código Postal" class="form-control" required>
+    <input type="number" name="cod_postal" id="cod_postal" placeholder="Código Postal" class="form-control" required>
 </div>
 <div>
     <label for="direccion">Dirección:</label>
@@ -46,22 +46,10 @@
         <option value="Cliente">Cliente</option>
     </select>
 </div>
-<div>
+<!-- <div>
     <label for="password">Contraseña:</label>
     <input type="password" name="password" id="password" placeholder="Contraseña" class="form-control" required>
-</div>
-<div>
-    <label for="estado">Estado:</label>
-    <select name="estado" id="estado" class="form-control" required>
-        <option value="">Seleccionar</option>
-        <option value="activo">Activo</option>
-        <option value="inactivo">Inactivo</option>
-    </select>
-</div>
-<div>
-    <label for="fecha_reg">Fecha de Registro:</label>
-    <input type="date" name="fecha_reg" id="fecha_reg" class="form-control" required>
-</div>
+</div> -->
 <br>
 <button type="button" class="btn btn-success" style="width: 30%; display: block; margin: 0 auto;" type="button" class="btn btn-success" onclick="registrarPersona();">Registrar</button>
 

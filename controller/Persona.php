@@ -19,12 +19,13 @@ if($tipo=="registrar"){
         $cod_postal = $_POST['cod_postal'];
         $direccion = $_POST['direccion'];
         $rol = $_POST['rol'];
-        $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Esto es para poder encriptar las contraseñas
-        $estado = $_POST['estado'];
-        $fecha_reg = $_POST['fecha_reg'];
+        // $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Esto es para poder encriptar las contraseñas
+         $secure_password = password_hash($nro_identidad, PASSWORD_DEFAULT);
+
+
         if ($nro_identidad == "" || $razon_social == "" || $telefono == "" || $correo == "" || 
         $departamento == "" || $provincia == "" || $distrito == "" || $cod_postal == "" || 
-        $direccion == "" || $rol == "" || $password == "" || $estado == "" || $fecha_reg == "") {
+        $direccion == "" || $rol == "" || $secure_password == "") {
           //respuesta
             $arr_Respuesta = array('status'=> false,
             'mensaje'=>'Error, campos vacios');
@@ -32,7 +33,7 @@ if($tipo=="registrar"){
             $objPersona = 
             $objPersona->registrarPersona($nro_identidad, $razon_social,
              $telefono, $correo, $departamento, $provincia,
-              $distrito, $cod_postal, $direccion,$rol,$password,$estado,$fecha_reg);
+              $distrito, $cod_postal, $direccion,$rol,$secure_password);
               if ($objPersona->id>0) {
                 $arr_Respuesta = array('status'=> true,
                 'mensaje'=>'Registro exitoso');

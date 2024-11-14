@@ -131,7 +131,7 @@
                     <i class="bi bi-cart-fill card-icon"></i> <!-- Icono de compras -->
                     <h5 class="card-title mt-3">Compras</h5>
                     <p class="card-text">Administre las compras de productos.</p>
-                    <a href="../../views/nuevacompra.php" class="btn btn-primary">Entrar</a>
+                    <a href="<?php echo BASE_URL; ?>admin" class="btn btn-primary">Entrar</a>
                 </div>
             </div>
         </div>

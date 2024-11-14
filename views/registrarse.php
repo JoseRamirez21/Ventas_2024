@@ -33,7 +33,7 @@
                 <button>Registrarse</button>
             </form>
         </div>
-        <div class="form-container sign-in">
+        <div class="form-container sign-in" >
             <form>
                 <h1>Iniciar Sesión</h1>
                 <div class="social-icons">

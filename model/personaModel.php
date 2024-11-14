@@ -15,18 +15,22 @@ class PersonaModel{
         $nro_identidad, $razon_social, $telefono, 
         $correo, $departamento, $provincia,
         $distrito, $cod_postal, $direccion, 
-        $rol, $password, $estado, $fecha_reg
+        $rol, $password
     ){
         // Ejecutar un procedimiento almacenado y el procedimiento almacena los datos de una persona en la base de datos
         $sql = $this->conexion->query("CALL insertpersona(
             '{$nro_identidad}', '{$razon_social}', '{$telefono}', 
             '{$correo}', '{$departamento}', '{$provincia}', 
             '{$distrito}', '{$cod_postal}', '{$direccion}', 
-            '{$rol}', '{$password}', '{$estado}', '{$fecha_reg}')");
+            '{$rol}', '{$password}')");
             $sql = $sql->fetch_object();
             return $sql;
     }
-   
+   public function buscarPersonaPorDNI($nro_identidad){
+   $sql = $this->conexion->query("SELECT * FROM persona WHERE nro_identidad='{$nro_identidad}'");
+   $sql = $sql->fetch_object();
+   return $sql;
+   }
     }
  
 ?>

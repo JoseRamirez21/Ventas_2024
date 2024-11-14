@@ -1,22 +1,19 @@
-
 async function registrarPersona() {
     // Capturamos los valores del formulario
-    let nro_identidad = document.getElementById('#nro_identidad').value;
-    let razon_social = document.getElementById('#razon_social').value;
-    let telefono = document.getElementById('#telefono').value;
-    let correo = document.getElementById('#correo').value;
-    let departamento = document.getElementById('#departamento').value;
-    let provincia = document.getElementById('#provincia').value;
-    let distrito = document.getElementById('#distrito').value;
-    let cod_postal = document.getElementById('#cod_postal').value;
-    let direccion = document.getElementById('#direccion').value;
-    let rol = document.getElementById('#rol').value;
-    let password = document.getElementById('#password').value;
-    let estado = document.getElementById('#estado').value;
-    let fecha_reg = document.getElementById('#fecha_reg').value;
+    let nro_identidad = document.getElementById('nro_identidad').value;
+    let razon_social = document.getElementById('razon_social').value;
+    let telefono = document.getElementById('telefono').value;
+    let correo = document.getElementById('correo').value;
+    let departamento = document.getElementById('departamento').value;
+    let provincia = document.getElementById('provincia').value;
+    let distrito = document.getElementById('distrito').value;
+    let cod_postal = document.getElementById('cod_postal').value;
+    let direccion = document.getElementById('direccion').value;
+    let rol = document.getElementById('rol').value;
+    // let password = document.getElementById('password').value;
+    
     if (!nro_identidad || !razon_social || !telefono || !correo || !departamento ||
-        !provincia || !distrito || !cod_postal || !direccion || !rol || !password ||
-        !estado || !fecha_reg) {
+        !provincia || !distrito || !cod_postal || !direccion || !rol /*|| !password*/ ) {
             
         alert("Error!!, Todos los campos son obligatorios.");
         return;

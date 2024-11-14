@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -424,11 +426,13 @@
                     <div class="dropdown mx-3 ">
                         <button class="btn btn-light dropdown-toggle" type="button" id="accountDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Cuenta
+                            <?php echo $_SESSION['sesion_venta_nombres'];?>
                         </button>
                         <ul class="dropdown-menu " aria-labelledby="accountDropdown">
                             <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>registrarse">Iniciar Sesión</a></li>
-                            <li><a class="dropdown-item" href="https://apps.apple.com/us/app/licores-mundiales/id1473051773" target="_blank">Cerrar sesión</a></li>
+                            <li  class="dropdown-item"><a onclick="cerrar_sesion();">Cerrar sesión</a></li>
+
+                            <li></li>
                         </ul>
                     </div>
                     <a class="btn btn-outline-secondary mx-3" href="<?php echo BASE_URL; ?>carrito" title="Ver Carrito">

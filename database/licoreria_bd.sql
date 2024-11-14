@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-11-2024 a las 14:14:09
+-- Tiempo de generación: 14-11-2024 a las 18:52:56
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -233,7 +233,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `insertpagos` (IN `p_id_venta` INT(1
     SELECT id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `insertpersona` (IN `p_nro_identidad` VARCHAR(11), IN `p_razon_social` VARCHAR(130), IN `p_telefono` VARCHAR(15), IN `p_correo` VARCHAR(100), IN `p_departamento` VARCHAR(20), IN `p_provincia` VARCHAR(30), IN `p_distrito` VARCHAR(50), IN `p_cod_postal` INT(5), IN `p_direccion` VARCHAR(100), IN `p_rol` VARCHAR(15), IN `p_password` VARCHAR(500), IN `p_estado` VARCHAR(1), IN `p_fecha_reg` DATETIME)   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertpersona` (IN `p_nro_identidad` VARCHAR(11), IN `p_razon_social` VARCHAR(130), IN `p_telefono` VARCHAR(15), IN `p_correo` VARCHAR(100), IN `p_departamento` VARCHAR(20), IN `p_provincia` VARCHAR(30), IN `p_distrito` VARCHAR(50), IN `p_cod_postal` INT(5), IN `p_direccion` VARCHAR(100), IN `p_rol` VARCHAR(15), IN `p_password` VARCHAR(500))   BEGIN
     DECLARE existe_persona INT;
     DECLARE id INT;
 
@@ -242,8 +242,8 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `insertpersona` (IN `p_nro_identidad
     
     IF existe_persona = 0 THEN
         -- Insertar la nueva persona
-        INSERT INTO persona (nro_identidad, razon_social, telefono, correo, departamento, provincia, distrito, cod_postal, direccion, rol, password, estado, fecha_reg) 
-        VALUES (p_nro_identidad, p_razon_social, p_telefono, p_correo, p_departamento, p_provincia, p_distrito, p_cod_postal, p_direccion, p_rol, p_password, p_estado, p_fecha_reg);
+        INSERT INTO persona (nro_identidad, razon_social, telefono, correo, departamento, provincia, distrito, cod_postal, direccion, rol, password ) 
+        VALUES (p_nro_identidad, p_razon_social, p_telefono, p_correo, p_departamento, p_provincia, p_distrito, p_cod_postal, p_direccion, p_rol, p_password);
         
         -- Obtener el ID de la nueva persona insertada
         SET id = LAST_INSERT_ID();
@@ -327,7 +327,8 @@ INSERT INTO `categoria` (`id`, `nombre`, `detalle`) VALUES
 (4, 'vzdv', 'sdvsd'),
 (5, 'etfh', 'sdgfh'),
 (6, 'Vinos red xtreme', 'russ kaya'),
-(7, 'ggh', 'hgh');
+(7, 'ggh', 'hgh'),
+(8, 'rojas verdes', 'weawe');
 
 -- --------------------------------------------------------
 
@@ -390,19 +391,19 @@ CREATE TABLE `pagos` (
 
 CREATE TABLE `persona` (
   `id` int(11) NOT NULL,
-  `nro_identidad` varchar(11) DEFAULT NULL,
-  `razon_social` varchar(130) DEFAULT NULL,
-  `telefono` varchar(15) DEFAULT NULL,
-  `correo` varchar(100) DEFAULT NULL,
-  `departamento` varchar(20) DEFAULT NULL,
-  `provincia` varchar(30) DEFAULT NULL,
-  `distrito` varchar(50) DEFAULT NULL,
-  `cod_postal` int(5) DEFAULT NULL,
-  `direccion` varchar(100) DEFAULT NULL,
-  `rol` varchar(15) DEFAULT NULL,
-  `password` varchar(500) DEFAULT NULL,
-  `estado` varchar(1) DEFAULT NULL,
-  `fecha_reg` datetime DEFAULT NULL
+  `nro_identidad` varchar(11) NOT NULL,
+  `razon_social` varchar(130) NOT NULL,
+  `telefono` varchar(15) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `departamento` varchar(20) NOT NULL,
+  `provincia` varchar(30) NOT NULL,
+  `distrito` varchar(50) NOT NULL,
+  `cod_postal` int(5) NOT NULL,
+  `direccion` varchar(100) NOT NULL,
+  `rol` varchar(15) NOT NULL,
+  `password` varchar(500) NOT NULL,
+  `estado` int(1) NOT NULL DEFAULT 1,
+  `fecha_reg` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -410,24 +411,26 @@ CREATE TABLE `persona` (
 --
 
 INSERT INTO `persona` (`id`, `nro_identidad`, `razon_social`, `telefono`, `correo`, `departamento`, `provincia`, `distrito`, `cod_postal`, `direccion`, `rol`, `password`, `estado`, `fecha_reg`) VALUES
-(1, '76122823', 'jose', '900654123', 'jose@gmail.com', 'ayacucho', 'huanta', 'huanta', 123456, 'San Martin', 'proveedor', '123', '1', '2024-12-12 00:00:00'),
-(2, '78965412', 'jota', '987456321', 'jota@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 51, 'Cedropata', 'trabajador', '123', '1', '2024-11-12 11:03:50'),
-(3, '32456a', 'sdfa<', 'sdf', 'azsxdcf', 'zx', 'zx', 'zxz', 0, 'zxc', 'zxc', 'zxc', 'z', '0000-00-00 00:00:00'),
-(4, '23', 'sdf', 'sdfg', 'szdxf', 'zsdf', 'zdx', 'sd', 0, 'sd', 'sd', 'sd', 's', '0000-00-00 00:00:00'),
-(5, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$ZIaoNV2IfuTazVEnWDWB5u1h25gEhbw9ttkli.LQgmQ7OVYJohGWO', 'a', '2024-11-15 00:00:00'),
-(6, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$9118tffZVf/GJc/B1IBGmeS/w6MkQNZoaFeGsfBMVzt72kNcefMRe', 'a', '2024-11-15 00:00:00'),
-(7, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$2V.Mf5KIvLhfAh3B/8mPzO3CITi0XIQ/A22H8vunIsh2xziXbUw.e', 'a', '2024-11-15 00:00:00'),
-(8, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$l/IkjXboGV.mcVJPCbnxiu1F61Tu/VZVR5rYuOt0.DiuNUKBDDNxS', 'a', '2024-11-15 00:00:00'),
-(9, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$i7j.6MCj7KOnLWNgcvxdRueIOQVT4VtF62ATwvbaGgij4QmujEfyi', 'a', '2024-11-15 00:00:00'),
-(10, '324a', 'sfdg', 'sdf', 'sdf', 'as', 'zxc', 'zxc', 0, 'xc', 'zxc', 'zxc', 'z', '0000-00-00 00:00:00'),
-(11, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'Proveedor', '$2y$10$abhSH3l2npzTQVblIP3eN.rO4JaaiKXUqasPWfqKd6rq0kwFIy.VK', 'a', '2024-11-21 00:00:00'),
-(12, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'Proveedor', '$2y$10$IRMXVpxxQlAG7PBUYcYz1uF2hSs2tFU083xnVbnlXygfZ0h/CLdE6', 'a', '2024-11-21 00:00:00'),
-(13, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'trabajador', '$2y$10$V939oLC6xMC301mnl0k9.eREyTffz29.LpaA1lRVlTm0/P2LXmo4y', 'a', '2024-11-21 00:00:00'),
-(14, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'trabajador', '$2y$10$bM.SB9qnJAqoq8vLkpmuGuXdyePkPhZXmQjU8KXg.nxAFQx7OtVai', 'a', '2024-11-21 00:00:00'),
-(15, '76122823', 'wqdqdqdw', 'qdqwd', 'wqdqwd', 'qww', 'wqw', 'wqw', 1234, 'wqw', 'trabajador', 'asdfg', '1', '2024-11-11 11:03:50'),
-(16, '', '', '', '', '', '', '', 0, '', '', '', '', '0000-00-00 00:00:00'),
-(17, '12222222', 'df', 'asd', 'sad', 'sd', 'sd', 'sd', 0, 'sd', 'Cliente', '$2y$10$Icvzs4OubFzAkv9BOr3Pa.suQwOT.oQHQHkKMxzPoVnoHAxEBmSHi', 'a', '2024-11-21 00:00:00'),
-(18, '1234321', 'xtreme', '234', 'wedf@gmail', 'asd', 'sd', 'sd', 0, 'asd', 'Proveedor', '$2y$10$85vl2rrNiZKq60q2zKyZrecyT2w.Ro5qOt3yV9Cz1kHQJcAjmtLf2', 'a', '2024-11-13 00:00:00');
+(1, '76122823', 'jose', '900654123', 'jose@gmail.com', 'ayacucho', 'huanta', 'huanta', 123456, 'San Martin', 'proveedor', '123', 1, '2024-12-12 00:00:00'),
+(2, '78965412', 'jota', '987456321', 'jota@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 51, 'Cedropata', 'trabajador', '123', 1, '2024-11-12 11:03:50'),
+(3, '32456a', 'sdfa<', 'sdf', 'azsxdcf', 'zx', 'zx', 'zxz', 0, 'zxc', 'zxc', 'zxc', 0, '0000-00-00 00:00:00'),
+(4, '23', 'sdf', 'sdfg', 'szdxf', 'zsdf', 'zdx', 'sd', 0, 'sd', 'sd', 'sd', 0, '0000-00-00 00:00:00'),
+(5, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$ZIaoNV2IfuTazVEnWDWB5u1h25gEhbw9ttkli.LQgmQ7OVYJohGWO', 0, '2024-11-15 00:00:00'),
+(6, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$9118tffZVf/GJc/B1IBGmeS/w6MkQNZoaFeGsfBMVzt72kNcefMRe', 0, '2024-11-15 00:00:00'),
+(7, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$2V.Mf5KIvLhfAh3B/8mPzO3CITi0XIQ/A22H8vunIsh2xziXbUw.e', 0, '2024-11-15 00:00:00'),
+(8, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$l/IkjXboGV.mcVJPCbnxiu1F61Tu/VZVR5rYuOt0.DiuNUKBDDNxS', 0, '2024-11-15 00:00:00'),
+(9, '12', 'sdf', 's<dzfx<szdf', 'asdf', '<szdxs', 'df', 'sdf', 0, 'df', 'Proveedor', '$2y$10$i7j.6MCj7KOnLWNgcvxdRueIOQVT4VtF62ATwvbaGgij4QmujEfyi', 0, '2024-11-15 00:00:00'),
+(10, '324a', 'sfdg', 'sdf', 'sdf', 'as', 'zxc', 'zxc', 0, 'xc', 'zxc', 'zxc', 0, '0000-00-00 00:00:00'),
+(11, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'Proveedor', '$2y$10$abhSH3l2npzTQVblIP3eN.rO4JaaiKXUqasPWfqKd6rq0kwFIy.VK', 0, '2024-11-21 00:00:00'),
+(12, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'Proveedor', '$2y$10$IRMXVpxxQlAG7PBUYcYz1uF2hSs2tFU083xnVbnlXygfZ0h/CLdE6', 0, '2024-11-21 00:00:00'),
+(13, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'trabajador', '$2y$10$V939oLC6xMC301mnl0k9.eREyTffz29.LpaA1lRVlTm0/P2LXmo4y', 0, '2024-11-21 00:00:00'),
+(14, '3456a', 'szdxf', 'czdxf', 'zxc', 'xc', 'xcx', 'c', 0, 'd', 'trabajador', '$2y$10$bM.SB9qnJAqoq8vLkpmuGuXdyePkPhZXmQjU8KXg.nxAFQx7OtVai', 0, '2024-11-21 00:00:00'),
+(15, '76122823', 'wqdqdqdw', 'qdqwd', 'wqdqwd', 'qww', 'wqw', 'wqw', 1234, 'wqw', 'trabajador', 'asdfg', 1, '2024-11-11 11:03:50'),
+(16, '', '', '', '', '', '', '', 0, '', '', '', 0, '0000-00-00 00:00:00'),
+(17, '12222222', 'df', 'asd', 'sad', 'sd', 'sd', 'sd', 0, 'sd', 'Cliente', '$2y$10$Icvzs4OubFzAkv9BOr3Pa.suQwOT.oQHQHkKMxzPoVnoHAxEBmSHi', 0, '2024-11-21 00:00:00'),
+(18, '1234321', 'xtreme', '234', 'wedf@gmail', 'asd', 'sd', 'sd', 0, 'asd', 'Proveedor', '$2y$10$85vl2rrNiZKq60q2zKyZrecyT2w.Ro5qOt3yV9Cz1kHQJcAjmtLf2', 0, '2024-11-13 00:00:00'),
+(19, '2002', 'ssd', '2344', '423', '4234', '423', '432', 324, '42', 'Cliente', '$2y$10$XvG5Fp1oaagpqbyrq6CTr.lVuQddqaqdMDfJ9okw5gwGAcQTGg4Du', 1, '2024-11-14 08:47:53'),
+(20, '2312', 'dsf', '42', 'sdfs', 'sfd', 'sdf', 'sfd', 2345, 'sdf', 'Cliente', '$2y$10$MHT/nlee61fse.IwGlZcZewqrw4bzgyfkJuuAIVUAHQIlRCwaRmUy', 1, '2024-11-14 09:01:14');
 
 -- --------------------------------------------------------
 
@@ -471,7 +474,9 @@ INSERT INTO `producto` (`id`, `codigo`, `nombre`, `detalle`, `precio`, `stock`, 
 (17, '018', 'Vino', 'Blanco Xtreme', 122.00, 16, 1, '2024-11-14', 'imagen', 1),
 (18, '019', 'Vino', 'Blanco Xtreme', 122.00, 16, 1, '2024-11-14', 'imagen', 1),
 (19, '20', 'vino', 'red', 11.00, 1, 1, '2024-11-12', 'imagen', 1),
-(20, '21', 'vino', 'red', 11.00, 1, 1, '2024-11-12', 'imagen', 1);
+(20, '21', 'vino', 'red', 11.00, 1, 1, '2024-11-12', 'imagen', 1),
+(21, '2222', 'fxdf', 'dfgdgdf', 0.00, 24, 1, '0000-00-00', 'er', 1),
+(22, '1212', 'sdd', 'szd', 3.00, 2, 1, '2024-11-22', 'imagen', 18);
 
 -- --------------------------------------------------------
 
@@ -573,7 +578,7 @@ ALTER TABLE `venta`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `compras`
@@ -597,13 +602,13 @@ ALTER TABLE `pagos`
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de la tabla `sesiones`
