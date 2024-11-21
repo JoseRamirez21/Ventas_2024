@@ -1,4 +1,21 @@
-async function registrarProducto() {
+  async function listar_productos(){
+    try {
+        let respuesta = await fetch(base_url+'controller/Producto.php?tipo=listar');
+        let json = await respuesta.json();
+        if(json.status){
+          
+        }
+        console.log(json);
+    } catch (error) {
+        
+    }
+    }
+    if (document.querySelector('#tbl_producto')) {
+        listar_productos();
+    }
+
+
+  async function registrarProducto() {
     let codigo = document.getElementById('codigo').value;
     let nombre = document.querySelector('#nombre').value;
     let detalle = document.querySelector('#detalle').value;
@@ -37,7 +54,7 @@ async function registrarProducto() {
     }
 }
 
-//listar categoria
+//listar categorias
 async function listar_categorias() {
     try {
         let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=listar');

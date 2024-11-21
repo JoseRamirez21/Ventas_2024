@@ -32,7 +32,9 @@ class ProductoModel{
     ){
        
             $arrRespuesta = array();
-            $respuesta = $this->conexion->query("SELECT * FROM producto");
+            $respuesta = $this->conexion->query("SELECT * FROM produc
+            
+            to");
     
             while ($objeto = $respuesta->fetch_object()) {  
                 array_push($arrRespuesta,$objeto);
