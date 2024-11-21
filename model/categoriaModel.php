@@ -28,5 +28,11 @@ public function registrarCategoria(
         $sql = $sql->fetch_object();
         return $sql;
 }
+public function obtener_categoria($id){
+    $respuesta = $this->conexion->query("SELECT * FROM categoria WHERE id='{$id}'");
+    $respuesta = $respuesta->fetch_object();
+    return $respuesta;
+}
+
 }
 ?>

@@ -3,11 +3,27 @@
         let respuesta = await fetch(base_url+'controller/Producto.php?tipo=listar');
         let json = await respuesta.json();
         if(json.status){
-          
+          let datos = json.contenido;
+          let cont = 0;
+          datos.forEach(item =>{
+            let nueva_fila = document.createElement("tr");
+            nueva_fila.id = "fila" + item.id; //el nueva_fila.id id es de crear nueva fila  y item.id es de base de datos 
+            cont+=1;
+            nueva_fila.innerHTML= `
+            <th>${cont}</th>
+            <td>${item.codigo}</td>
+            <td>${item.nombre}</td>
+            <td>${item.stock}</td>
+            <td>${item.categoria.nombre}</td>
+            <td>${item.proveedor.razon_social}</td>
+            <td>${item.options}</td>
+            `;
+            document.querySelector('#tbl_producto').appendChild(nueva_fila);
+          });
         }
         console.log(json);
     } catch (error) {
-        
+        console.log("Opps salio un error:" + error);
     }
     }
     if (document.querySelector('#tbl_producto')) {

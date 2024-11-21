@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>views/plantilla/pages/estilo.css">
-
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     
     <style>
 
@@ -34,13 +34,13 @@
     padding: 30px; /* Aumento del padding */
     background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Degradado de blanco a gris claro */
     color: #007bff; /* Azul */
-    border-radius: 10px; /* Esquinas redondeadas */
+    border-radius: 10px; 
     z-index: 1000;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3); /* Sombra sutil */
     border: 1px solid #007bff; /* Borde azul */
     animation: fadeIn 0.5s ease, fadeOut 0.5s ease 2s; /* Animaciones */
-    font-size: 20px; /* Aumento del tamaño de la letra */
+    font-size: 20px; 
 }
 
 .notification i {

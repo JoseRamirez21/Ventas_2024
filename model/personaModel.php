@@ -68,7 +68,11 @@ class PersonaModel
         }
         return $arrRespuesta;
     }
-
+    public function obtener_persona($id){
+        $respuesta = $this->conexion->query("SELECT * FROM persona WHERE id='{$id}'");
+        $respuesta = $respuesta->fetch_object();
+        return $respuesta;
+    }
 }
 
 
