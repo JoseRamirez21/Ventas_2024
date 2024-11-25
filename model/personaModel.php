@@ -41,9 +41,6 @@ class PersonaModel
         return $sql;
     }
 
-
-
-
     public function obtener_personas()
     {
         $arrRespuesta = array();
@@ -53,10 +50,6 @@ class PersonaModel
         }
         return $arrRespuesta;
     }
-
-
-
-
 
     public function obtener_trabajadores()
     {
@@ -86,6 +79,18 @@ class PersonaModel
         $respuesta = $respuesta->fetch_object();
         return $respuesta;
     }
+
+    public function obtener_proveedor_por_id($id)
+    {
+        $respuesta = $this->conexion->query("SELECT razon_social FROM persona WHERE id = '{$id}'");
+        $objeto = $respuesta->fetch_object();
+        return $objeto;
+    }
+    public function obtener_trabajador_por_id($id)
+{
+    $respuesta = $this->conexion->query("SELECT razon_social FROM persona WHERE id = '{$id}'");
+    return $respuesta->fetch_object();
+}
     
 }
 

@@ -35,7 +35,8 @@ class vistaModelo
          'admin',
          'productos',
           'categorias',
-          'personas'
+          'personas',
+          'compras'
       ];
       // if (!isset($_SESSION['sesion_venta_id'])) {
       //    return "login";

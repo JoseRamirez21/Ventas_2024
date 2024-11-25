@@ -1,10 +1,51 @@
 <?php
 require_once('../model/comprasModel.php');
-
+require_once('../model/productoModel.php');
+require_once('../model/personaModel.php');
 //instancio la clase  ComprasModel
 
 $objCompras = new ComprasModel();
+$objProducto = new ProductoModel();
+$objPersona = new PersonaModel();
+
 $tipo  = $_REQUEST['tipo'];
+
+
+if ($tipo == "listar") {
+    //respuesta 
+    $arr_Respuesta = array('status' => false, 'contenido' => '');
+    $arr_Compras = $objCompras->obtener_compras();
+    if (!empty($arr_Compras)) {
+ 
+       for ($i = 0; $i < count($arr_Compras); $i++) {
+ 
+          // Obtener producto
+          $id_producto = $arr_Compras[$i]->id_producto;
+          $r_producto = $objProducto->obtener_producto_por_id($id_producto);
+          $arr_Compras[$i]->producto = $r_producto;
+ 
+          // Obtener trabajador
+          $id_trabajador = $arr_Compras[$i]->id_trabajador;
+          $r_trabajador = $objPersona->obtener_trabajador_por_id($id_trabajador);
+          $arr_Compras[$i]->trabajador = $r_trabajador;
+ 
+          $id_Compras = $arr_Compras[$i]->id;
+         
+          $opciones = '<button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>';
+          $arr_Compras[$i]->options = $opciones;
+       }
+       $arr_Respuesta['status'] = true;
+       $arr_Respuesta['contenido'] = $arr_Compras;
+    }
+ 
+    echo json_encode($arr_Respuesta);
+ }
+
+
+
+
+
 
 if ($tipo == "registrar") {
 

@@ -38,4 +38,14 @@ class ComprasModel
         }
         return $arrRespuesta;
     }
+    public function obtener_compras()
+    {
+        $arrRespuesta = array();
+        $respuesta = $this->conexion->query("SELECT id, id_producto, cantidad, precio, id_trabajador
+FROM compras");
+        while ($objeto = $respuesta->fetch_object()) {
+            array_push($arrRespuesta, $objeto);
+        }
+        return $arrRespuesta;
+    }
 }
