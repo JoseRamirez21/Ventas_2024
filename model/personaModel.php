@@ -44,6 +44,19 @@ class PersonaModel
 
 
 
+    public function obtener_personas()
+    {
+        $arrRespuesta = array();
+        $respuesta = $this->conexion->query(" SELECT * FROM persona");
+        while ($objeto = $respuesta->fetch_object()) {
+            array_push($arrRespuesta, $objeto);
+        }
+        return $arrRespuesta;
+    }
+
+
+
+
 
     public function obtener_trabajadores()
     {
@@ -73,6 +86,7 @@ class PersonaModel
         $respuesta = $respuesta->fetch_object();
         return $respuesta;
     }
+    
 }
 
 

@@ -1,3 +1,49 @@
+// Función para listar las Personas
+async function listar_personas() {
+    try {
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=listar');
+        let json = await respuesta.json();
+
+        if (json.status) {
+
+            let datos = json.contenido;
+            let cont = 0;
+            // Agregar filas a la tabla
+            datos.forEach(item => {
+                let nueva_fila = document.createElement("tr");
+                nueva_fila.id = "fila" + item.id;
+                cont += 1
+                nueva_fila.innerHTML = `
+                 <tr>
+                        <th>${cont}</th>
+                        <td>${item.nro_identidad}</td>
+                        <td>${item.razon_social}</td>
+                        <td>${item.telefono}</td>
+                        <td>${item.correo}</td>
+                        <td>${item.departamento}</td>
+                        <td>${item.direccion}</td>
+                        <td>${item.rol}</td>
+                        <td>${item.fecha_reg}</td>
+                       <td>${item.options}</td>
+                    </tr>
+                `;
+                document.querySelector("#tbl_persona")
+                    .appendChild(nueva_fila);
+
+            });
+        };
+        console.log(json);
+    } catch (error) {
+        console.error("Error al listar a las Personas" + error);
+    }
+}
+if (document.querySelector('#tbl_persona')) {
+    listar_personas();
+}
+
+
+
+
 async function registrarPersona() {
     // Capturamos los valores del formulario
     let nro_identidad = document.getElementById('nro_identidad').value;

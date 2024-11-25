@@ -6,6 +6,31 @@ $tipo = $_REQUEST['tipo'];
 
 // instancio de la clase PersonaModel
 $objPersona = new PersonaModel();
+
+
+if ($tipo == "listar") {
+    //respuesta 
+    $arr_Respuesta = array('status' => false, 'contenido' => '');
+    $arr_Persona = $objPersona->obtener_personas();
+    if (!empty($arr_Persona)) {
+
+        for ($i = 0; $i < count($arr_Persona); $i++) {
+
+            $id_Persona = $arr_Persona[$i]->id;
+            $razon_social = $arr_Persona[$i]->razon_social;
+
+            $opciones = '<button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>';
+            $arr_Persona[$i]->options = $opciones;
+        }
+        $arr_Respuesta['status'] = true;
+        $arr_Respuesta['contenido'] = $arr_Persona;
+    }
+
+    echo json_encode($arr_Respuesta);
+}
+
+
 if ($tipo == "registrar") {
 
   if ($_POST) {
