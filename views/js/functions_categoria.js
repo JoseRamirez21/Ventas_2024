@@ -1,8 +1,40 @@
+
+async function listar_categorias() {
+    try {
+        let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=listar');
+        let json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let cont = 0;
+            datos.forEach(item => {
+                let nueva_fila = document.createElement("tr");
+                nueva_fila.id = "fila" + item.id; //el nueva_fila.id id es de crear nueva fila  y item.id es de base de datos 
+                cont += 1;
+                nueva_fila.innerHTML = `
+            <th>${cont}</th>
+            <td>${item.nombre}</td>
+            <td>${item.detalle}</td>
+            <td>${item.options}</td>
+            `;
+                document.querySelector('#tbl_categoria').appendChild(nueva_fila);
+            });
+        }
+        console.log(json);
+    } catch (error) {
+        console.log("Error al listar Categorias:" + error);
+    }
+}
+if (document.querySelector('#tbl_categoria')) {
+    listar_categorias();
+}
+
+
+
 async function registrarCategoria() {
-   
+
     let nombre = document.querySelector('#nombre').value;
     let detalle = document.querySelector('#detalle').value;
-    
+
     if (nombre == "" || detalle == "") {
         alert("Error!!, Campos vacíos");
         return;
@@ -30,3 +62,6 @@ async function registrarCategoria() {
         console.log("Oops, ocurrio un error" + e);
     }
 }
+
+
+
