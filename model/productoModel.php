@@ -13,12 +13,12 @@ class ProductoModel{
     public function registrarProducto(
         $codigo, $nombre,$detalle,
          $precio, $stock, $categoria,
-        $fecha_v, $imagen, $proveedor
+        $fecha_v, $imagen, $proveedor,$tipo_archivo
     ){
         // Ejecutar un procedimiento almacenado y el procedimiento almacena los datos de un nuevo producto en la base de datos
             $sql = $this->conexion->query("CALL insertproducto('{$codigo}',
             '{$nombre}','{$detalle}','{$precio}','{$stock}','{$categoria}',
-            '{$fecha_v}','{$imagen}','{$proveedor}')");
+            '{$fecha_v}','{$imagen}','{$proveedor}','{$tipo_archivo}')");
             $sql = $sql->fetch_object();
             return $sql;
     }
