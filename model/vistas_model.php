@@ -38,9 +38,9 @@ class vistaModelo
           'personas',
           'compras'
       ];
-      // if (!isset($_SESSION['sesion_venta_id'])) {
-      //    return "login";
-      // } validacion para inicio de sesion 
+      if (!isset($_SESSION['sesion_venta_id'])) {
+         return "login";
+      } //validacion para inicio de sesion 
       if (in_array($vista, $palabras_permitidas)) {
          if (is_file("./views/" . $vista . ".php")) {
             $contenido = "./views/" . $vista . ".php";
