@@ -114,7 +114,7 @@
 <div class="col-lg-3 col-md-4 col-sm-6 p-3">
     <div class="card" style="min-height: 00px;">
         <a href="<?php echo BASE_URL; ?>carrito">
-            <img src="https://mundolicor.com.pe/wp-content/uploads/2019/12/136-Johnnie-Walker-Black-600x600.jpg"
+            <img src="https://floreriasb.com.pe/wp-content/uploads/2022/08/LSB-14.jpg"
                 class="card-img-top" alt="...">
         </a>
         <div class="card-body br-100">
