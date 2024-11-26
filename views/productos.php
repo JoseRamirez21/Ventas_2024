@@ -49,7 +49,7 @@ td {
 }
 
 tr:hover {
-    background-color: #f1f1f1;
+    background-color: #c9c3c2;
 }
 
 .btn {
