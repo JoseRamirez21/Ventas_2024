@@ -1,62 +1,10 @@
-<!-- 
-<div class="fo1" style="padding: 150px;  width: 900px; display: block; margin: 0 auto; ">
-<form class="form1" action="" id="formRegistrarProd">
-<h3 style="cursor: pointer; color: #007bff; text-align: center;" >Agregar Nuevos Productos</h3>
-    <div>
-        <label for="codigo">Código:</label>
-        <input type="text" name="codigo" id="codigo"  placeholder="Codigo" class="form-control" required>
-    </div>
-    <div>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre"  placeholder="Nombre" class="form-control" required>
-    </div>
-    <div>
-        <label for="detalle">Detalle:</label>
-        <input type="text" name="detalle" id="detalle"  placeholder="Detalle" class="form-control" required>
-    </div>
-    <div>
-        <label for="precio">Precio:</label>
-        <input type="number" name="precio" id="precio"  placeholder="Precio" class="form-control" required>
-    </div>
-    <div>
-        <label for="stock">Stock:</label>
-        <input type="number" name="stock" id="stock"  placeholder="Stock" class="form-control" required>
-    </div>
-    <div>
-        <label for="categoria">Categoría:</label>
-
-        <select name="categoria" id="categoria" class="form-control"  placeholder="Categoria" required>  <option value="">Seleccionar</option></select>
-       
-    </div>
-    <div>
-    <label for="Fecha de Vencimiento">Fecha de Vencimiento:</label><br>
-    <input type="date" name="fecha_v" id="fecha_v" placeholder="Fecha de Vencimiento" class="form-control" required>
-    </div>
-    <div>
-        <label for="img">Imagen del Producto:</label>
-        <input type="file" name="imagen" id="imagen"   class="form-control" required>
-    </div>
-    <div>
-        <label for="proveedor">Proveedor:</label>
-        
-        <select name="proveedor" id="proveedor" class="form-control"  placeholder="Proveedor" required>  <option value="">Seleccionar</option></select>
-    </div>
-    <br>
-
-    <button style="width: 30%; display: block; margin: 0 auto;" type="button" class="btn btn-success" onclick="registrarProducto();">Registrar</button>
-</form>
-</div>
-<script src="<?php echo BASE_URL;?>views/js/functions_productos.js"></script>
-<script>listar_categorias();</script>
-<script>listar_proveedores();</script> -->
-
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar Nuevos Productos</title>
+    <title>Editar Los Productos</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
@@ -89,7 +37,7 @@
 <body>
     <div class="fo1" style="margin-top : 150px;">
         <form class="form1" action="" id="formRegistrarProd" style="width: 100%;">
-            <h3 class="text-center"><i class="fas fa-plus-circle"></i> Agregar Nuevos Productos</h3>
+            <h3 class="text-center"><i class="fas fa-plus-circle"></i> Editar Los Productos</h3>
             <div class="form-group">
                 <label for="codigo">Código:</label>
                 <input type="text" name="codigo" id="codigo" placeholder="Código" class="form-control" required>
@@ -106,10 +54,10 @@
                 <label for="precio">Precio:</label>
                 <input type="number" name="precio" id="precio" placeholder="Precio" class="form-control" required>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="stock">Stock:</label>
                 <input type="number" name="stock" id="stock" placeholder="Stock" class="form-control" required>
-            </div>
+            </div> -->
             <div class="form-group">
                 <label for="categoria">Categoría:</label>
                 <select name="categoria" id="categoria" class="form-control" required>
@@ -145,6 +93,11 @@
     <script>
         listar_categorias();
         listar_proveedores();
+    </script>
+    <script>
+        //http://localhost/Ventas_2024/editar-producto/1
+        const id_p=<?php $pagina=explode("/",$_GET['views']); echo $pagina['1'];?>;
+        ver_producto(id_p);
     </script>
 </body>
 </html>

@@ -117,3 +117,34 @@ async function listar_proveedores() {
         console.log("Error al cargar Proveedor " + e);
     }
 }
+
+// Ver producto
+async function ver_producto(id){
+    const formData = new FormData();
+    formData.append('id_producto', id);
+    try {
+        let respuesta = await fetch(base_url+'controller/Producto.php?tipo=ver',{
+            method: 'POST',
+            mode: 'cors',
+            cache:'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#codigo').value = json.contenido.codigo;
+            document.querySelector('#nombre').value = json.contenido.nombre;
+            document.querySelector('#detalle').value = json.contenido.detalle;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#fecha_v').value = json.contenido.fecha_vencimiento;
+            document.querySelector('#categoria').value = json.contenido.id_categoria;
+            document.querySelector('#imagen').value = json.contenido.imagen;
+            document.querySelector('#proveedor').value = json.contenido.id_proveedor;
+        }else{
+            window.location = base_url+"productos";
+        }
+
+        console.log(json);
+    } catch (error) {
+        console.log("Opps ocurrio un error" + error);
+    }
+}

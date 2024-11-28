@@ -28,11 +28,12 @@ if ($tipo == "listar") {
           $id_proveedor= $arr_Producto[$i]->id_proveedor;
           $r_proveedor = $objPersona->obtener_persona($id_proveedor);
           $arr_Producto[$i]->proveedor=$r_proveedor;
-
+          
             $id_producto = $arr_Producto[$i]->id;
             $nombre = $arr_Producto[$i]->nombre;
-            $opciones = '<button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
-                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>';
+            // //localhost/editar-producto/4                                                             
+            $opciones = '<a href=" '.BASE_URL.'editar-producto/'.$id_producto.'"><button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button></a>
+                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"  onclick="eliminar_producto('.$id_producto.');"></i></button>';  //eliminar_producto(va llamar al id);
              $arr_Producto[$i]->options = $opciones;
         }
         $arr_Respuesta['status'] = true;
@@ -91,8 +92,17 @@ if($tipo=="registrar"){
     }
 }
 
-if($tipo=="listar"){
-
+if($tipo=="ver"){
+// print_r($_POST);
+$id_producto = $_POST['id_producto'];
+$arr_Respuesta = $objProducto->verProducto($id_producto);
+// print_r($arr_Respuesta);eso es para hacer la prueba 
+if(empty($arr_Respuesta)){
+  $response = array('status' => false, 'mensaje' =>"Error, No hay informacion");
+}else{
+  $response = array('status' => true, 'mensaje' => "Datos Encontrados", 'contenido' =>$arr_Respuesta);
+}
+echo json_encode($response);
 }
 
 
