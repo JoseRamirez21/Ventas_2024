@@ -76,6 +76,41 @@ tr:hover {
 .btn i {
     margin-right: 5px;
 }
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center; /* Centra el botón verticalmente */
+    height: 100%; /* Asegura que el contenedor tenga suficiente altura */
+}
+.btn-warning {
+    border-radius: 50px; /* Bordes redondeados */
+    padding: 12px 30px; /* Aumento de tamaño del botón */
+    font-size: 1.1rem; /* Tamaño de fuente más grande */
+    font-weight: 600; /* Fuente más gruesa */
+    color: white; /* Texto blanco */
+    background: linear-gradient(45deg, #ff8c00, #f7b731); /* Degradado naranja a amarillo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Manito al pasar el ratón */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    transition: all 0.4s ease; /* Transiciones suaves */
+}
+
+.btn-warning:hover {
+    background: linear-gradient(45deg, #f7b731, #ff8c00); /* Cambio de degradado al pasar el ratón */
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.btn-warning:active {
+    transform: translateY(2px); /* Efecto de presión al hacer clic */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Sombra suave al hacer clic */
+}
+
+.btn-warning i {
+    margin-right: 8px; /* Espaciado entre el icono y el texto */
+    font-size: 1.2rem; /* Icono un poco más grande */
+}
+
     </style>
 </head>
 <body>
@@ -93,6 +128,11 @@ tr:hover {
 
     </tbody>
 </table>
+</div>
+<div class="btn-container">
+    <button type="button" class="btn btn-warning" onclick="window.history.back();">
+        <i class="fas fa-arrow-left"></i> Regresar
+    </button>
 </div>
 </body>
 </html>

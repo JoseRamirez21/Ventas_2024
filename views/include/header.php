@@ -435,10 +435,14 @@
                             <li></li>
                         </ul>
                     </div>
+                    <!-- Botón para acceder al área de administración -->
+     <a class="btn btn-outline-secondary mx-3" href="<?php echo BASE_URL; ?>inicioadmin" title="Administrar">
+            <i class="fas fa-user-shield"></i> 
+        </a>
                     <a class="btn btn-outline-secondary mx-3" href="<?php echo BASE_URL; ?>carrito" title="Ver Carrito">
     <i class="fas fa-shopping-cart"></i>
-</a>
-                </div>
+    </a>
+    </div> 
             </nav>
             <nav class="navbar navbar-expand-lg category-menu">
                 <div class="container-fluid d-flex justify-content-center">
