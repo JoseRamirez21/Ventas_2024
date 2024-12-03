@@ -92,7 +92,7 @@ tr:hover {
     <th>Direccion</th>
     <th>Rol</th>
     <th>Fecharegistro</th>
-    <th style="width: 30px;">Acciones</th>
+    <th>Acciones</th>
 </tr>
     </thead>
     <tbody id="tbl_persona">
