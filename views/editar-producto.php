@@ -32,6 +32,84 @@
         .btn-success {
             border-radius: 20px;
         }
+        .btn-success,.btn-secondary {
+    border-radius: 20px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido del botón */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    margin-top: 20px;
+}
+/* Contenedor para centrar los botones */
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    height: 100%; /* Asegura que el contenedor tenga suficiente altura */
+    gap: 20px; /* Espacio entre los botones */
+}
+
+/* Estilo para el botón de registrar (btn-success) */
+.btn-success {
+    border-radius: 50px; /* Bordes redondeados */
+    padding: 12px 30px; /* Aumento de tamaño del botón */
+    font-size: 1.1rem; /* Tamaño de fuente más grande */
+    font-weight: 600; /* Fuente más gruesa */
+    color: white; /* Texto blanco */
+    background: linear-gradient(45deg, #28a745, #34d058); /* Degradado verde */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Manito al pasar el ratón */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    transition: all 0.4s ease; /* Transiciones suaves */
+}
+
+.btn-success:hover {
+    background: linear-gradient(45deg, #34d058, #28a745); /* Cambio de degradado al pasar el ratón */
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.btn-success:active {
+    transform: translateY(2px); /* Efecto de presión al hacer clic */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Sombra suave al hacer clic */
+}
+
+.btn-success i {
+    margin-right: 8px; /* Espaciado entre el icono y el texto */
+    font-size: 1.2rem; /* Icono un poco más grande */
+}
+
+/* Estilo para el botón de regresar (btn-secondary) */
+.btn-secondary {
+    border-radius: 50px; /* Bordes redondeados */
+    padding: 12px 30px; /* Aumento de tamaño del botón */
+    font-size: 1.1rem; /* Tamaño de fuente más grande */
+    font-weight: 600; /* Fuente más gruesa */
+    color: white; /* Texto blanco */
+    background: linear-gradient(45deg, #6c757d, #adb5bd); /* Degradado gris */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Manito al pasar el ratón */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    transition: all 0.4s ease; /* Transiciones suaves */
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(45deg, #adb5bd, #6c757d); /* Cambio de degradado al pasar el ratón */
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.btn-secondary:active {
+    transform: translateY(2px); /* Efecto de presión al hacer clic */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Sombra suave al hacer clic */
+}
+
+.btn-secondary i {
+    margin-right: 8px; /* Espaciado entre el icono y el texto */
+    font-size: 1.2rem; /* Icono un poco más grande */
+}
+
     </style>
 </head>
 <body>
@@ -80,9 +158,17 @@
                     <!-- Opciones se agregarán dinámicamente -->
                 </select>
             </div>
-            <button type="button" class="btn btn-success btn-block" onclick="registrarProducto();">
+            <!-- <button type="button" class="btn btn-success btn-block" onclick="registrarProducto();">
                 <i class="fas fa-check"></i> Registrar
-            </button>
+            </button> -->
+            <div class="btn-container">
+    <button type="button" class="btn btn-success btn-block" onclick="registrarCategoria();">
+        <i class="fas fa-check"></i> Registrar
+    </button>
+    <button type="button" class="btn btn-secondary" onclick="window.history.back();">
+        <i class="fas fa-arrow-left"></i> Regresar
+    </button>
+</div>
         </form>
     </div>
 

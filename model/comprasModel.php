@@ -48,4 +48,9 @@ FROM compras");
         }
         return $arrRespuesta;
     }
+    public function verCompra($id){
+        $sql = $this->conexion->query("SELECT * FROM compras WHERE id='{$id}'");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
 }

@@ -1,59 +1,3 @@
-<!-- <div class="fo1" style="padding: 150px; width: auto; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
-    <form class="form1" action="" id="formRegistrarPer"  style="width: 60%;">
-    <h3 style="cursor: pointer; color: #007bff; text-align: center;" >Agregar Nueva Persona</h3>
-    <div>
-    <label for="numero_identidad">Número de Identidad:</label>
-    <input type="text" name="numero_identidad" id="nro_identidad" placeholder="Número de Identidad" class="form-control" required>
-</div>
-<div>
-    <label for="razon_social">Razón Social:</label>
-    <input type="text" name="razon_social" id="razon_social" placeholder="Razón Social" class="form-control" required>
-</div>
-<div>
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" class="form-control" required>
-</div>
-<div>
-    <label for="correo">Correo Electrónico:</label>
-    <input type="email" name="correo" id="correo" placeholder="Correo Electrónico" class="form-control" required>
-</div>
-<div>
-    <label for="departamento">Departamento:</label>
-    <input type="text" name="departamento" id="departamento" placeholder="Departamento" class="form-control" required>
-</div>
-<div>
-    <label for="provincia">Provincia:</label>
-    <input type="text" name="provincia" id="provincia" placeholder="Provincia" class="form-control" required>
-</div>
-<div>
-    <label for="distrito">Distrito:</label>
-    <input type="text" name="distrito" id="distrito" placeholder="Distrito" class="form-control" required>
-</div>
-<div>
-    <label for="cod_postal">Código Postal:</label>
-    <input type="number" name="cod_postal" id="cod_postal" placeholder="Código Postal" class="form-control" required>
-</div>
-<div>
-    <label for="direccion">Dirección:</label>
-    <input type="text" name="direccion" id="direccion" placeholder="Dirección" class="form-control" required>
-</div>
-<div>
-    <label for="rol">Rol:</label>
-   
-    <select name="rol" id="rol" class="form-control" placeholder="Rol" required>
-        <option value="">Seleccionar</option>
-        <option value="Proveedor">Proveedor</option>
-        <option value="Cliente">Cliente</option>
-    </select>
-</div>
-
-<br>
-<button type="button" class="btn btn-success" style="width: 30%; display: block; margin: 0 auto;" type="button" class="btn btn-success" onclick="registrarPersona();">Registrar</button>
-
-<script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
-
-</div> -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -215,7 +159,7 @@
                 </select>
             </div>
            <div>
-           <button type="button" class="btn btn-success btn-block" onclick="registrarPersona();">
+           <button type="button" class="btn btn-success btn-block" onclick="registrarProducto();">
                 <i class="fas fa-check"></i> Registrar
             </button>
             <button type="button" class="btn btn-secondary"  onclick="window.history.back();">
@@ -224,10 +168,16 @@
            </div>
         </form>
     </div>
-
+   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
+
+    <script>
+        //http://localhost/Ventas_2024/editar-producto/1
+        const id_pe=<?php $pagina=explode("/",$_GET['views']); echo $pagina['1'];?>;
+        ver_persona(id_pe);
+    </script>
 </body>
 </html>

@@ -19,8 +19,8 @@ if ($tipo == "listar") {
             $id_Persona = $arr_Persona[$i]->id;
             $razon_social = $arr_Persona[$i]->razon_social;
 
-            $opciones = '<button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
-                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>';
+            $opciones = '<a href=" '.BASE_URL.'editar-persona/'.$id_Persona.'"><button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button></a>
+                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"  onclick="eliminar_persona('.$id_Persona.');"></i></button>';  //eliminar_categoria(va llamar al id);
             $arr_Persona[$i]->options = $opciones;
         }
         $arr_Respuesta['status'] = true;
@@ -134,4 +134,16 @@ if ($tipo == "listar_trabajador") {
 
   echo json_encode($arr_Respuesta);
 }
+if($tipo=="ver"){
+  // print_r($_POST);
+  $id_persona = $_POST['id_persona'];
+  $arr_Respuesta = $objPersona->verPersona($id_persona);
+  // print_r($arr_Respuesta);eso es para hacer la prueba 
+  if(empty($arr_Respuesta)){
+    $response = array('status' => false, 'mensaje' =>"Error, No hay informacion");
+  }else{
+    $response = array('status' => true, 'mensaje' => "Datos Encontrados", 'contenido' =>$arr_Respuesta);
+  }
+  echo json_encode($response);
+  }
 ?>

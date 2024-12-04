@@ -116,3 +116,31 @@ async function listar_trabajadores() {
         console.log("Error al cargar trabajador " + e);
     }
 }
+
+//Ver Compras
+async function ver_compra(id){
+    const formData = new FormData();
+    formData.append('id_compra', id);
+    try {
+        let respuesta = await fetch(base_url+'controller/Compra.php?tipo=ver',{
+            method: 'POST',
+            mode: 'cors',
+            cache:'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#codigo').value = json.contenido.codigo;
+            document.querySelector('#id_producto').value = json.contenido.id_producto;
+            document.querySelector('#cantidad').value = json.contenido.cantidad;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#trabajador').value = json.contenido.trabajador;
+        }else{
+            window.location = base_url+"compras";
+        }
+
+        console.log(json);
+    } catch (error) {
+        console.log("Opps ocurrio un error" + error);
+    }
+}
