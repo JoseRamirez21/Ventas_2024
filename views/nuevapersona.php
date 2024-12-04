@@ -208,6 +208,8 @@
                 <label for="rol">Rol:</label>
                 <select name="rol" id="rol" class="form-control" required>
                     <option value="">Seleccionar</option>
+                    <option value="Administrador">Administrador</option>
+                    <option value="Trabajador">Trabajador</option>
                     <option value="Proveedor">Proveedor</option>
                     <option value="Cliente">Cliente</option>
                 </select>
