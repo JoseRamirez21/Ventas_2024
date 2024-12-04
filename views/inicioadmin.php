@@ -46,14 +46,27 @@
             font-size: 50px; /* Tamaño de icono aumentado */
             margin-bottom: 15px;
         }
-        .text-success { background-color: #dff0d8; }
-        .text-primary { background-color: #d9edf7; }
-        .text-warning { background-color: #fcf8e3; }
-        .text-danger { background-color: #f2dede; }
+        .btn-back {
+            position: absolute;
+            top: 140px;
+            right: 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            padding: 10px 20px;
+            font-size: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #0056b3;
+            color: white;
+        }
     </style>
 </head>
 <body>
-
+<a href="<?php echo BASE_URL; ?>inicio" class="btn btn-primary btn-back">
+    <i class="fas fa-arrow-left"></i> Regresar a Inicio
+</a>
 <div class="container admin-panel" style="margin-top: 200px;">
     <h1 class="text-center">Bienvenido al Panel de Administración</h1>
     <div class="d-flex flex-row justify-content-center">
@@ -98,7 +111,6 @@
         </div>
     </div>
 </div>
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
