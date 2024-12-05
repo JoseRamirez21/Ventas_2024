@@ -114,11 +114,13 @@
 </head>
 <body>
     <div class="fo1" style="margin-top : 150px;">
-        <form class="form1" action="" id="formEditProd" style="width: 100%;">
+        <form class="form1" action="" id="formActualizar" style="width: 100%;">
             <h3 class="text-center"><i class="fas fa-plus-circle"></i> Editar Los Productos</h3>
+            <input type="hidden" name="id_producto" id="id_producto">
+            <input type="hidden" name="img" id="img">
             <div class="form-group">
                 <label for="codigo">Código:</label>
-                <input type="text" name="codigo" id="codigo" placeholder="Código" class="form-control" required>
+                <input type="text" name="codigo" id="codigo" placeholder="Código" class="form-control" readonly>
             </div>
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
@@ -150,6 +152,7 @@
             <div class="form-group">
                 <label for="imagen">Imagen del Producto:</label>
                 <input type="file" name="imagen" id="imagen" class="form-control" >
+                
             </div>
             <div class="form-group">
                 <label for="proveedor">Proveedor:</label>
@@ -162,8 +165,8 @@
                 <i class="fas fa-check"></i> Registrar
             </button> -->
             <div class="btn-container">
-    <button type="button" class="btn btn-success btn-block" onclick="actualizarProducto(id_p);">
-        <i class="fas fa-check"></i> Registrar
+    <button type="button" class="btn btn-success btn-block" onclick="actualizar_producto();">
+        <i class="fas fa-check"></i> Actualizar
     </button>
     <button type="button" class="btn btn-secondary" onclick="window.history.back();">
         <i class="fas fa-arrow-left"></i> Regresar

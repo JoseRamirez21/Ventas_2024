@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-12-2024 a las 03:23:49
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Tiempo de generación: 05-12-2024 a las 18:58:44
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `ventas_2024`
+-- Base de datos: `licoreria_bd`
 --
 
 DELIMITER $$
@@ -50,8 +50,9 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarpersona` (IN `p_id` INT(1
     SELECT p_id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarproducto` (IN `p_id` INT(11), IN `p_codigo` VARCHAR(20), IN `p_nombre` VARCHAR(30), IN `p_detalle` VARCHAR(100), IN `p_precio` DECIMAL(6,2), IN `p_id_categoria` INT(11), IN `p_fecha_vencimiento` DATE, IN `p_imagen` VARCHAR(100), IN `p_id_proveedor` INT(11))   BEGIN
-	UPDATE producto SET codigo=p_codigo,nombre=p_nombre,detalle=p_detalle,precio=p_precio,id_categoria=p_id_categoria,fecha_vencimiento=p_fecha_vencimiento,imagen=p_imagen,id_proveedor=p_id_proveedor WHERE id=p_id;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarproducto` (IN `p_id` INT(11), IN `p_nombre` VARCHAR(30), IN `p_detalle` VARCHAR(100), IN `p_precio` DECIMAL(6,2), IN `p_id_categoria` INT(11), IN `p_fecha_vencimiento` DATE, IN `p_id_proveedor` INT(11))   BEGIN
+	UPDATE producto SET 
+  nombre=p_nombre,detalle=p_detalle,precio=p_precio,id_categoria=p_id_categoria,fecha_vencimiento=p_fecha_vencimiento,id_proveedor=p_id_proveedor WHERE id=p_id;
     SELECT p_id;
 END$$
 
@@ -413,7 +414,8 @@ CREATE TABLE `persona` (
 INSERT INTO `persona` (`id`, `nro_identidad`, `razon_social`, `telefono`, `correo`, `departamento`, `provincia`, `distrito`, `cod_postal`, `direccion`, `rol`, `password`, `estado`, `fecha_reg`) VALUES
 (2, '78965412', 'jota', '987456321', 'jota@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 51, 'Cedropata', 'trabajador', '123', 1, '2024-11-12 11:03:50'),
 (20, '2312', 'dsf', '42', 'sdfs', 'sfd', 'sdf', 'sfd', 2345, 'sdf', 'Cliente', '$2y$10$MHT/nlee61fse.IwGlZcZewqrw4bzgyfkJuuAIVUAHQIlRCwaRmUy', 1, '2024-11-14 09:01:14'),
-(21, '76122823', 'Jose Carlos', '901267943', 'josexitorap@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 5121, 'Plaza Central', 'Proveedor', '$2y$10$Lm8pJx1ajvdMjk5qozVPOeojbz/ilVnJo66mmeuuHEXLf.Kq1D3DW', 1, '2024-12-02 19:11:46');
+(21, '76122823', 'Jose Carlos', '901267943', 'josexitorap@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 5121, 'Plaza Central', 'Proveedor', '$2y$10$Lm8pJx1ajvdMjk5qozVPOeojbz/ilVnJo66mmeuuHEXLf.Kq1D3DW', 1, '2024-12-02 19:11:46'),
+(22, '76122822', 'Importec SAC', '987564123', 'etfgrstg@gmail.com', 'Lima', 'Lima', 'Lima', 245, 'Lima', 'Proveedor', '$2y$10$ckmH0/CUZzJIPFZEyc1iz.0jA9r2COXYvw1Fa.RkcM84Uz7SZckAi', 1, '2024-12-05 10:10:29');
 
 -- --------------------------------------------------------
 
@@ -439,9 +441,11 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id`, `codigo`, `nombre`, `detalle`, `precio`, `stock`, `id_categoria`, `fecha_vencimiento`, `imagen`, `id_proveedor`) VALUES
-(2, '002', 'whisky', 'real good', 45.00, 4, 2, '2024-10-10', 'whisky.png', 2),
-(10, '010', 'whisky', 'xtreme full', 34.00, 40, 1, '2024-10-03', '1.png', 2),
-(14, '015', 'Vino', 'Blanco', 12.00, 16, 1, '2024-11-14', 'imagen', 2);
+(2, '002', 'whisky', 'real good1', 45.00, 4, 2, '2024-10-10', 'whisky.png', 21),
+(10, '010', 'whisky', 'xtreme full', 34.00, 40, 1, '2024-10-03', '1.png', 22),
+(14, '015', 'Vino', 'Blanco', 12.00, 16, 1, '2024-11-14', 'imagen', 21),
+(27, '1010', 'Will', 'Black', 12.00, 4, 11, '2024-12-10', '27.jpg', 21),
+(28, '1111', 'admin', 'qw', 12.00, 12, 14, '2024-12-17', '28.jpg', 22);
 
 -- --------------------------------------------------------
 
@@ -567,13 +571,13 @@ ALTER TABLE `pagos`
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT de la tabla `sesiones`

@@ -131,6 +131,8 @@ async function ver_producto(id){
         });
         json = await respuesta.json();
         if (json.status) {
+            document.querySelector('#id_producto').value = json.contenido.id;
+            document.querySelector('#img').value = json.contenido.imagen;
             document.querySelector('#codigo').value = json.contenido.codigo;
             document.querySelector('#nombre').value = json.contenido.nombre;
             document.querySelector('#detalle').value = json.contenido.detalle;
@@ -152,42 +154,21 @@ async function ver_producto(id){
 
 //actualizar producto
 
-async function actualizarProducto(id) {
-    let codigo = document.getElementById('codigo').value;
-    let nombre = document.querySelector('#nombre').value;
-    let detalle = document.querySelector('#detalle').value;
-    let precio = document.querySelector('#precio').value;
-    // let stock = document.querySelector('#stock').value;
-    let categoria = document.querySelector('#categoria').value;
-    let fecha_v = document.querySelector('#fecha_v').value;
-    let img = document.querySelector('#imagen').value;
-    let proveedor = document.querySelector('#proveedor').value;
-    if (codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == ""
-        || categoria == "" || fecha_v == "" || img == "" || proveedor == "") {
-        alert("Error!!, Campos vacíos");
-        return;
-    }
+async function actualizar_producto() {
+    const datos = new FormData();
     try {
-        //capturamos datos del formulario editar-producto.php
-        const datos = new FormData(formEditProd);
-        datos.append('id_producto' , id);
+        //capturamos datos del formulario nuevoproducto.php
+        const datos = new FormData(formActualizar);
         //enviamos datos hacia el controlador
-        let respuesta1 = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
             body: datos
         });
-        json = await respuesta1.json();
-        if (json.status) {
-            swal("registro", json.mensaje, "success");
-        } else {
-            swal("registro", json.mensaje, "error");
-        }
-        console.log(json);
-
 
     } catch (e) {
         console.log("Oops, ocurrio un error" + e);
     }
+   
 }
