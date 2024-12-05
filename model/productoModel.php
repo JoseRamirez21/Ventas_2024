@@ -45,14 +45,29 @@ class ProductoModel{
             $objeto = $respuesta->fetch_object();
             return $objeto;
         }
+
 public function verProducto($id){
-    $sql = $this->conexion->query("SELECT * FROM producto WHERE id='$id'");
+    $sql = $this->conexion->query("SELECT * FROM producto WHERE id='{$id}'");
     $sql = $sql->fetch_object();
     return $sql;
 }
 
-    }
-    
 
+
+public function actualizar_producto(
+    $codigo, $nombre,$detalle,
+     $precio, $stock, $categoria,
+    $fecha_v, $imagen, $proveedor,$tipo_archivo
+){
+    // Ejecutar un procedimiento almacenado y el procedimiento almacena los datos de un nuevo producto en la base de datos
+        $sql = $this->conexion->query("CALL actualizarproducto('{$codigo}',
+        '{$nombre}','{$detalle}','{$precio}','{$stock}','{$categoria}',
+        '{$fecha_v}','{$imagen}','{$proveedor}','{$tipo_archivo}')");
+        $sql = $sql->fetch_object();
+        return $sql;
+}
+    }
+   
+    
 
 ?>

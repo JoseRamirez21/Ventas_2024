@@ -114,7 +114,7 @@
 </head>
 <body>
     <div class="fo1" style="margin-top : 150px;">
-        <form class="form1" action="" id="formRegistrarProd" style="width: 100%;">
+        <form class="form1" action="" id="formEditProd" style="width: 100%;">
             <h3 class="text-center"><i class="fas fa-plus-circle"></i> Editar Los Productos</h3>
             <div class="form-group">
                 <label for="codigo">Código:</label>
@@ -149,7 +149,7 @@
             </div>
             <div class="form-group">
                 <label for="imagen">Imagen del Producto:</label>
-                <input type="file" name="imagen" id="imagen" class="form-control" required>
+                <input type="file" name="imagen" id="imagen" class="form-control" >
             </div>
             <div class="form-group">
                 <label for="proveedor">Proveedor:</label>
@@ -162,7 +162,7 @@
                 <i class="fas fa-check"></i> Registrar
             </button> -->
             <div class="btn-container">
-    <button type="button" class="btn btn-success btn-block" onclick="registrarCategoria();">
+    <button type="button" class="btn btn-success btn-block" onclick="actualizarProducto(id_p);">
         <i class="fas fa-check"></i> Registrar
     </button>
     <button type="button" class="btn btn-secondary" onclick="window.history.back();">

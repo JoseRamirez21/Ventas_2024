@@ -77,7 +77,7 @@ async function ver_categoria(id){
         });
         json = await respuesta.json();
         if (json.status) {
-            document.querySelector('#codigo').value = json.contenido.codigo;
+            // document.querySelector('#codigo').value = json.contenido.codigo;
             document.querySelector('#nombre').value = json.contenido.nombre;
             document.querySelector('#detalle').value = json.contenido.detalle;
         }else{

@@ -141,8 +141,8 @@
     <script src="<?php echo BASE_URL;?>views/js/functions_categoria.js"></script>
     <script>
         //http://localhost/Ventas_2024/editar-producto/1
-        const id_c=<?php $pagina=explode("/",$_GET['views']); echo $pagina['1'];?>;
-        ver_categoria(id_c);
+        const id_p=<?php $pagina=explode("/",$_GET['views']); echo $pagina['1'];?>;
+        ver_categoria(id_p);
     </script>
 </body>
 </html>

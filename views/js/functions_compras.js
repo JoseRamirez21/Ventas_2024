@@ -130,11 +130,11 @@ async function ver_compra(id){
         });
         json = await respuesta.json();
         if (json.status) {
-            document.querySelector('#codigo').value = json.contenido.codigo;
+            // document.querySelector('#codigo').value = json.contenido.codigo;
             document.querySelector('#id_producto').value = json.contenido.id_producto;
             document.querySelector('#cantidad').value = json.contenido.cantidad;
             document.querySelector('#precio').value = json.contenido.precio;
-            document.querySelector('#trabajador').value = json.contenido.trabajador;
+            document.querySelector('#trabajador').value = json.contenido.id_trabajador;
         }else{
             window.location = base_url+"compras";
         }

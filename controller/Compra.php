@@ -42,11 +42,6 @@ if ($tipo == "listar") {
     echo json_encode($arr_Respuesta);
  }
 
-
-
-
-
-
 if ($tipo == "registrar") {
 
     if ($_POST) {
@@ -75,4 +70,25 @@ if ($tipo == "registrar") {
             echo json_encode($arr_Respuesta);
         }
     }
+}
+
+if ($tipo == "ver") {
+    // Verifica si se ha recibido el ID de la compra
+    $id_compra = $_POST['id_compra'] ;
+
+    if ($id_compra) {
+        // Llama al método del modelo para obtener la compra
+        $arr_Respuesta = $objCompras->verCompra($id_compra);
+
+        // Comprueba si se obtuvo información
+        if (empty($arr_Respuesta)) {
+            $response = array('status' => false, 'mensaje' => "Error, No hay información");
+        } else {
+            $response = array('status' => true, 'mensaje' => "Datos Encontrados", 'contenido' => $arr_Respuesta);
+        }
+    } else {
+        $response = array('status' => false, 'mensaje' => "Error, ID de compra no proporcionado");
+    }
+
+    echo json_encode($response);
 }

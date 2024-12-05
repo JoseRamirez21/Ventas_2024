@@ -135,7 +135,7 @@
                 </select>
             </div>
             <div>
-            <button type="button" class="btn btn-success btn-block" onclick="registrarProducto();">
+            <button type="button" class="btn btn-success btn-block" onclick="registrarCompra();">
                 <i class="fas fa-check"></i> Registrar
             </button>
             <button type="button" class="btn btn-secondary"  onclick="window.history.back();">
@@ -153,8 +153,8 @@
 <script>listar_trabajadores();</script>
 <script>
         //http://localhost/Ventas_2024/editar-producto/1
-        const id_co=<?php $pagina=explode("/",$_GET['views']); echo $pagina['1'];?>;
-        ver_compra(id_co);
+        const id_p=<?php $pagina=explode("/",$_GET['views']); echo $pagina['1'];?>;
+        ver_compra(id_p);
     </script>
 </body>
 </html>

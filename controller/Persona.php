@@ -134,10 +134,12 @@ if ($tipo == "listar_trabajador") {
 
   echo json_encode($arr_Respuesta);
 }
+
+
 if($tipo=="ver"){
   // print_r($_POST);
-  $id_persona = $_POST['id_persona'];
-  $arr_Respuesta = $objPersona->verPersona($id_persona);
+  $id_Persona = $_POST['id_persona'];
+  $arr_Respuesta = $objPersona->verPersona($id_Persona);
   // print_r($arr_Respuesta);eso es para hacer la prueba 
   if(empty($arr_Respuesta)){
     $response = array('status' => false, 'mensaje' =>"Error, No hay informacion");

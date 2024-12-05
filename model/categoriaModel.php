@@ -33,7 +33,8 @@ public function obtener_categoria($id){
     $respuesta = $respuesta->fetch_object();
     return $respuesta;
 }
-public function verCategoria($id){
+
+public function verCategoria($id) {
     $sql = $this->conexion->query("SELECT * FROM categoria WHERE id='{$id}'");
     $sql = $sql->fetch_object();
     return $sql;
