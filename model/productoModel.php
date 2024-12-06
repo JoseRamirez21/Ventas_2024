@@ -64,15 +64,7 @@ class ProductoModel
 
 
 
-    public function actualizar_producto(
-        $id,
-        $nombre,
-        $detalle,
-        $precio,
-        $categoria,
-        $fecha_v,
-        $proveedor
-    ) {
+    public function actualizar_producto( $id, $nombre, $detalle, $precio,$categoria, $fecha_v,$proveedor) {
         // Ejecutar un procedimiento almacenado y el procedimiento almacena los datos de un nuevo producto en la base de datos
         $sql = $this->conexion->query("CALL actualizarproducto('{$id}',
         '{$nombre}','{$detalle}','{$precio}','{$categoria}',
@@ -80,4 +72,49 @@ class ProductoModel
         $sql = $sql->fetch_object();
         return $sql;
     }
+
+
+
+    public function eliminar_producto($id) {
+    // Iniciar la transacción para asegurar que ambas operaciones se realicen de manera atómica
+    $this->conexion->begin_transaction();
+
+    try {
+        // Primero, eliminar las compras asociadas al producto
+        $sql_eliminar_compras = "DELETE FROM compras WHERE id_producto = ?";
+        $query_compras = $this->conexion->prepare($sql_eliminar_compras);
+        $query_compras->bind_param("i", $id);
+
+        if (!$query_compras->execute()) {
+            // Si falla la ejecución, lanzar una excepción
+            throw new Exception("Error al eliminar las compras asociadas.");
+        }
+
+        // Luego, eliminar el producto de la tabla productos
+        $sql = "DELETE FROM producto WHERE id = ?";
+        $query = $this->conexion->prepare($sql);
+        $query->bind_param("i", $id);
+
+        if (!$query->execute()) {
+            // Si falla la ejecución, lanzar una excepción
+            throw new Exception("Error al eliminar el producto.");
+        }
+
+        // Confirmar la transacción
+        $this->conexion->commit();
+        return true; // El producto se eliminó correctamente
+    } catch (Exception $e) {
+        // Si ocurre algún error, deshacer los cambios realizados en la transacción
+        $this->conexion->rollback();
+        // Retornar el mensaje del error para saber más detalles
+        return $e->getMessage();
+    }
 }
+
+    
+    
+    
+    
+    
+}
+

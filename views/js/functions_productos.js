@@ -166,9 +166,45 @@ async function actualizar_producto() {
             cache: 'no-cache',
             body: datos
         });
-
+json = await respuesta.json();
+console.log(json);
     } catch (e) {
-        console.log("Oops, ocurrio un error" + e);
+         console.log("Oops, ocurrio un error" + e);
     }
    
+    
+
+}
+
+
+
+async function eliminar_producto(id_producto, img) {
+    // Crear un objeto FormData con los datos que vamos a enviar al servidor
+    const datos = new FormData();
+    datos.append('id_producto', id_producto);
+    datos.append('img', img); // Imagen asociada al producto
+
+    try {
+        // Enviar los datos al servidor usando fetch
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=eliminar', {
+            method: 'POST',
+            body: datos
+        });
+
+        let json = await respuesta.json();
+        
+        // Si el producto se eliminó correctamente
+        if (json.status) {
+            alert(json.mensaje);
+            // Eliminar la fila de la tabla sin recargar la página
+            const fila = document.getElementById(`fila_${id_producto}`);
+            if (fila) {
+                fila.remove();
+            }
+        } else {
+            alert(json.mensaje);
+        }
+    } catch (error) {
+        console.log('Error al eliminar producto:', error);
+    }
 }
