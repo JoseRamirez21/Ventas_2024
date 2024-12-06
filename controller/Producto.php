@@ -181,6 +181,8 @@ if ($tipo == "actualizar") {
   }
 }
 
+
+
 if ($tipo == "eliminar") {
   if ($_POST) {
       $id = $_POST['id_producto'];
@@ -198,8 +200,9 @@ if ($tipo == "eliminar") {
 
           if ($idEliminado) {
               // Eliminar la imagen asociada si la ruta es válida
-              $rutaImagen = $_SERVER['DOCUMENT_ROOT'] . '/assets/img_productos/' . $imagen;  // Usar DOCUMENT_ROOT para ruta absoluta
+              $rutaImagen = $_SERVER['DOCUMENT_ROOT'] . '../assets/img_productos/' . $imagen; // Asegúrate que la ruta esté correcta
 
+              // Verificar si la imagen existe antes de intentar eliminarla
               if (!empty($imagen) && file_exists($rutaImagen)) {
                   if (unlink($rutaImagen)) {
                       $arr_Respuesta = array(
@@ -231,6 +234,8 @@ if ($tipo == "eliminar") {
       echo json_encode($arr_Respuesta);
   }
 }
+
+
 
 
 
