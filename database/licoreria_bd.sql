@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-12-2024 a las 18:59:15
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 06-12-2024 a las 02:47:41
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `licoreria_bd`
+-- Base de datos: `ventas_2024`
 --
 
 DELIMITER $$
@@ -352,9 +352,7 @@ CREATE TABLE `compras` (
 --
 
 INSERT INTO `compras` (`id`, `id_producto`, `cantidad`, `precio`, `id_trabajador`) VALUES
-(2, 2, 1, 1.00, 2),
-(3, 10, 12, 1.00, 2),
-(4, 14, 12, 1.00, 2);
+(2, 2, 1, 1.00, 2);
 
 -- --------------------------------------------------------
 
@@ -441,11 +439,8 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id`, `codigo`, `nombre`, `detalle`, `precio`, `stock`, `id_categoria`, `fecha_vencimiento`, `imagen`, `id_proveedor`) VALUES
-(2, '002', 'whisky', 'real good1', 45.00, 4, 2, '2024-10-10', 'whisky.png', 21),
-(10, '010', 'whisky', 'xtreme full', 34.00, 40, 1, '2024-10-03', '1.png', 22),
-(14, '015', 'Vino', 'Blanco', 12.00, 16, 1, '2024-11-14', 'imagen', 21),
-(27, '1010', 'Will', 'Black', 12.00, 4, 11, '2024-12-10', '27.jpg', 21),
-(28, '1111', 'admin', 'qw', 12.00, 12, 14, '2024-12-17', '28.jpg', 22);
+(2, '002', 'whisky', 'real good32', 45.00, 4, 2, '2024-10-10', 'whisky.png', 21),
+(37, '525', 'dfsf', 'fsf', 4.00, 43, 2, '2024-12-27', '37.jpg', 22);
 
 -- --------------------------------------------------------
 
@@ -577,7 +572,7 @@ ALTER TABLE `persona`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT de la tabla `sesiones`
