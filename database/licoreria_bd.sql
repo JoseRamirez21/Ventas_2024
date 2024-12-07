@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-12-2024 a las 02:47:41
+-- Tiempo de generación: 07-12-2024 a las 02:13:18
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -26,7 +26,7 @@ DELIMITER $$
 -- Procedimientos
 --
 CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarcategoria` (IN `p_id` INT(11), IN `p_nombre` VARCHAR(20), IN `p_detalle` VARCHAR(50))   BEGIN
-	UPDATE categoria SET nombre=p_nombre,detalle=p_detalle,detalle=p_detalle WHERE id=p_id;
+	UPDATE categoria SET nombre=p_nombre,detalle=p_detalle WHERE id=p_id;
     SELECT p_id;
 END$$
 
@@ -439,7 +439,7 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id`, `codigo`, `nombre`, `detalle`, `precio`, `stock`, `id_categoria`, `fecha_vencimiento`, `imagen`, `id_proveedor`) VALUES
-(2, '002', 'whisky', 'real good32', 45.00, 4, 2, '2024-10-10', 'whisky.png', 21),
+(2, '002', 'whisky', 'real good', 45.00, 4, 2, '2024-10-10', 'whisky.png', 21),
 (37, '525', 'dfsf', 'fsf', 4.00, 43, 2, '2024-12-27', '37.jpg', 22);
 
 -- --------------------------------------------------------
