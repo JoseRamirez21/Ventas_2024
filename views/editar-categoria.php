@@ -114,20 +114,24 @@
 </head>
 <body>
 <div class="fo1" style="margin-top: 247px;">
-        <form class="form1" action="" id="formRegistrarCat" style="width: 100%;">
+        <form class="form1" action="" id="formActualizarCat" style="width: 100%;">
+        <input type="hidden" name="id" id="id" value="">
             <h3 class="text-center"><i class="fas fa-plus-circle"></i> Editar Categoría</h3>
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" required>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" >
             </div>
             <div class="form-group">
                 <label for="detalle">Detalle:</label>
-                <input type="text" name="detalle" id="detalle" placeholder="Detalle" class="form-control" required>
+                <input type="text" name="detalle" id="detalle" placeholder="Detalle" class="form-control" >
             </div>
             <div class="btn-container">
-    <button type="button" class="btn btn-success btn-block" onclick="registrarCategoria();">
-        <i class="fas fa-check"></i> Registrar
-    </button>
+    <!-- <button type="button" class="btn btn-success btn-block" onclick="registrarCategoria();">
+        <i class="fas fa-check"></i> Actualizar
+    </button> -->
+    <button type="button" class="btn btn-success btn-block" onclick="actualizarCategoria();">
+    <i class="fas fa-check"></i> Actualizar
+</button>
     <button type="button" class="btn btn-secondary" onclick="window.history.back();">
         <i class="fas fa-arrow-left"></i> Regresar
     </button>

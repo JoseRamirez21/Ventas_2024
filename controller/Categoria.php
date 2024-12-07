@@ -79,3 +79,44 @@ if($tipo=="ver"){
     }
     echo json_encode($response);
     }
+
+
+    
+    if ($tipo == "actualizar") {
+        // Obtener los datos del formulario
+        $id_categoria = isset($_POST['id']) ? $_POST['id'] : null;
+        $nombre = isset($_POST['nombre']) ? trim($_POST['nombre']) : null;
+        $detalle = isset($_POST['detalle']) ? trim($_POST['detalle']) : null;
+    
+        // Verificar si todos los campos están llenos
+        if (empty($id_categoria) || empty($nombre) || empty($detalle)) {
+            echo json_encode([
+                'status' => 'error',
+                'message' => 'Todos los campos son obligatorios.'
+            ]);
+            exit;
+        }
+    
+        // Llamada al modelo para actualizar la categoría
+        $resultado = $categoriaModel->actualizarCategoria($id_categoria, $nombre, $detalle);
+    
+        if ($resultado) {
+            echo json_encode([
+                'status' => 'success',
+                'message' => 'Categoría actualizada correctamente.'
+            ]);
+        } else {
+            echo json_encode([
+                'status' => 'error',
+                'message' => 'No se pudo actualizar la categoría. Intente nuevamente.'
+            ]);
+        }
+        exit;
+    }
+    
+    
+
+
+
+
+    

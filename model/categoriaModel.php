@@ -39,5 +39,19 @@ public function verCategoria($id) {
     $sql = $sql->fetch_object();
     return $sql;
 }
+
+public function actualizarCategoria($id, $nombre, $detalle) {
+    try {
+        $sql = "CALL actualizarcategoria(?, ?, ?)";
+        $query = $this->conexion->prepare($sql);
+        $query->execute([$id, $nombre, $detalle]);
+        return true; // Retornamos true si la actualización fue exitosa
+    } catch (PDOException $e) {
+        return false; // Retornamos false en caso de error
+    }
+}
+
+
+
 }
 ?>
