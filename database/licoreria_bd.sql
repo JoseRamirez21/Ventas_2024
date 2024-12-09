@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-12-2024 a las 00:27:47
+-- Tiempo de generación: 10-12-2024 a las 00:53:54
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -325,7 +325,7 @@ CREATE TABLE `categoria` (
 
 INSERT INTO `categoria` (`id`, `nombre`, `detalle`) VALUES
 (1, 'Vino', 'Nacional'),
-(2, 'Whisky1', 'Importado'),
+(2, 'Whisky', 'Importado'),
 (10, 'Burbujas', 'Importado'),
 (11, 'Rones', 'Nacional'),
 (12, 'Vodka', 'Importado'),
@@ -352,7 +352,8 @@ CREATE TABLE `compras` (
 --
 
 INSERT INTO `compras` (`id`, `id_producto`, `cantidad`, `precio`, `id_trabajador`) VALUES
-(2, 2, 5, 1.00, 2);
+(2, 2, 5, 1.00, 2),
+(7, 37, 15, 12.00, 2);
 
 -- --------------------------------------------------------
 
@@ -439,8 +440,8 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id`, `codigo`, `nombre`, `detalle`, `precio`, `stock`, `id_categoria`, `fecha_vencimiento`, `imagen`, `id_proveedor`) VALUES
-(2, '002', 'whisky111', 'real good', 45.00, 4, 2, '2024-10-10', 'whisky.png', 21),
-(37, '525', 'dfsf', 'fsf', 4.00, 43, 2, '2024-12-27', '37.jpg', 22);
+(2, '002', 'whisky', 'real good', 45.00, 4, 2, '2024-10-10', 'whisky.png', 21),
+(37, '525', 'will', 'Will', 4.00, 43, 2, '2024-12-27', '37.jpg', 21);
 
 -- --------------------------------------------------------
 
@@ -548,7 +549,7 @@ ALTER TABLE `categoria`
 -- AUTO_INCREMENT de la tabla `compras`
 --
 ALTER TABLE `compras`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `detalle_venta`
