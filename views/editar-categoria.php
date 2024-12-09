@@ -115,8 +115,8 @@
 <body>
 <div class="fo1" style="margin-top: 247px;">
         <form class="form1" action="" id="formActualizarCat" style="width: 100%;">
-        <input type="hidden" name="id" id="id" value="">
             <h3 class="text-center"><i class="fas fa-plus-circle"></i> Editar Categoría</h3>
+            <input type="hidden" name="id_categoria" id="id_categoria" value="">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" >

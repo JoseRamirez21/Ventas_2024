@@ -171,9 +171,6 @@ console.log(json);
     } catch (e) {
          console.log("Oops, ocurrio un error" + e);
     }
-   
-    
-
 }
 
 

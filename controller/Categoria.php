@@ -83,35 +83,35 @@ if($tipo=="ver"){
 
     
     if ($tipo == "actualizar") {
+        if ($_POST) {
         // Obtener los datos del formulario
-        $id_categoria = isset($_POST['id']) ? $_POST['id'] : null;
-        $nombre = isset($_POST['nombre']) ? trim($_POST['nombre']) : null;
-        $detalle = isset($_POST['detalle']) ? trim($_POST['detalle']) : null;
+        $id = $_POST['id_categoria'];
+        $nombre = $_POST['nombre'];
+        $detalle = $_POST['detalle'];
     
-        // Verificar si todos los campos están llenos
-        if (empty($id_categoria) || empty($nombre) || empty($detalle)) {
-            echo json_encode([
-                'status' => 'error',
-                'message' => 'Todos los campos son obligatorios.'
-            ]);
-            exit;
-        }
-    
-        // Llamada al modelo para actualizar la categoría
-        $resultado = $categoriaModel->actualizarCategoria($id_categoria, $nombre, $detalle);
-    
-        if ($resultado) {
-            echo json_encode([
-                'status' => 'success',
-                'message' => 'Categoría actualizada correctamente.'
-            ]);
+        if ($nombre == "" || $detalle == "") {
+            $arr_Respuesta = array(
+                'status' => false,
+                'mensaje' => 'Error, campos vacíos'
+            );
         } else {
-            echo json_encode([
-                'status' => 'error',
-                'message' => 'No se pudo actualizar la categoría. Intente nuevamente.'
-            ]);
+            $arrCategoria = $objCategoria->actualizarCategoria($id, $nombre, $detalle);
+  
+            if ($arrCategorias->p_id > 0) { // Producto actualizado correctamente
+                $arr_Respuesta = array(
+                    'status' => true,
+                    'mensaje' => 'Actualizado Correctamente'
+                );
+            
+            } else {
+                $arr_Respuesta = array(
+                    'status' => false,
+                    'mensaje' => 'Error al Actualizar Producto'
+                );
+            }
         }
-        exit;
+        echo json_encode($arr_Respuesta);
+    }
     }
     
     
