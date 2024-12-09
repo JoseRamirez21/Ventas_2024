@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-12-2024 a las 02:13:18
+-- Tiempo de generación: 10-12-2024 a las 00:27:47
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -45,8 +45,8 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarpagos` (IN `p_id` INT(11)
     SELECT p_id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarpersona` (IN `p_id` INT(11), IN `p_nro_identidad` VARCHAR(11), IN `p_razon_social` VARCHAR(130), IN `p_telefono` VARCHAR(15), IN `p_correo` VARCHAR(100), IN `p_departamento` VARCHAR(20), IN `p_provincia` VARCHAR(30), IN `p_distrito` VARCHAR(50), IN `p_cod_postal` INT(5), IN `p_direccion` VARCHAR(100), IN `p_rol` VARCHAR(15), IN `p_password` VARCHAR(500), IN `p_estado` VARCHAR(1), IN `p_fecha_reg` DATETIME)   BEGIN
-	UPDATE persona SET nro_identidad=p_nro_identidad,razon_social=p_razon_social,telefono=p_telefono,correo=p_correo,departamento=p_departamento,provincia=p_provincia,distrito=p_distrito,cod_postal=p_cod_postal,direccion=p_direccion,rol=p_rol,password=p_password,estado=p_estado,fecha_reg=p_fecha_reg WHERE id=p_id;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarpersona` (IN `p_id` INT(11), IN `p_nro_identidad` VARCHAR(11), IN `p_razon_social` VARCHAR(130), IN `p_telefono` VARCHAR(15), IN `p_correo` VARCHAR(100), IN `p_departamento` VARCHAR(20), IN `p_direccion` VARCHAR(100), IN `p_rol` VARCHAR(15))   BEGIN
+	UPDATE persona SET nro_identidad=p_nro_identidad,razon_social=p_razon_social,telefono=p_telefono,correo=p_correo,departamento=p_departamento,direccion=p_direccion,rol=p_rol WHERE id=p_id;
     SELECT p_id;
 END$$
 
@@ -325,7 +325,7 @@ CREATE TABLE `categoria` (
 
 INSERT INTO `categoria` (`id`, `nombre`, `detalle`) VALUES
 (1, 'Vino', 'Nacional'),
-(2, 'Whisky', 'Importado'),
+(2, 'Whisky1', 'Importado'),
 (10, 'Burbujas', 'Importado'),
 (11, 'Rones', 'Nacional'),
 (12, 'Vodka', 'Importado'),
@@ -352,7 +352,7 @@ CREATE TABLE `compras` (
 --
 
 INSERT INTO `compras` (`id`, `id_producto`, `cantidad`, `precio`, `id_trabajador`) VALUES
-(2, 2, 1, 1.00, 2);
+(2, 2, 5, 1.00, 2);
 
 -- --------------------------------------------------------
 
@@ -410,10 +410,10 @@ CREATE TABLE `persona` (
 --
 
 INSERT INTO `persona` (`id`, `nro_identidad`, `razon_social`, `telefono`, `correo`, `departamento`, `provincia`, `distrito`, `cod_postal`, `direccion`, `rol`, `password`, `estado`, `fecha_reg`) VALUES
-(2, '78965412', 'jota', '987456321', 'jota@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 51, 'Cedropata', 'trabajador', '123', 1, '2024-11-12 11:03:50'),
+(2, '78965412', 'Super SAC', '987456321', 'jota@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 51, 'Cedropata', 'Trabajador', '123', 1, '2024-11-12 11:03:50'),
 (20, '2312', 'dsf', '42', 'sdfs', 'sfd', 'sdf', 'sfd', 2345, 'sdf', 'Cliente', '$2y$10$MHT/nlee61fse.IwGlZcZewqrw4bzgyfkJuuAIVUAHQIlRCwaRmUy', 1, '2024-11-14 09:01:14'),
 (21, '76122823', 'Jose Carlos', '901267943', 'josexitorap@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 5121, 'Plaza Central', 'Proveedor', '$2y$10$Lm8pJx1ajvdMjk5qozVPOeojbz/ilVnJo66mmeuuHEXLf.Kq1D3DW', 1, '2024-12-02 19:11:46'),
-(22, '76122822', 'Importec SAC', '987564123', 'etfgrstg@gmail.com', 'Lima', 'Lima', 'Lima', 245, 'Lima', 'Proveedor', '$2y$10$ckmH0/CUZzJIPFZEyc1iz.0jA9r2COXYvw1Fa.RkcM84Uz7SZckAi', 1, '2024-12-05 10:10:29');
+(22, '76122822', 'Importec SAC', '987564123', 'etfgrstg@gmail.com', 'Lima', 'Lima', 'Lima', 245, 'Lima', 'Trabajador', '$2y$10$ckmH0/CUZzJIPFZEyc1iz.0jA9r2COXYvw1Fa.RkcM84Uz7SZckAi', 1, '2024-12-05 10:10:29');
 
 -- --------------------------------------------------------
 
@@ -439,7 +439,7 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id`, `codigo`, `nombre`, `detalle`, `precio`, `stock`, `id_categoria`, `fecha_vencimiento`, `imagen`, `id_proveedor`) VALUES
-(2, '002', 'whisky', 'real good', 45.00, 4, 2, '2024-10-10', 'whisky.png', 21),
+(2, '002', 'whisky111', 'real good', 45.00, 4, 2, '2024-10-10', 'whisky.png', 21),
 (37, '525', 'dfsf', 'fsf', 4.00, 43, 2, '2024-12-27', '37.jpg', 22);
 
 -- --------------------------------------------------------

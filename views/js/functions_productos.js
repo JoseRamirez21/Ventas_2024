@@ -63,8 +63,6 @@
             swal("registro", json.mensaje, "error");
         }
         console.log(json);
-
-
     } catch (e) {
         console.log("Oops, ocurrio un error" + e);
     }
@@ -156,9 +154,11 @@ async function ver_producto(id){
 
 async function actualizar_producto() {
     const datos = new FormData();
+
     try {
         //capturamos datos del formulario nuevoproducto.php
         const datos = new FormData(formActualizar);
+        
         //enviamos datos hacia el controlador
         let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
             method: 'POST',
@@ -166,10 +166,17 @@ async function actualizar_producto() {
             cache: 'no-cache',
             body: datos
         });
-json = await respuesta.json();
-console.log(json);
+        //alert
+        json = await respuesta.json();
+        if (json.status) {
+            swal("registro", json.mensaje, "success");
+        } else {
+            swal("registro", json.mensaje, "error");
+        }
+        console.log(json);
+
     } catch (e) {
-         console.log("Oops, ocurrio un error" + e);
+        console.log("Oops, ocurrio un error" + e);
     }
 }
 

@@ -49,7 +49,6 @@ if ($tipo == "registrar") {
         $cantidad = $_POST['cantidad'];
         $precio = $_POST['precio']; 
         $trabajador = $_POST['trabajador'];
-
         if (
             $id_producto == "" || $cantidad == "" || $precio == "" || $trabajador == ""
         ) {
@@ -61,7 +60,6 @@ if ($tipo == "registrar") {
                 $precio,
                 $trabajador
             );
-
             if ($arrProducto->id > 0) {
                 $arr_Respuesta = array('status' => true, 'mensaje' => 'Producto registrado con exito');
             } else {
@@ -112,15 +110,11 @@ if ($tipo == "actualizar") {
         $arr_Compras = $objCompras->actualizar_Compra($id, $id_producto, $cantidad, $precio, $id_trabajador);
 
         if ($arrCompras->p_id > 0) { // compra actualizado correctamente
-            $arr_Respuesta = array(
-                'status' => true,
-                'mensaje' => 'Actualizado Correctamente'
+            $arr_Respuesta = array( 'status' => true,'mensaje' => 'Actualizado Correctamente'
             );
         
         } else {
-            $arr_Respuesta = array(
-                'status' => false,
-                'mensaje' => 'Error al Actualizar Compra'
+            $arr_Respuesta = array(  'status' => false,  'mensaje' => 'Error al Actualizar Compra'
             );
         }
     }

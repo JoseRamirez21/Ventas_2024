@@ -67,7 +67,6 @@ async function registrarCompra() {
         } else {
             swal("Registro", json.mensaje, "error");
         }
-
         console.log(json);
     } catch (e) {
         console.log("Oops, ocurrio un error" + e)
