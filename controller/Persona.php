@@ -148,4 +148,44 @@ if($tipo=="ver"){
   }
   echo json_encode($response);
   }
+
+
+
+  if ($tipo == "actualizar") {
+    if ($_POST) {
+    // Obtener los datos del formulario
+    $id = $_POST['id_persona'];
+    $nro_identidad = $_POST['nro_identidad'];
+    $razon_social = $_POST['razon_social'];
+    $telefono = $_POST['telefono'];
+    $correo = $_POST['correo'];
+    $departamento = $_POST['departamento'];
+    $direccion = $_POST['direccion'];
+    $rol = $_POST['rol'];
+
+    if ($nro_identidad == "" || $razon_social == "" || $telefono == "" || $correo == "" || $departamento == "" || $direccion == "" || $rol == "") {
+        $arr_Respuesta = array(
+            'status' => false,
+            'mensaje' => 'Error, campos vacíos'
+        );
+    } else {
+        $arr_Persona = $objPersona->actualizar_persona($id, $nro_identidad, $razon_social, $telefono, $correo,$departamento,$direccion,$rol);
+
+        if ($arrPersona->p_id > 0) { // compra actualizado correctamente
+            $arr_Respuesta = array(
+                'status' => true,
+                'mensaje' => 'Actualizado Correctamente'
+            );
+        
+        } else {
+            $arr_Respuesta = array(
+                'status' => false,
+                'mensaje' => 'Error al Actualizar Persona'
+            );
+        }
+    }
+    echo json_encode($arr_Respuesta);
+}
+}
+
 ?>

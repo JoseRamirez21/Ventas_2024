@@ -102,10 +102,14 @@ async function ver_persona(id){
         json = await respuesta.json();
         if (json.status) {
             // document.querySelector('#codigo').value = json.contenido.codigo;
+            document.querySelector('#id_persona').value = json.contenido.id;
             document.querySelector('#nro_identidad').value = json.contenido.nro_identidad;
             document.querySelector('#razon_social').value = json.contenido.razon_social;
             document.querySelector('#telefono').value = json.contenido.telefono;
             document.querySelector('#correo').value = json.contenido.correo;
+            document.querySelector('#provincia').value = json.contenido.provincia;
+            document.querySelector('#distrito').value = json.contenido.distrito;
+            document.querySelector('#cod_postal').value = json.contenido.cod_postal;
             document.querySelector('#departamento').value = json.contenido.departamento;
             document.querySelector('#direccion').value = json.contenido.direccion;
             document.querySelector('#rol').value = json.contenido.rol;
@@ -117,5 +121,24 @@ async function ver_persona(id){
         console.log(json);
     } catch (error) {
         console.log("Opps ocurrio un error" + error);
+    }
+}
+
+async function actualizar_persona() {
+    const datos = new FormData();
+    try {
+        //capturamos datos del formulario nuevoproducto.php
+        const datos = new FormData(formRegistrarPer);
+        //enviamos datos hacia el controlador
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+json = await respuesta.json();
+console.log(json);
+    } catch (e) {
+         console.log("Oops, ocurrio un error" + e);
     }
 }

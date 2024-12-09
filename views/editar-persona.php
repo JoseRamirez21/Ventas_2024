@@ -112,9 +112,10 @@
     <div class="fo1" style="margin-top: 150px;">
         <form class="form1" action="" id="formRegistrarPer" style="width: 100%;">
             <h3 class="text-center"><i class="fas fa-user-plus"></i> Agregar Nueva Persona</h3>
+            <input type="hidden" name="id_persona" id="id_persona" value="">
             <div class="form-group">
                 <label for="numero_identidad">Número de Identidad:</label>
-                <input type="text" name="numero_identidad" id="nro_identidad" placeholder="Número de Identidad" class="form-control" required>
+                <input type="text" name="nro_identidad" id="nro_identidad" placeholder="Número de Identidad" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="razon_social">Razón Social:</label>
@@ -159,8 +160,8 @@
                 </select>
             </div>
            <div>
-           <button type="button" class="btn btn-success btn-block" onclick="registrarPersona();">
-                <i class="fas fa-check"></i> Registrar
+           <button type="button" class="btn btn-success btn-block" onclick="actualizar_persona();">
+                <i class="fas fa-check"></i>Actualizar
             </button>
             <button type="button" class="btn btn-secondary"  onclick="window.history.back();">
     <i class="fas fa-arrow-left"></i> Regresar

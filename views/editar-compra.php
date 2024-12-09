@@ -112,6 +112,7 @@
     <div class="fo1" style="margin-top: 170px;">
         <form class="form1" action="" id="formRegistrarCom" style="width: 100%;">
             <h3 class="text-center"><i class="fas fa-shopping-cart"></i> Agregar Nueva Compra</h3>
+            <input type="hidden" name="id_compra" id="id_compra" value="">
             <div class="form-group">
                 <label for="id_producto">Producto:</label>
                 <select name="id_producto" id="id_producto" class="form-control" required>
@@ -135,8 +136,8 @@
                 </select>
             </div>
             <div>
-            <button type="button" class="btn btn-success btn-block" onclick="registrarCompra();">
-                <i class="fas fa-check"></i> Registrar
+            <button type="button" class="btn btn-success btn-block" onclick="actualizar_compra();">
+                <i class="fas fa-check"></i> Actualizar
             </button>
             <button type="button" class="btn btn-secondary"  onclick="window.history.back();">
     <i class="fas fa-arrow-left"></i> Regresar

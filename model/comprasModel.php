@@ -53,4 +53,12 @@ FROM compras");
         $sql = $sql->fetch_object();
         return $sql;
     }
+    public function actualizar_Compra( $id, $id_producto, $cantidad, $precio,$id_trabajador) {
+        // Ejecutar un procedimiento almacenado y el procedimiento almacena los datos de un nuevo producto en la base de datos
+        $sql = $this->conexion->query("CALL actualizarcompras('{$id}',
+        '{$id_producto}','{$cantidad}','{$precio}','{$id_trabajador}'
+        )");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
 }

@@ -92,3 +92,38 @@ if ($tipo == "ver") {
 
     echo json_encode($response);
 }
+
+
+if ($tipo == "actualizar") {
+    if ($_POST) {
+    // Obtener los datos del formulario
+    $id = $_POST['id_compra'];
+    $id_producto = $_POST['id_producto'];
+    $cantidad = $_POST['cantidad'];
+    $precio = $_POST['precio'];
+    $id_trabajador = $_POST['trabajador'];
+
+    if ($id_producto == "" || $cantidad == "" || $precio == "" || $id_trabajador == "") {
+        $arr_Respuesta = array(
+            'status' => false,
+            'mensaje' => 'Error, campos vacíos'
+        );
+    } else {
+        $arr_Compras = $objCompras->actualizar_Compra($id, $id_producto, $cantidad, $precio, $id_trabajador);
+
+        if ($arrCompras->p_id > 0) { // compra actualizado correctamente
+            $arr_Respuesta = array(
+                'status' => true,
+                'mensaje' => 'Actualizado Correctamente'
+            );
+        
+        } else {
+            $arr_Respuesta = array(
+                'status' => false,
+                'mensaje' => 'Error al Actualizar Compra'
+            );
+        }
+    }
+    echo json_encode($arr_Respuesta);
+}
+}

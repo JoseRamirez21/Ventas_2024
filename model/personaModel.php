@@ -96,6 +96,17 @@ public function verPersona($id) {
     $sql = $sql->fetch_object();
     return $sql;
 }
+
+public function actualizar_persona($id, $nro_identidad, $razon_social, $telefono, $correo,$departamento,$direccion,$rol) {
+    // Ejecutar un procedimiento almacenado y el procedimiento almacena los datos de un nuevo producto en la base de datos
+    $sql = $this->conexion->query("CALL actualizarpersona('{$id}',
+    '{$nro_identidad}','{$razon_social}','{$telefono}','{$correo}','{$departamento}','{$direccion}','{$rol}'
+    )");
+    $sql = $sql->fetch_object();
+    return $sql;
+}
+
+
 }
 
 

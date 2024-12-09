@@ -96,6 +96,7 @@ async function listar_productos() {
     }
 }
 
+
 // Listar trabajador
 async function listar_trabajadores() {
     try {
@@ -117,6 +118,7 @@ async function listar_trabajadores() {
     }
 }
 
+
 //Ver Compras
 async function ver_compra(id){
     const formData = new FormData();
@@ -131,6 +133,7 @@ async function ver_compra(id){
         json = await respuesta.json();
         if (json.status) {
             // document.querySelector('#codigo').value = json.contenido.codigo;
+            document.querySelector('#id_compra').value = json.contenido.id;
             document.querySelector('#id_producto').value = json.contenido.id_producto;
             document.querySelector('#cantidad').value = json.contenido.cantidad;
             document.querySelector('#precio').value = json.contenido.precio;
@@ -142,5 +145,25 @@ async function ver_compra(id){
         console.log(json);
     } catch (error) {
         console.log("Opps ocurrio un error" + error);
+    }
+}
+
+
+async function actualizar_compra() {
+    const datos = new FormData();
+    try {
+        //capturamos datos del formulario nuevoproducto.php
+        const datos = new FormData(formRegistrarCom);
+        //enviamos datos hacia el controlador
+        let respuesta = await fetch(base_url + 'controller/Compra.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+json = await respuesta.json();
+console.log(json);
+    } catch (e) {
+         console.log("Oops, ocurrio un error" + e);
     }
 }
