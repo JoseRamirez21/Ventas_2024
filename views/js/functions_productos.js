@@ -182,33 +182,40 @@ async function actualizar_producto() {
 
 
 
-async function eliminar_producto(id_producto, img) {
-    // Crear un objeto FormData con los datos que vamos a enviar al servidor
-    const datos = new FormData();
-    datos.append('id_producto', id_producto);
-    datos.append('img', img); // Imagen asociada al producto
 
+
+async function eliminar_producto(id){
+ swal({
+    title: "Realmente desea eliminar el Producto?",
+    text : '',
+    icon : "warning",
+    buttons : true,
+    dangerMode : true
+ }).then((willDelete)=>{
+if (willDelete) {
+    fnt_eliminar(id);
+}
+ })
+}
+async function fnt_eliminar(id){
+    // alert("producto eliminado: + id = "+id) ; se realiza para probar ña funcion
+    const formdata = new FormData();
+    formdata.append('id_producto', id);
     try {
-        // Enviar los datos al servidor usando fetch
-        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=eliminar', {
-            method: 'POST',
-            body: datos
-        });
-
-        let json = await respuesta.json();
-        
-        // Si el producto se eliminó correctamente
-        if (json.status) {
-            alert(json.mensaje);
-            // Eliminar la fila de la tabla sin recargar la página
-            const fila = document.getElementById(`fila_${id_producto}`);
-            if (fila) {
-                fila.remove();
-            }
-        } else {
-            alert(json.mensaje);
-        }
-    } catch (error) {
-        console.log('Error al eliminar producto:', error);
+       let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=eliminar',{
+        method: 'POST',
+        mode: 'cors',
+        cache: 'no-cache',
+        body:formdata
+       }); 
+       json= await respuesta.json();
+       if (json.status) {
+        swal("Eliminar" , "eliminado correctamente", "success");
+        document.querySelector('#fila' + id).remove();
+       }else{
+        swal('Eliminar', "Error al eliminar producto", "warning");
+       }
+    } catch (e) {
+        console.log("Ocurrio un error" + e);
     }
 }

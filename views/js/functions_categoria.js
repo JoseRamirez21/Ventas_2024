@@ -108,10 +108,53 @@ async function actualizarCategoria() {
                 cache: 'no-cache',
                 body: datos
             });
-    json = await respuesta.json();
-    console.log(json);
+            json = await respuesta.json();
+            if (json.status) {
+                swal("registro", json.mensaje, "success");
+            } else {
+                swal("registro", json.mensaje, "error");
+            }
+            console.log(json);
         } catch (e) {
              console.log("Oops, ocurrio un error" + e);
         }
     }
 
+
+
+
+    async function eliminar_categoria(id){
+        swal({
+           title: "Realmente desea eliminar el Producto?",
+           text : '',
+           icon : "warning",
+           buttons : true,
+           dangerMode : true
+        }).then((willDelete)=>{
+       if (willDelete) {
+           fnt_eliminar(id);
+       }
+        })
+       }
+       async function fnt_eliminar(id){
+           // alert("producto eliminado: + id = "+id) ; se realiza para probar ña funcion
+           const formdata = new FormData();
+           formdata.append('id_categoria', id);
+           try {
+              let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=eliminar',{
+               method: 'POST',
+               mode: 'cors',
+               cache: 'no-cache',
+               body:formdata
+              }); 
+              json= await respuesta.json();
+              if (json.status) {
+               swal("Eliminar" , "eliminado correctamente", "success");
+               document.querySelector('#fila' + id).remove();
+              }else{
+               swal('Eliminar', "Error al eliminar la categoria", "warning");
+              }
+           } catch (e) {
+               console.log("Ocurrio un error" + e);
+           }
+       }

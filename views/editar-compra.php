@@ -111,7 +111,7 @@
 <body>
     <div class="fo1" style="margin-top: 170px;">
         <form class="form1" action="" id="formRegistrarCom" style="width: 100%;">
-            <h3 class="text-center"><i class="fas fa-shopping-cart"></i> Agregar Nueva Compra</h3>
+            <h3 class="text-center"><i class="fas fa-shopping-cart"></i> Editar Compras</h3>
             <input type="hidden" name="id_compra" id="id_compra" value="">
             <div class="form-group">
                 <label for="id_producto">Producto:</label>

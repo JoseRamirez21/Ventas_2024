@@ -184,57 +184,17 @@ if ($tipo == "actualizar") {
 
 
 if ($tipo == "eliminar") {
-  if ($_POST) {
-      $id = $_POST['id_producto'];
-      $imagen = $_POST['img']; // Imagen asociada al producto
-
-      // Validar que el ID del producto no esté vacío
-      if (empty($id)) {
-          $arr_Respuesta = array(
-              'status' => false,
-              'mensaje' => 'Error, el ID del producto es requerido'
-          );
-      } else {
-          // Llamar al modelo para eliminar el producto
-          $idEliminado = $objProducto->eliminar_producto($id);
-
-          if ($idEliminado) {
-              // Eliminar la imagen asociada si la ruta es válida
-              $rutaImagen = $_SERVER['DOCUMENT_ROOT'] . '../assets/img_productos/' . $imagen; // Asegúrate que la ruta esté correcta
-
-              // Verificar si la imagen existe antes de intentar eliminarla
-              if (!empty($imagen) && file_exists($rutaImagen)) {
-                  if (unlink($rutaImagen)) {
-                      $arr_Respuesta = array(
-                          'status' => true,
-                          'mensaje' => 'Producto y su imagen eliminados correctamente'
-                      );
-                  } else {
-                      $arr_Respuesta = array(
-                          'status' => true,
-                          'mensaje' => 'Producto eliminado correctamente, pero no se pudo eliminar la imagen. Verifique los permisos.'
-                      );
-                  }
-              } else {
-                  $arr_Respuesta = array(
-                      'status' => true,
-                      'mensaje' => 'Producto eliminado correctamente, sin imagen asociada o imagen no encontrada'
-                  );
-              }
-          } else {
-              // Error al eliminar en la base de datos
-              $arr_Respuesta = array(
-                  'status' => false,
-                  'mensaje' => 'Error al eliminar el producto en la base de datos'
-              );
-          }
-      }
-
-      // Retornar la respuesta en formato JSON
-      echo json_encode($arr_Respuesta);
+  // print_r($_POST);
+  $id_producto = $_POST['id_producto'];
+  $arr_Respuesta = $objProducto->eliminarProducto($id_producto);
+  // print_r($arr_Respuesta);eso es para hacer la prueba 
+  if (empty($arr_Respuesta)) {
+    $response = array('status' => false);
+  } else {
+    $response = array('status' => true,);
   }
+  echo json_encode($response);
 }
-
 
 
 

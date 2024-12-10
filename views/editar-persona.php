@@ -111,7 +111,7 @@
 <body>
     <div class="fo1" style="margin-top: 150px;">
         <form class="form1" action="" id="formRegistrarPer" style="width: 100%;">
-            <h3 class="text-center"><i class="fas fa-user-plus"></i> Agregar Nueva Persona</h3>
+            <h3 class="text-center"><i class="fas fa-user-edit"></i> Editar Persona</h3>
             <input type="hidden" name="id_persona" id="id_persona" value="">
             <div class="form-group">
                 <label for="numero_identidad">Número de Identidad:</label>

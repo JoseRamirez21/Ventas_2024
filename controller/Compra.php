@@ -109,7 +109,7 @@ if ($tipo == "actualizar") {
     } else {
         $arr_Compras = $objCompras->actualizar_Compra($id, $id_producto, $cantidad, $precio, $id_trabajador);
 
-        if ($arrCompras->p_id > 0) { // compra actualizado correctamente
+        if ($arr_Compras->p_id > 0) { // compra actualizado correctamente
             $arr_Respuesta = array( 'status' => true,'mensaje' => 'Actualizado Correctamente'
             );
         

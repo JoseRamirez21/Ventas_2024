@@ -136,8 +136,14 @@ async function actualizar_persona() {
             cache: 'no-cache',
             body: datos
         });
-json = await respuesta.json();
-console.log(json);
+  //alert
+  json = await respuesta.json();
+  if (json.status) {
+      swal("registro", json.mensaje, "success");
+  } else {
+      swal("registro", json.mensaje, "error");
+  }
+  console.log(json);
     } catch (e) {
          console.log("Oops, ocurrio un error" + e);
     }

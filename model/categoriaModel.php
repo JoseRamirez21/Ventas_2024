@@ -41,17 +41,16 @@ public function verCategoria($id) {
 }
 
 public function actualizarCategoria($id, $nombre, $detalle) {
-    try {
-        $sql = "CALL actualizarcategoria(?, ?, ?)";
-        $query = $this->conexion->prepare($sql);
-        $query->execute([$id, $nombre, $detalle]);
-        return true; // Retornamos true si la actualización fue exitosa
-    } catch (PDOException $e) {
-        return false; // Retornamos false en caso de error
-    }
+        $sqli = $this->conexion->query ("CALL actualizarcategoria('{$id}', '{$nombre}', '{$detalle}')");
+        $sql = $sqli->fetch_object();
+        return $sql;
+}
+public function eliminarCategoria($id){
+    $sql = $this->conexion->query("CALL eliminarcategoria('{$id}')");
+    $sql = $sql->fetch_object();
+    return $sql;
 }
 
-
-
 }
+
 ?>

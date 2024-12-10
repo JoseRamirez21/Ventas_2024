@@ -171,7 +171,7 @@ if($tipo=="ver"){
     } else {
         $arr_Persona = $objPersona->actualizar_persona($id, $nro_identidad, $razon_social, $telefono, $correo,$departamento,$direccion,$rol);
 
-        if ($arrPersona->p_id > 0) { // compra actualizado correctamente
+        if ($arr_Persona->p_id > 0) { // compra actualizado correctamente
             $arr_Respuesta = array(
                 'status' => true,
                 'mensaje' => 'Actualizado Correctamente'

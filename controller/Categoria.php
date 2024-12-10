@@ -97,7 +97,7 @@ if($tipo=="ver"){
         } else {
             $arrCategoria = $objCategoria->actualizarCategoria($id, $nombre, $detalle);
   
-            if ($arrCategorias->p_id > 0) { // Producto actualizado correctamente
+            if ($arrCategoria->p_id > 0) { // Producto actualizado correctamente
                 $arr_Respuesta = array(
                     'status' => true,
                     'mensaje' => 'Actualizado Correctamente'
@@ -116,7 +116,20 @@ if($tipo=="ver"){
     
     
 
+    if ($tipo == "eliminar") {
+        // print_r($_POST);
+        $id_categoria = $_POST['id_categoria'];
+        $arr_Respuesta = $objCategoria->eliminarCategoria($id_categoria);
+        // print_r($arr_Respuesta);eso es para hacer la prueba 
+        if (empty($arr_Respuesta)) {
+          $response = array('status' => false );
+        } else {
+          $response = array('status' => true,);
+        }
+        echo json_encode($response);
+      }
 
+      
 
 
     
