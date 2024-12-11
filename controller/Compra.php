@@ -121,3 +121,17 @@ if ($tipo == "actualizar") {
     echo json_encode($arr_Respuesta);
 }
 }
+
+
+if ($tipo == "eliminar") {
+    // print_r($_POST);
+    $id_compra = $_POST['id_compra'];
+    $arr_Respuesta = $objCompras->eliminarCompra($id_compra);
+    // print_r($arr_Respuesta);eso es para hacer la prueba 
+    if (empty($arr_Respuesta)) {
+      $response = array('status' => false );
+    } else {
+      $response = array('status' => true,);
+    }
+    echo json_encode($response);
+  }

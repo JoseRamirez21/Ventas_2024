@@ -171,3 +171,41 @@ async function actualizar_compra() {
          console.log("Oops, ocurrio un error" + e);
     }
 }
+
+
+
+async function eliminar_compra(id){
+    swal({
+       title: "Realmente desea eliminar la Compra?",
+       text : '',
+       icon : "warning",
+       buttons : true,
+       dangerMode : true
+    }).then((willDelete)=>{
+   if (willDelete) {
+       fnt_eliminar(id);
+   }
+    })
+   }
+   async function fnt_eliminar(id){
+       // alert("producto eliminado: + id = "+id) ; se realiza para probar ña funcion
+       const formdata = new FormData();
+       formdata.append('id_compra', id);
+       try {
+          let respuesta = await fetch(base_url + 'controller/Compra.php?tipo=eliminar',{
+           method: 'POST',
+           mode: 'cors',
+           cache: 'no-cache',
+           body:formdata
+          }); 
+          json= await respuesta.json();
+          if (json.status) {
+           swal("Eliminar" , "eliminado correctamente", "success");
+           document.querySelector('#fila' + id).remove();
+          }else{
+           swal('Eliminar', "Error al eliminar la compra", "warning");
+          }
+       } catch (e) {
+           console.log("Ocurrio un error" + e);
+       }
+   }

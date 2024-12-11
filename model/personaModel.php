@@ -106,7 +106,11 @@ public function actualizar_persona($id, $nro_identidad, $razon_social, $telefono
     return $sql;
 }
 
-
+public function eliminarPersona($id){
+    $sql = $this->conexion->query("CALL eliminarpersona('{$id}')");
+    $sql = $sql->fetch_object();
+    return $sql;
+}
 }
 
 
