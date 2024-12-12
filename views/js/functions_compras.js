@@ -203,7 +203,7 @@ async function eliminar_compra(id){
            swal("Eliminar" , "eliminado correctamente", "success");
            document.querySelector('#fila' + id).remove();
           }else{
-           swal('Eliminar', "Error al eliminar la compra", "warning");
+           swal('Eliminar', "Error al eliminar la compra, tiene registros asociados ", "warning");
           }
        } catch (e) {
            console.log("Ocurrio un error" + e);

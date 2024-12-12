@@ -183,19 +183,37 @@ if ($tipo == "actualizar") {
 
 
 
+// if ($tipo == "eliminar") {
+//   // print_r($_POST);
+//   $id_producto = $_POST['id_producto'];
+//   $arr_Respuesta = $objProducto->eliminarProducto($id_producto);
+//   // print_r($arr_Respuesta);eso es para hacer la prueba 
+//   if (empty($arr_Respuesta)) {
+//     $response = array('status' => false);
+//   } else {
+//     $response = array('status' => true,);
+//   }
+//   echo json_encode($response);
+// }
+
+
 if ($tipo == "eliminar") {
-  // print_r($_POST);
-  $id_producto = $_POST['id_producto'];
-  $arr_Respuesta = $objProducto->eliminarProducto($id_producto);
-  // print_r($arr_Respuesta);eso es para hacer la prueba 
-  if (empty($arr_Respuesta)) {
-    $response = array('status' => false);
-  } else {
-    $response = array('status' => true,);
+  if ($_POST) {
+      $id_producto = $_POST['id_producto'];
+
+      // Verificar si la categoría tiene productos asociados
+      if ($objProducto->productoTieneCompras($id_producto)) {
+          $arr_Respuesta = array('status' => false, 'mensaje' => 'No se puede eliminar la categoría porque tiene productos asociados');
+      } else {
+          $arr_Producto = $objProducto->eliminarProducto($id_producto);
+
+          if ($arr_Producto) {
+              $arr_Respuesta = array('status' => true, 'mensaje' => 'Eliminación Exitosa');
+          } else {
+              $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, inténtelo de nuevo tiene productos asociados');
+          }
+      }
+      echo json_encode($arr_Respuesta);
   }
-  echo json_encode($response);
 }
-
-
-
 

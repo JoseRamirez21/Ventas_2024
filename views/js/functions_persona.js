@@ -178,7 +178,7 @@ async function eliminar_persona(id){
            swal("Eliminar" , "eliminado correctamente", "success");
            document.querySelector('#fila' + id).remove();
           }else{
-           swal('Eliminar', "Error al eliminar la persona", "warning");
+           swal('Eliminar', "Error al eliminar la persona, tiene registros asociados ", "warning");
           }
        } catch (e) {
            console.log("Ocurrio un error" + e);

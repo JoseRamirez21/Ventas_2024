@@ -50,6 +50,12 @@ public function eliminarCategoria($id){
     $sql = $sql->fetch_object();
     return $sql;
 }
+public function categoriaTieneProducto($id)
+{
+    $sql = $this->conexion->query("SELECT COUNT(*) as count FROM producto WHERE id_categoria = '{$id}'");
+    $resultado = $sql->fetch_object();
+    return $resultado->count > 0;
+}
 
 }
 

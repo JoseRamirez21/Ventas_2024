@@ -67,4 +67,9 @@ FROM compras");
         $sql = $sql->fetch_object();
         return $sql;
     }
+    public function categoriaTieneDependencia($id) {
+        $sql = $this->conexion->query("SELECT COUNT(*) as count FROM persona WHERE id = '{$id}'");
+        $resultado = $sql->fetch_object();
+        return $resultado->count > 0;
+    }
 }

@@ -111,6 +111,14 @@ public function eliminarPersona($id){
     $sql = $sql->fetch_object();
     return $sql;
 }
+
+public function categoriaTieneDependencias($id) {
+    // Cambia 'id' por la columna correcta que referencia a la tabla 'persona'
+    $sql = $this->conexion->query("SELECT COUNT(*) as count FROM compras WHERE id_trabajador = '{$id}'");
+    $resultado = $sql->fetch_object();
+
+    return $resultado->count > 0; // Devuelve true si hay dependencias
+}
 }
 
 
