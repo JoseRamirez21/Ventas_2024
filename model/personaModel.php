@@ -112,15 +112,28 @@ public function eliminarPersona($id){
     return $sql;
 }
 
-public function categoriaTieneDependencias($id) {
-    // Cambia 'id' por la columna correcta que referencia a la tabla 'persona'
+// public function categoriaTieneDependencias($id) {
+//     // Cambia 'id' por la columna correcta que referencia a la tabla 'persona'
+//     $sql = $this->conexion->query("SELECT COUNT(*) as count FROM compras WHERE id_trabajador = '{$id}'");
+//     $resultado = $sql->fetch_object();
+
+//     return $resultado->count > 0; // Devuelve true si hay dependencias
+// }
+// }
+public function personaTieneAsociaciones($id)
+{
     $sql = $this->conexion->query("SELECT COUNT(*) as count FROM compras WHERE id_trabajador = '{$id}'");
     $resultado = $sql->fetch_object();
+    if ($resultado->count > 0) {
+        return true;
+    }
 
-    return $resultado->count > 0; // Devuelve true si hay dependencias
+    $sql = $this->conexion->query("SELECT COUNT(*) as count FROM producto WHERE id_proveedor = '{$id}'");
+    $resultado = $sql->fetch_object();
+    return $resultado->count > 0;
 }
+
+
 }
-
-
 
 ?>

@@ -206,7 +206,7 @@ if ($tipo == "eliminar") {
       $id_persona = $_POST['id_persona'];
 
       // Verificar si la categoría tiene productos asociados
-      if ($objPersona->categoriaTieneDependencias($id_persona)) {
+      if ($objPersona->personaTieneAsociaciones($id_persona)) {
           $arr_Respuesta = array('status' => false, 'mensaje' => 'No se puede eliminar la categoría porque tiene productos asociados');
       } else {
         $arr_Persona = $objPersona->eliminarPersona($id_persona);
