@@ -65,7 +65,16 @@
                     <p class="card-text" style="color: rgb(63, 19, 241);"><strong>Precio: S/. 200.00</strong>
                 </div>
                 <div class="card-body d-flex align-items-center">
-    <a href="<?php echo BASE_URL; ?>carrito" class="card-link btn btn-danger">Agregar al Carrito</a>
+<!-- 🟥 Botón rojo (fuera del modal, por ejemplo en la tarjeta del producto) -->
+<button 
+  class="btn btn-danger add-to-cart"
+  data-name="JOHNNIE WALKER RED LABEL 750 ML"
+  data-price="95.00"
+  data-image="https://licoreriasunidas.pe/cdn/shop/products/johnnie-walker-red-label-750ml.webp?v=1677262912">
+  Añadir al carrito
+</button>
+
+
     <button type="button" class="btn btn-light ml-2" data-toggle="modal" data-target="#productModal" style="border: 2px solid blue;">
         <i class="fas fa-eye" style="color: blue;"></i>
     </button>
@@ -97,7 +106,16 @@
                         <p class="current-price">S/200.00</p>
                         <p>De color dorado y aroma acogedor de vainilla, madera tostada, frutas, especias y agave cocido. Una rica combinación de especias, frutas, madera, vainilla y sutiles avellanas tostadas. Al terminar se presenta suave y duradero con los cálidos sabores de vainilla y especias sutiles descansadas en roble.</p>
                         <p>Disponibilidad: <span class="text-success">2 disponibles</span></p>
-                        <button class="btn btn-success btn-block">Añadir al carrito</button>
+                      <button 
+  class="btn btn-success btn-block add-to-cart"
+  data-name="JOHNNIE WALKER GOLD LABEL DE 750 ML"
+  data-price="200.00"
+  data-image="https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-gold-label-botella-750ml.webp?v=1677262912"
+>
+  Añadir al carrito
+
+
+
                     </div>
                 </div>
             </div>
@@ -105,8 +123,101 @@
     </div>
 </div>
 
+<!-- 🟢 Notificación flotante elegante -->
+<div id="cart-notification"
+     style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.9);
+            background: #ffffff; color: #28a745; padding: 15px 25px; 
+            border-radius: 12px; display: none; z-index: 9999;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15); 
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 16px; font-weight: 500; text-align: center; 
+            min-width: 260px; max-width: 320px;">
+  <i class="fas fa-check-circle" style="font-size: 22px; margin-right: 8px; color: #28a745;"></i>
+  <span id="cart-notification-text">Producto agregado</span>
+</div>
+
+<style>
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes popOut {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+</style>
 
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.add-to-cart'); // botones del modal
+  const redButton = document.querySelector('.btn-danger.card-link'); // tu botón rojo
+  const notification = document.getElementById('cart-notification');
+
+  // Función para agregar producto al carrito
+  function addToCart(product) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const exist = cart.find(p => p.name === product.name);
+
+    if (exist) {
+      exist.quantity += 1;
+    } else {
+      cart.push(product);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Mostrar notificación
+    notification.style.display = 'block';
+    setTimeout(() => notification.style.display = 'none', 1500);
+  }
+
+  // Botones del modal
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const product = {
+        name: btn.dataset.name,
+        price: parseFloat(btn.dataset.price),
+        image: btn.dataset.image,
+        quantity: 1
+      };
+      addToCart(product);
+    });
+  });
+
+  // Botón rojo
+  if (redButton) {
+    redButton.addEventListener('click', (e) => {
+      e.preventDefault(); // evitar que recargue la página
+      const product = {
+        name: "JOHNNIE WALKER GOLD LABEL DE 750 ML", // colocar el nombre exacto del producto
+        price: 200.00, // precio
+        image: "https://licoreriasunidas.pe/cdn/shop/products/whisky-johnnie-walker-gold-label-botella-750ml.webp?v=1677262912",
+        quantity: 1
+      };
+      addToCart(product);
+
+      // Redirigir al carrito después de 1.2s
+      setTimeout(() => {
+        window.location.href = "<?php echo BASE_URL; ?>carrito";
+      }, 1200);
+    });
+  }
+});
+</script>
 
 
 
@@ -160,7 +271,15 @@
                         <p class="current-price">S/.165.00</p>
                         <p>Johnnie Walker Black Label es un whisky complejo, rico y lleno de carácter. Con notas de frutas oscuras, vainilla y un toque ahumado.</p>
                         <p>Disponibilidad: <span class="text-success">Disponible</span></p>
-                        <button class="btn btn-success btn-block">Añadir al carrito</button>
+                        <button 
+  class="btn btn-success btn-block add-to-cart"
+  data-name="JOHNNIE WALKER BLACK LABEL DE 750 ML"
+  data-price="200.00"
+  data-image=https://mundolicor.com.pe/wp-content/uploads/2019/12/136-Johnnie-Walker-Black-600x600.jpg"
+>
+  Añadir al carrito
+</button>
+
                     </div>
                 </div>
             </div>
@@ -1261,6 +1380,63 @@
     <a href="https://w.app/i3a7vS" target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s" alt="WhatsApp">
     </a>
+      <!-- 🔔 Notificación flotante -->
+    <div id="cart-notification" 
+         style="position: fixed; top: 20px; right: 20px; background: #28a745; 
+                color: white; padding: 12px 20px; border-radius: 8px; 
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2); display: none; z-index: 9999;">
+      ✅ Producto agregado al carrito
+    </div>
 </div>
             
             
+<!-- SCRIPT CARRITO -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cartButtons = document.querySelectorAll('.add-to-cart');
+
+    cartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const product = {
+          name: button.getAttribute('data-name'),
+          price: parseFloat(button.getAttribute('data-price')),
+          image: button.getAttribute('data-image'),
+          quantity: 1
+        };
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const existing = cart.find(item => item.name === product.name);
+        if (existing) {
+          existing.quantity += 1;
+        } else {
+          cart.push(product);
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        // 👇 Mostrar notificación flotante en lugar de alert
+        showCartNotification(`✅ ${product.name} se agregó al carrito`);
+      });
+    });
+  });
+
+  // ✅ Función para mostrar notificación flotante
+  function showCartNotification(message) {
+    const notif = document.getElementById('cart-notification');
+    notif.textContent = message;
+    notif.style.display = 'block';
+    notif.style.opacity = '1';
+
+    setTimeout(() => {
+      notif.style.transition = 'opacity 0.5s';
+      notif.style.opacity = '0';
+      setTimeout(() => {
+        notif.style.display = 'none';
+        notif.style.transition = '';
+      }, 500);
+    }, 2000);
+  }
+</script>
+
+
