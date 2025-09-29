@@ -11,7 +11,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://guacamole.radioformula.com.mx/resizer/Kd9Rnf8EaCeF72IQGbCf8Sx75k8=/1200x675/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/radioformula/YMQV6E5AIBFZVKVBTZ4GDB4F44.jpg"
+                <img src="https://mihogar.blog/wp-content/uploads/2023/09/los-secretos-detras-de-la-magia-del-licor-43-revelados-1.jpg"
                     class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">

@@ -412,14 +412,12 @@ CREATE TABLE `persona` (
 -- Volcado de datos para la tabla `persona`
 --
 
-INSERT INTO `persona` (`id`, `nro_identidad`, `razon_social`, `telefono`, `correo`, `departamento`, `provincia`, `distrito`, `cod_postal`, `direccion`, `rol`, `password`, `estado`, `fecha_reg`) VALUES
-(2, '78965412', 'Super SAC', '987456321', 'jota@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 51, 'Cedropata', 'Trabajador', '123', 1, '2024-11-12 11:03:50'),
-(20, '2312', 'dsf', '42', 'sdfs', 'sfd', 'sdf', 'sfd', 2345, 'sdf', 'Cliente', '$2y$10$MHT/nlee61fse.IwGlZcZewqrw4bzgyfkJuuAIVUAHQIlRCwaRmUy', 1, '2024-11-14 09:01:14'),
-(21, '76122823', 'Jose Carlos', '901267943', 'josexitorap@gmail.com', 'Ayacucho', 'Huanta', 'Huanta', 5121, 'Plaza Central', 'Proveedor', '$2y$10$Lm8pJx1ajvdMjk5qozVPOeojbz/ilVnJo66mmeuuHEXLf.Kq1D3DW', 1, '2024-12-02 19:11:46'),
-(23, '213423', 'sf', '3442', 'sf@gmail.comd', 'asf', 'sgsdg', 'dgd', 55, '4gfd', 'Trabajador', '$2y$10$teH2nCET0TA8SWVorOq7WeWCMIIZqMykAHX23cNML2UZVgoSFAVlG', 1, '2024-12-11 17:35:35'),
-(24, '5645645', 'sf', '3442', 'sf@gmail.comd', 'asf', 'sgsdg', 'dgd', 55, '4gfd', 'Trabajador', '$2y$10$YUJWudowprF/bJGztIebFeE159mJ8q8mjWZFa1WSbzFYQX.ffrvxW', 1, '2024-12-11 17:35:41'),
-(25, '67867867', 'sf', '3442', 'sf@gmail.comd', 'asf', 'sgsdg', 'dgd', 55, '4gfd', 'Trabajador', '$2y$10$3vWVt6nMkSj/kNcaeFCp5e6pnOPp10trC96FrDkS3IHh/ABRvkbqW', 1, '2024-12-11 17:36:03'),
-(26, '8668', 'sf', '3442', 'sf@gmail.comd', 'asf', 'sgsdg', 'dgd', 55, '4gfd', 'Trabajador', '$2y$10$lGdvPSHjojDmvUWbiS7Wwu6Wg9Hi55Ny7CUR/oCw3fvZmkDtkJbmy', 1, '2024-12-11 17:36:07');
+INSERT INTO `persona` 
+(`nro_identidad`, `razon_social`, `telefono`, `correo`, `departamento`, `provincia`, `distrito`, `cod_postal`, `direccion`, `rol`, `password`, `estado`, `fecha_reg`) 
+VALUES 
+('76122823', 'Administrador', '999999999', '76122823', 'Ayacucho', 'Huanta', 'Huanta', 51, 'Sede Central', 'Administrador', 
+'$2y$10$gTGUz1xZpNjp9prZekXUBuysYpJjwz1T2ciMq/VuH.Q09N3ypBSsS', 
+1, NOW());
 
 -- --------------------------------------------------------
 

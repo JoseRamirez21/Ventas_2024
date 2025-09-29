@@ -8,7 +8,6 @@ class vistaModelo
    {
       $palabras_permitidas = [
          'usuario',
-         
          'carrito',
          'nuevo-carrito',
          'burbuja',
